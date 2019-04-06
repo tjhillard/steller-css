@@ -1,0 +1,11 @@
+{
+  "name": "steller-css",
+  "version": "0.0.1",
+  "description": "A functional CSS framework for creating design systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TJ Hillard",
+  "license": "ISC"
+}

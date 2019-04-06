@@ -1,0 +1,50 @@
+// -----------------------------
+// Grid
+// -----------------------------
+
+$grid-columns: 12;
+
+$column-gutter-sm: 8px;
+$column-gutter-md: 16px;
+$column-gutter-lg: 24px;
+
+$row-gutter-sm: 4px;
+$row-gutter-md: 8px;
+$row-gutter-lg: 16px;
+
+// ⚠️ WARNING!
+// This variable is consumed throughout the framework to generate responsive class variants.
+// Modify with care.
+$breakpoint-map: (
+  (sm, $breakpoint-sm, $column-gutter-sm, $row-gutter-sm),
+  (md, $breakpoint-md, $column-gutter-md, $row-gutter-md),
+  (lg, $breakpoint-lg, $column-gutter-lg, $row-gutter-lg),
+);
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+
+  @each $label, $breakpoint, $col-gutter, $row-gutter in $breakpoint-map {
+    @media (min-width: #{$breakpoint}) {
+      grid-column-gap: $col-gutter;
+      grid-row-gap: $row-gutter;
+
+      @for $i from 1 through $grid-columns {
+        @for $j from 1 through $grid-columns {
+          .col-#{$label}-#{$i} {
+            grid-column: span $i;
+          }
+
+          .col-#{$label}-#{$i}.col-start-#{$label}-#{$j} {
+            grid-column: $j / span $i;
+          }
+
+          .row-#{$label}-#{$i} {
+            grid-row: span $i;
+          }
+        }
+      }
+    }
+  }
+}

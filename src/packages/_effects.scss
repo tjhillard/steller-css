@@ -1,0 +1,27 @@
+// -----------------------------
+// Box Shadow
+// -----------------------------
+
+$box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
+$box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
+$box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+
+$box-shadow-map: (
+  (sm, $box-shadow-sm),
+  (md, $box-shadow-md),
+  (lg, $box-shadow-lg),
+);
+
+@each $box-shadow-label, $box-shadow-value in $box-shadow-map {
+  .shadow-#{$box-shadow-label} {
+    box-shadow: $box-shadow-value;
+  }
+
+  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+    .#{$breakpoint-label}\:shadow-#{$box-shadow-label} {
+      @media (min-width: $breakpoint) {
+        box-shadow: $box-shadow-value;
+      }
+    }
+  }
+}

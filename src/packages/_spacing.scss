@@ -1,0 +1,85 @@
+// -----------------------------
+// Spacing
+// -----------------------------
+
+$spacings: (
+  (4px, 'xs'),
+  (8px, 'sm'),
+  (16px, 'md'),
+  (24px, 'lg'),
+  (32px, 'xl'),
+  (48px, "2xl"),
+  (64px, "3xl"),
+);
+
+$sides: (
+  (top, t),
+  (right, r),
+  (bottom, b),
+  (left, l),
+);
+
+$types: (
+  (margin, m),
+  (padding, p),
+);
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $spacing, $spacing-label in $spacings {
+    @each $type, $type-label in $types {
+      // t, r, b, l
+      @each $side, $side-label in $sides {
+        .#{$type-label}#{$side-label}-#{$spacing-label} {
+          #{$type}-#{$side}: #{$spacing};
+        }
+
+        // Responsive t, r, b, l
+        .#{$breakpoint-label}\:#{$type-label}#{$side-label}-#{$spacing-label} {
+          @media (min-width: $breakpoint) {
+            #{$type}-#{$side}: #{$spacing};
+          }
+        }
+      }
+
+      // x
+      .#{$type-label}x-#{$spacing-label} {
+        #{$type}-left: #{$spacing};
+        #{$type}-right: #{$spacing};
+      }
+
+      // Responsive x
+      .#{$breakpoint-label}\:#{$type-label}x-#{$spacing-label} {
+        @media (min-width: $breakpoint) {
+          #{$type}-left: #{$spacing};
+          #{$type}-right: #{$spacing};
+        }
+      }
+
+      // y
+      .#{$type-label}y-#{$spacing-label} {
+        #{$type}-top: #{$spacing};
+        #{$type}-bottom: #{$spacing};
+      }
+
+      // Responsive y
+      .#{$breakpoint-label}\:#{$type-label}y-#{$spacing-label} {
+        @media (min-width: $breakpoint) {
+          #{$type}-top: #{$spacing};
+          #{$type}-bottom: #{$spacing};
+        }
+      }
+
+      // all
+      .#{$type-label}-#{$spacing-label} {
+        #{$type}: #{$spacing};
+      }
+
+      // Responsive all
+      .#{$breakpoint-label}\:#{$type-label}-#{$spacing-label} {
+        @media (min-width: $breakpoint) {
+          #{$type}: #{$spacing};
+        }
+      }
+    }
+  }
+}

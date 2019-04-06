@@ -1,0 +1,9 @@
+.sass-cache
+.DS_Store
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*

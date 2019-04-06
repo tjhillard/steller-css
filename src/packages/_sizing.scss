@@ -1,0 +1,162 @@
+// -----------------------------
+// Width
+// -----------------------------
+
+$width-map: (
+  (auto, auto),
+  (full, 100%),
+  (screen, 100vw),
+  (1px, 1px),
+);
+
+@each $width-label, $width in $width-map {
+  .w-#{$width-label} {
+    width: $width;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $width-label, $width in $width-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:w-#{$width-label} {
+        width: $width;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Height
+// -----------------------------
+
+$height-map: (
+  (auto, auto),
+  (full, 100%),
+  (screen, 100vw),
+  (1px, 1px),
+);
+
+@each $height-label, $height in $height-map {
+  .h-#{$height-label} {
+    height: $height;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $height-label, $height in $height-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:h-#{$height-label} {
+        height: $height;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Min Width
+// -----------------------------
+
+$min-width-map: (
+  (auto, auto),
+  (full, 100%),
+  (screen, 100vw),
+  (1px, 1px),
+);
+
+@each $min-width-label, $min-width in $min-width-map {
+  .min-w-#{$min-width-label} {
+    min-width: $min-width;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $min-width-label, $min-width in $min-width-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:min-w-#{$min-width-label} {
+        min-width: $min-width;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Min Height
+// -----------------------------
+
+$min-height-map: (
+  (auto, auto),
+  (full, 100%),
+  (screen, 100vw),
+  (1px, 1px),
+);
+
+@each $min-height-label, $min-height in $min-height-map {
+  .min-h-#{$min-height-label} {
+    min-height: $min-height;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $min-height-label, $min-height in $min-height-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:min-h-#{$min-height-label} {
+        min-height: $min-height;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Max Width
+// -----------------------------
+
+$max-width-map: (
+  (auto, auto),
+  (full, 100%),
+  (screen, 100vw),
+  (1px, 1px),
+);
+
+@each $max-width-label, $max-width in $max-width-map {
+  .min-h-#{$max-width-label} {
+    max-width: $max-width;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $max-width-label, $max-width in $max-width-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:min-h-#{$max-width-label} {
+        max-width: $max-width;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Max Height
+// -----------------------------
+
+$max-height-map: (
+  (0, 0),
+  (auto, auto),
+  (full, 100%),
+  (screen, 100vw),
+  (1px, 1px),
+);
+
+@each $max-height-label, $max-height in $max-height-map {
+  .min-h-#{$max-height-label} {
+    max-height: $max-height;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $max-height-label, $max-height in $max-height-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:max-h-#{$max-height-label} {
+        max-height: $max-height;
+      }
+    }
+  }
+}

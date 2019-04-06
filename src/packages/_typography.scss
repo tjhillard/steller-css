@@ -1,0 +1,189 @@
+// -----------------------------
+// Font Size
+// -----------------------------
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 18px; // 👈 .container default
+$font-size-lg: 24px;
+$font-size-xl: 30px;
+$font-size-2xl: 36px;
+$font-size-3xl: 48px;
+$font-size-4xl: 60px;
+
+$font-size-map: (
+  ('xs', $font-size-xs),
+  ('sm', $font-size-sm),
+  ('md', $font-size-md),
+  ('lg', $font-size-lg),
+  ('xl', $font-size-xl),
+  ('2xl', $font-size-2xl),
+  ('3xl', $font-size-3xl),
+  ('4xl', $font-size-4xl),
+);
+
+@each $font-size-label, $size in $font-size-map {
+  .font-size-#{$font-size-label} {
+    font-size: $size;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $font-size-label, $size in $font-size-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:font-size-#{$font-size-label} {
+        font-size: $size;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Font Weight
+// -----------------------------
+
+$font-weight-bold: 900;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+
+$font-weight-map: (
+  ('bold', $font-weight-bold),
+  ('medium', $font-weight-medium),
+  ('regular', $font-weight-regular),
+);
+
+@each $font-weight-label, $font-weight in $font-weight-map {
+  .font-weight-#{$font-weight-label} {
+    font-weight: $font-weight;
+  }
+}
+
+@each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $font-weight-label, $font-weight in $font-weight-map {
+    @media (min-width: $breakpoint) {
+      .#{$breakpoint-label}\:font-weight-#{$font-weight-label} {
+        font-weight: $font-weight;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Leading / Line Height
+// -----------------------------
+
+$leading-tight: 1.25em;
+$leading-normal: 1.5em;
+$leading-loose: 2em;
+
+.leading-tight {
+  line-height: $leading-tight;
+}
+
+.leading-normal {
+  line-height: $leading-normal;
+}
+
+.leading-loose {
+  line-height: $leading-loose;
+}
+
+// -----------------------------
+// Font Style / Decoration / Transform
+// -----------------------------
+
+$font-style-map: (
+	('italic', font-style, italic),
+	('underline', text-decoration, underline),
+	('no-underline', text-decoration, none),
+	('lowercase', text-transform, lowercase),
+	('uppercase', text-transform, uppercase),
+	('capitalize', text-transform, capitalize),
+);
+
+@each $font-style-class-name, $font-style-property, $font-style-value in $font-style-map {
+  .#{$font-style-class-name} {
+    #{$font-style-property}: $font-style-value;
+  }
+
+  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+    .#{$breakpoint-label}\:#{$font-style-class-name} {
+      @media (min-width: $breakpoint) {
+        #{$font-style-property}: $font-style-value;
+      }
+    }
+  }
+}
+
+// -----------------------------
+// Responsive Defaults
+// http://typecast.com/blog/a-more-modern-scale-for-web-typography
+// -----------------------------
+
+h1 {
+  font-size: $font-size-md * 2;
+  line-height: 1.25;
+}
+
+@media (min-width: $breakpoint-md) {
+  h1 {
+    font-size: $font-size-md * 2.5;
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  h1 {
+    font-size: $font-size-md * 3;
+    line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: $font-size-md * 1.625;
+  line-height: 1.15384615;
+}
+
+@media (min-width: $breakpoint-md) {
+  h2 {
+    font-size: $font-size-md * 2;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  h2 {
+    font-size: $font-size-md * 2.25;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: $font-size-md * 1.375;
+  line-height: 1.13636364;
+}
+
+@media (min-width: $breakpoint-md) {
+  h3 {
+    font-size: $font-size-md * 1.5;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  h3 {
+    font-size: $font-size-md * 1.75;
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: $font-size-md * 1.125;
+  line-height: 1.11111111;
+}
+
+@media (min-width: $breakpoint-md) {
+  h4 {
+    line-height: 1.22222222;
+  }
+}
