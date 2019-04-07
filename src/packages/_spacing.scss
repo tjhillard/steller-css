@@ -2,7 +2,7 @@
 // Spacing
 // -----------------------------
 
-$spacings: (
+$spacing-sizes: (
   (4px, 'xs'),
   (8px, 'sm'),
   (16px, 'md'),
@@ -25,7 +25,7 @@ $types: (
 );
 
 @each $breakpoint-label, $breakpoint in $breakpoint-map {
-  @each $spacing, $spacing-label in $spacings {
+  @each $spacing, $spacing-label in $spacing-sizes {
     @each $type, $type-label in $types {
       // t, r, b, l
       @each $side, $side-label in $sides {
