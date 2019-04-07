@@ -1,0 +1,146 @@
+// -----------------------------
+// Display
+// -----------------------------
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+// -----------------------------
+// Text Align
+// -----------------------------
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+// -----------------------------
+// Floats
+// -----------------------------
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-none {
+  float: none;
+}
+
+// -----------------------------
+// Position
+// -----------------------------
+
+.static {
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.pin {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pin-t {
+  top: 0;
+}
+
+.pin-r {
+  right: 0;
+}
+
+.pin-b {
+  bottom: 0;
+}
+
+.pin-l {
+  left: 0;
+}
+
+// -----------------------------
+// Visibility
+// -----------------------------
+
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+// -----------------------------
+// Z-Index
+// -----------------------------
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 0;
+}
+
+.z-20 {
+  z-index: 0;
+}
+
+.z-max {
+  z-index: 2147483647;
+}

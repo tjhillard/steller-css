@@ -1,0 +1,69 @@
+// -----------------------------
+// Hover
+// -----------------------------
+
+.cursor-pointer {
+	cursor: pointer;
+}
+
+// -----------------------------
+// Rise on hover
+// -----------------------------
+
+.hover\:rise-sm:hover {
+	transform: translateY(-1px);
+	transition: all 100ms ease-in-out;
+}
+
+.hover\:rise-md:hover {
+	transform: translateY(-2px);
+	transition: all 100ms ease-in-out;
+}
+
+.hover\:rise-lg:hover {
+	transform: translateY(-4px);
+	transition: all 100ms ease-in-out;
+}
+
+// -----------------------------
+// Shadow on hover
+// -----------------------------
+
+.hover\:shadow-sm:hover {
+	box-shadow: $box-shadow-sm;
+}
+
+.hover\:shadow-md:hover {
+	box-shadow: $box-shadow-md;
+}
+
+.hover\:shadow-lg:hover {
+	box-shadow: $box-shadow-lg;
+}
+
+// -----------------------------
+// Grow on hover
+// -----------------------------
+
+.hover\:grow-sm:hover {
+	transform: scale(1.05);
+	transition: all 100ms ease-in-out;
+}
+
+.hover\:grow-md:hover {
+	transform: scale(1.01);
+	transition: all 100ms ease-in-out;
+}
+
+.hover\:grow-lg:hover {
+	transform: scale(1.15);
+	transition: all 100ms ease-in-out;
+}
+
+// -----------------------------
+// Underline on hover
+// -----------------------------
+
+.hover\:underline:hover {
+	text-decoration: underline;
+}
