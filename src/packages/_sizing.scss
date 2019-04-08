@@ -32,7 +32,7 @@ $width-map: (
 $height-map: (
   (auto, auto),
   (full, 100%),
-  (screen, 100vw),
+  (screen, 100vh),
   (1px, 1px),
 );
 
@@ -86,7 +86,7 @@ $min-width-map: (
 $min-height-map: (
   (auto, auto),
   (full, 100%),
-  (screen, 100vw),
+  (screen, 100vh),
   (1px, 1px),
 );
 
@@ -118,7 +118,7 @@ $max-width-map: (
 );
 
 @each $max-width-label, $max-width in $max-width-map {
-  .min-h-#{$max-width-label} {
+  .min-w-#{$max-width-label} {
     max-width: $max-width;
   }
 }
@@ -126,7 +126,7 @@ $max-width-map: (
 @each $breakpoint-label, $breakpoint in $breakpoint-map {
   @each $max-width-label, $max-width in $max-width-map {
     @media (min-width: $breakpoint) {
-      .#{$breakpoint-label}\:min-h-#{$max-width-label} {
+      .#{$breakpoint-label}\:min-w-#{$max-width-label} {
         max-width: $max-width;
       }
     }
@@ -141,12 +141,12 @@ $max-height-map: (
   (0, 0),
   (auto, auto),
   (full, 100%),
-  (screen, 100vw),
+  (screen, 100vh),
   (1px, 1px),
 );
 
 @each $max-height-label, $max-height in $max-height-map {
-  .min-h-#{$max-height-label} {
+  .max-h-#{$max-height-label} {
     max-height: $max-height;
   }
 }
