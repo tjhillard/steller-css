@@ -24,59 +24,65 @@ $types: (
   (padding, p),
 );
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
-  @each $spacing, $spacing-label in $spacing-sizes {
-    @each $type, $type-label in $types {
-      // t, r, b, l
-      @each $side, $side-label in $sides {
-        .#{$type-label}#{$side-label}-#{$spacing-label} {
-          #{$type}-#{$side}: #{$spacing};
-        }
+@each $spacing, $spacing-label in $spacing-sizes {
+  @each $type, $type-label in $types {
+    // t, r, b, l
+    @each $side, $side-label in $sides {
+      .#{$type-label}#{$side-label}-#{$spacing-label} {
+        #{$type}-#{$side}: #{$spacing};
+      }
 
-        // Responsive t, r, b, l
+      // Responsive t, r, b, l
+      @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
         .#{$breakpoint-label}\:#{$type-label}#{$side-label}-#{$spacing-label} {
-          @media (min-width: $breakpoint) {
+          @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
             #{$type}-#{$side}: #{$spacing};
           }
         }
       }
+    }
 
-      // x
-      .#{$type-label}x-#{$spacing-label} {
-        #{$type}-left: #{$spacing};
-        #{$type}-right: #{$spacing};
-      }
+    // x
+    .#{$type-label}x-#{$spacing-label} {
+      #{$type}-left: #{$spacing};
+      #{$type}-right: #{$spacing};
+    }
 
-      // Responsive x
+    // Responsive x
+    @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
       .#{$breakpoint-label}\:#{$type-label}x-#{$spacing-label} {
-        @media (min-width: $breakpoint) {
+        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
           #{$type}-left: #{$spacing};
           #{$type}-right: #{$spacing};
         }
       }
+    }
 
-      // y
-      .#{$type-label}y-#{$spacing-label} {
-        #{$type}-top: #{$spacing};
-        #{$type}-bottom: #{$spacing};
-      }
+    // y
+    .#{$type-label}y-#{$spacing-label} {
+      #{$type}-top: #{$spacing};
+      #{$type}-bottom: #{$spacing};
+    }
 
-      // Responsive y
+    // Responsive y
+    @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
       .#{$breakpoint-label}\:#{$type-label}y-#{$spacing-label} {
-        @media (min-width: $breakpoint) {
+        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
           #{$type}-top: #{$spacing};
           #{$type}-bottom: #{$spacing};
         }
       }
+    }
 
-      // all
-      .#{$type-label}-#{$spacing-label} {
-        #{$type}: #{$spacing};
-      }
+    // all
+    .#{$type-label}-#{$spacing-label} {
+      #{$type}: #{$spacing};
+    }
 
-      // Responsive all
-      .#{$breakpoint-label}\:#{$type-label}-#{$spacing-label} {
-        @media (min-width: $breakpoint) {
+    // Responsive all
+    @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
+      .#{$breakpoint-label}\:#{$type-label}x-#{$spacing-label} {
+        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
           #{$type}: #{$spacing};
         }
       }

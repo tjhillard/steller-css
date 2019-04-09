@@ -26,6 +26,25 @@
 }
 
 // -----------------------------
+// Shift right on hover
+// -----------------------------
+
+.hover\:shift-right-sm:hover {
+	transform: translateX(1px);
+	transition: all 100ms ease-in-out;
+}
+
+.hover\:shift-right-md:hover {
+	transform: translateX(2px);
+	transition: all 100ms ease-in-out;
+}
+
+.hover\:shift-right-lg:hover {
+	transform: translateX(4px);
+	transition: all 100ms ease-in-out;
+}
+
+// -----------------------------
 // Shadow on hover
 // -----------------------------
 

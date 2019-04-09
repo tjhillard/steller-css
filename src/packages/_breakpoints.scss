@@ -2,6 +2,11 @@
 // Breakpoints
 // -----------------------------
 
-$breakpoint-sm: 0;
-$breakpoint-md: 576px;
-$breakpoint-lg: 992px;
+$breakpoint-sm-min: 0;
+$breakpoint-sm-max: 575px;
+
+$breakpoint-md-min: $breakpoint-sm-max + 1px;
+$breakpoint-md-max: 991px;
+
+$breakpoint-lg-min: $breakpoint-md-max + 1px;
+$breakpoint-lg-max: 33554428px;

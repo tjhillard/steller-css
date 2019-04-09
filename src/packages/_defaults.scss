@@ -1,8 +1,107 @@
 // -----------------------------
-// Defaults
+// General
 // -----------------------------
 
 * {
 	color: $color-gray-dark-4;
 	line-height: $leading-normal;
+}
+
+span, p {
+	@media (max-width: $breakpoint-sm-max) {
+		line-height: $leading-tight;
+	}
+}
+
+a {
+	color: $color-primary;
+}
+
+// -----------------------------
+// Headings
+// -----------------------------
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-heading;
+}
+
+// -----------------------------
+// Responsive Heading Defaults
+// http://typecast.com/blog/a-more-modern-scale-for-web-typography
+// -----------------------------
+
+h1 {
+  font-size: $font-size-md * 2;
+  line-height: 1.25;
+  font-family: $font-family-heading;
+  font-weight: 700;
+}
+
+@media (min-width: $breakpoint-md-min) {
+  h1 {
+    font-size: $font-size-md * 2.5;
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: $breakpoint-lg-min) {
+  h1 {
+    font-size: $font-size-md * 3;
+    line-height: 1.05;
+  }
+}
+
+h2 {
+  font-size: $font-size-md * 1.625;
+  line-height: 1.15384615;
+  font-family: $font-family-heading;
+  font-weight: 400;
+}
+
+@media (min-width: $breakpoint-md-min) {
+  h2 {
+    font-size: $font-size-md * 2;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: $breakpoint-lg-min) {
+  h2 {
+    font-size: $font-size-md * 2.25;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: $font-size-md * 1.375;
+  line-height: 1.13636364;
+  font-family: $font-family-heading;
+  font-weight: 400;
+}
+
+@media (min-width: $breakpoint-md-min) {
+  h3 {
+    font-size: $font-size-md * 1.5;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: $breakpoint-lg-min) {
+  h3 {
+    font-size: $font-size-md * 1.75;
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: $font-size-md * 1.125;
+  line-height: 1.11111111;
+  font-family: $font-family-heading;
+  font-weight: 400;
+}
+
+@media (min-width: $breakpoint-md-min) {
+  h4 {
+    line-height: 1.22222222;
+  }
 }

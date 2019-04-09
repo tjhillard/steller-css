@@ -34,10 +34,13 @@ $speeds: (
 
 @each $speed-name, $speed in $speeds {
   .slide-in-from-top-#{$speed-name}-enter {
-    transform: translateY(-40%);
+    transform: translateY(-10%);
     opacity: 0;
   }
-  .slide-in-from-top-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-top-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-top-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 
@@ -47,10 +50,13 @@ $speeds: (
 
 @each $speed-name, $speed in $speeds {
   .slide-in-from-bottom-#{$speed-name}-enter {
-    transform: translateY(40%);
+    transform: translateY(10%);
     opacity: 0;
   }
-  .slide-in-from-bottom-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-bottom-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-bottom-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 
@@ -60,10 +66,13 @@ $speeds: (
 
 @each $speed-name, $speed in $speeds {
   .slide-in-from-right-#{$speed-name}-enter {
-    transform: translateX(40%);
+    transform: translateX(10%);
     opacity: 0;
   }
-  .slide-in-from-right-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-right-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-right-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 
@@ -73,10 +82,13 @@ $speeds: (
 
 @each $speed-name, $speed in $speeds {
   .slide-in-from-left-#{$speed-name}-enter {
-    transform: translateX(-40%);
+    transform: translateX(-10%);
     opacity: 0;
   }
-  .slide-in-from-left-#{$speed-name}-enter-to { transition: all #{$speed} ease-in-out; }
+  .slide-in-from-left-#{$speed-name}-enter-to {
+    transition: all #{$speed} ease-in-out;
+    opacity: 1;
+  }
   .slide-in-from-left-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
 }
 

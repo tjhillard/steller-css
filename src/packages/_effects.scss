@@ -17,9 +17,9 @@ $box-shadow-map: (
     box-shadow: $box-shadow-value;
   }
 
-  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
     .#{$breakpoint-label}\:shadow-#{$box-shadow-label} {
-      @media (min-width: $breakpoint) {
+      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
         box-shadow: $box-shadow-value;
       }
     }

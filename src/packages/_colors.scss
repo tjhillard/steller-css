@@ -24,11 +24,11 @@ $color-gray-dark-4: #333;
 $color-gray-dark-5: #242424;
 $color-gray-dark-6: #121212;
 
-$color-primary: #1f76cd;
-$color-secondary: #109979;
+$color-primary: #2F4D54;
+$color-secondary: #6A96A1;
 
 $color-success: #4cd964;
-$color-info: #5ac8fa;
+$color-info: #86BBD8;
 $color-warning: #ffcc00;
 $color-danger: #FF7F66;
 
@@ -196,9 +196,9 @@ $color-map: (
     color: $color-value;
   }
 
-  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
     .#{$breakpoint-label}\:#{$color-class-name} {
-      @media (min-width: $breakpoint) {
+      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
         color: $color-value;
       }
     }
@@ -284,6 +284,17 @@ $background-color-map: (
 	('bg-danger-dark-3', $color-danger-dark-3),
 	('bg-danger-dark-4', $color-danger-dark-4),
 	('bg-danger-dark-5', $color-danger-dark-5),
+	// gray
+	('bg-gray-light-1', $color-gray-light-1),
+	('bg-gray-light-2', $color-gray-light-2),
+	('bg-gray-light-3', $color-gray-light-3),
+	('bg-gray-light-4', $color-gray-light-4),
+	('bg-gray-light-5', $color-gray-light-5),
+	('bg-gray-dark-1', $color-gray-dark-1),
+	('bg-gray-dark-2', $color-gray-dark-2),
+	('bg-gray-dark-3', $color-gray-dark-3),
+	('bg-gray-dark-4', $color-gray-dark-4),
+	('bg-gray-dark-5', $color-gray-dark-5),
 );
 
 @each $background-color-class-name, $background-color-value in $background-color-map {
@@ -291,9 +302,9 @@ $background-color-map: (
     background-color: $background-color-value;
   }
 
-  @each $breakpoint-label, $breakpoint in $breakpoint-map {
+  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
     .#{$breakpoint-label}\:#{$background-color-class-name} {
-      @media (min-width: $breakpoint) {
+      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
         background-color: $background-color-value;
       }
     }

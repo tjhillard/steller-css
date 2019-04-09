@@ -15,9 +15,9 @@ $width-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $width-label, $width in $width-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:w-#{$width-label} {
         width: $width;
       }
@@ -42,9 +42,9 @@ $height-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $height-label, $height in $height-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:h-#{$height-label} {
         height: $height;
       }
@@ -69,9 +69,9 @@ $min-width-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $min-width-label, $min-width in $min-width-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:min-w-#{$min-width-label} {
         min-width: $min-width;
       }
@@ -96,9 +96,9 @@ $min-height-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $min-height-label, $min-height in $min-height-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:min-h-#{$min-height-label} {
         min-height: $min-height;
       }
@@ -123,9 +123,9 @@ $max-width-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $max-width-label, $max-width in $max-width-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:min-w-#{$max-width-label} {
         max-width: $max-width;
       }
@@ -151,9 +151,9 @@ $max-height-map: (
   }
 }
 
-@each $breakpoint-label, $breakpoint in $breakpoint-map {
+@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
   @each $max-height-label, $max-height in $max-height-map {
-    @media (min-width: $breakpoint) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
       .#{$breakpoint-label}\:max-h-#{$max-height-label} {
         max-height: $max-height;
       }
