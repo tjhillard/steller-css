@@ -1,5 +1,5 @@
-# steller-css
-A functional CSS framework for creating design systems
+# steller-css ⛰️
+A functional (aka "atomic" or "utility-first") CSS framework for creating design systems. Includes several built-in smart defaults for building responsive, accesible, and beautiful user interfaces.
 
 * 12 column grid system built with CSS Grid
 * Out-of-the-box responsive typography support
