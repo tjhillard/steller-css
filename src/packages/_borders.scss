@@ -30,14 +30,6 @@ $border-colors-map: (
   .border-#{$border-color-name} {
     border-color: $border-color;
   }
-
-  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-    .#{$breakpoint-label}\:border-#{$border-color-name} {
-      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-        border-color: $border-color;
-      }
-    }
-  }
 }
 
 // -----------------------------
@@ -61,39 +53,15 @@ $border-radius-map: (
     border-radius: $size;
   }
 
-  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-    .#{$breakpoint-label}\:rounded-#{$size-label} {
-      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-        border-radius: $size;
-      }
-    }
-  }
-
   @each $corner-label, $corner in $corners {
     .rounded-#{$corner-label}-#{$size-label} {
       border-#{$corner}-radius: $size;
-    }
-
-    @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-      .#{$breakpoint-label}\:rounded-#{$corner-label}-#{$size-label} {
-        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-          border-#{$corner}-radius: $size;
-        }
-      }
     }
   }
 }
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-@each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-  .#{$breakpoint-label}\:rounded-full {
-    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-      border-radius: 9999px;
-    }
-  }
 }
 
 // -----------------------------
@@ -117,25 +85,9 @@ $border-width-map: (
     border-width: $size;
   }
 
-  @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-    .#{$breakpoint-label}\:border-#{$size-label} {
-      @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-        border-width: $size;
-      }
-    }
-  }
-
   @each $corner-label, $corner in $corners {
     .border-#{$corner-label}-#{$size-label} {
       border-#{$corner}-width: $size;
-    }
-
-    @each $breakpoint-label, $breakpoint-min, $breakpoint-max in $breakpoint-map {
-      .#{$breakpoint-label}\:border-#{$corner-label}-#{$size-label} {
-        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
-          border-#{$corner}-width: $size;
-        }
-      }
     }
   }
 }
