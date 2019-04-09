@@ -6,6 +6,8 @@ A functional CSS framework for creating design systems
 * Clear, predictable class syntax
 * Only 12kb gzipped
 
+>⚠️ PSA: This project is a work in progress and isn't built for configurability at the moment.
+
 ## Usage
 
 I made this repository mainly for myself, for quickly creating a composable css framework for my projects' design systems. If you are interested in giving this a spin, I would just clone the project, and copy pasta the files in `src/packages` into your projects assets directory then import them into your `index.scss` or equivilent. Check `src/index.scss` to view necessary import order.
