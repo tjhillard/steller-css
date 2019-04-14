@@ -10,14 +10,27 @@ A functional (aka "atomic" or "utility-first") CSS framework for creating design
 
 ## Installation
 
->WIP
+```
+npm i steller-css
+```
+
+```
+yarn add steller-css
+```
 
 ## Usage
 
 1. Create a `theme.scss` or `variables.scss`, or whatever name you prefer
 2. Copy pasta the values in the [example config](https://github.com/tjhillard/steller-css/blob/master/src/example-theme.scss) 
 3. Adjust the theme variables to your design system's needs. In your `index.scss` or equivilent
-4. Import your newly created `theme.scss` at the top of your entry point sass file before any of your application imports.
+4. Import your newly created `theme.scss` at the top of your entry point sass file before any of your application imports
+
+```scss
+// Your index.scss / sass main file
+
+@import 'steller-theme'; :point_left: Your config file
+@import '~steller-css/src/index.scss'; :point_left: Steller from node_modules
+```
 
 ## Docs
 
