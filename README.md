@@ -26,8 +26,15 @@ yarn add steller-css
 4. In your `index.scss` or equivilent, import your newly created `theme.scss` at the top of your entry point sass file
 5. Import steller
 ```scss
+<<<<<<< HEAD
 @import 'steller-theme'; // Your config file
 @import '~steller-css'; // Steller from node_modules
+=======
+// Your index.scss / sass main file
+
+@import 'steller-theme'; // Your config file
+@import '~steller-css/index'; // Steller from node_modules
+>>>>>>> 4f0f6bcc8b4a46b1f6c36b8247c6af682afd30d2
 ```
 
 ## Docs
