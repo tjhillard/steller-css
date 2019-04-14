@@ -43,6 +43,7 @@ $min-width-map: (
   (full, 100%),
   (screen, 100vw),
   (1px, 1px),
+  (0, 0),
 );
 
 @each $min-width-label, $min-width in $min-width-map {
@@ -60,6 +61,7 @@ $min-height-map: (
   (full, 100%),
   (screen, 100vh),
   (1px, 1px),
+  (0, 0),
 );
 
 @each $min-height-label, $min-height in $min-height-map {
@@ -77,6 +79,7 @@ $max-width-map: (
   (full, 100%),
   (screen, 100vw),
   (1px, 1px),
+  (0, 0),
 );
 
 @each $max-width-label, $max-width in $max-width-map {
@@ -90,11 +93,11 @@ $max-width-map: (
 // -----------------------------
 
 $max-height-map: (
-  (0, 0),
   (auto, auto),
   (full, 100%),
   (screen, 100vh),
   (1px, 1px),
+  (0, 0),
 );
 
 @each $max-height-label, $max-height in $max-height-map {

@@ -2,7 +2,6 @@
   margin: 0 auto;
   max-width: $container-width;
   position: relative;
-  font-family: $font-family-body;
 
   @include above-media(breakpoint-sm) {
     padding-left: 16px;

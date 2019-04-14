@@ -2,6 +2,10 @@
 // General
 // -----------------------------
 
+html {
+  font-size: $font-size-md;
+}
+
 * {
 	color: $color-gray-dark-4;
 	line-height: $leading-md;

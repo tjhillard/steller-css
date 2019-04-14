@@ -13,6 +13,13 @@ $borders-classes-map: (
 
   // border radius
   'rounded-full':  (border-radius: 9999px),
+
+  // border style
+  'border-solid': (border-style: solid),
+  'border-dashed': (border-style: dashed),
+  'border-dotted': (border-style: dotted),
+  'border-inset': (border-style: inset),
+  'border-outset': (border-style: outset),
 );
 
 $border-radius-map: (
@@ -64,4 +71,3 @@ $border-width-map: (
     ));
   }
 }
-
