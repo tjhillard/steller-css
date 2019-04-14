@@ -28,8 +28,8 @@ yarn add steller-css
 ```scss
 // Your index.scss / sass main file
 
-@import 'steller-theme'; :point_left: Your config file
-@import '~steller-css/index'; :point_left: Steller from node_modules
+@import 'steller-theme'; // Your config file
+@import '~steller-css/index'; // Steller from node_modules
 ```
 
 ## Docs
