@@ -27,7 +27,7 @@ yarn add steller-css
 5. Import steller
 ```scss
 @import 'steller-theme'; // Your config file
-@import '~steller-css'; // Steller from node_modules
+@import '~steller-css/index'; // Steller from node_modules
 ```
 
 ## Docs
