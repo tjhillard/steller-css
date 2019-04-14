@@ -1,8 +1,5 @@
 @import 'mixins/media-queries';
-
-@import './classes/index.scss';
-
+@import 'defaults';
+@import 'classes/index';
 @import 'variants/responsive';
 @import 'variants/hover';
-
-@import 'defaults';

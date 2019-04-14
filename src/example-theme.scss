@@ -7,75 +7,86 @@
  * --------------------------------------------------------------
  */
 
- /**
+/**
  * --------------------------------------------------------------
- * Core
+ * Color
  *
- * Color, Typography, and Responsive Breakpoints
+ * As many colors as you need, and you get to name them.
+ * The names chosen here, will align with their class names.
+ *
+ * .text-{$name} --> { color: $value; }
+ * .bg-{$name} --> { background-color: $value; }
+ * .border-{$name} --> { border-color: $value; }
  * --------------------------------------------------------------
  */
 
-// -----------------------------
-// Color
-// -----------------------------
+$steller-colors: (
+	// Brand
+	'primary': #3F7CAC,
+	'secondary': #E2CB9E,
 
-$color-primary: #2F4D54;
-$color-secondary: #6A96A1;
+	// Accents
+	'accent-green': #73937E,
+	'accent-teal': #86BBD8,
 
-$color-success: #4cd964;
-$color-info: #86BBD8;
-$color-warning: #ffcc00;
-$color-danger: #FF7F66;
+	// System
+	'success': #4cd964,
+	'info': #86BBD8,
+	'warning': #ffcc00,
+	'danger': #FF7F66,
 
-$color-white: #fff;
-$color-black: #000;
+	// Grayscale
+	'white': #fff,
+	'black': #000,
+	'dark-grey': #393D3F,
+	'light-grey': lighten(#393D3F, 22%),
+);
 
-$color-gray-light-1: #fafafa;
-$color-gray-light-2: #f2f2f2;
-$color-gray-light-3: #e6e6e6;
-$color-gray-light-4: #d9d9d9;
-$color-gray-light-5: #ccc;
-$color-gray-light-6: #999;
+/**
+ * --------------------------------------------------------------
+ * Typography
+ *
+ *
+ * .font-{$name} --> { font: $value; }
+ * .font-size-{$size} --> { font-size: $value; }
+ * .font-weight-{$weight} --> { font-weight: $value; }
+ * .leading-{$size} --> { line-height: $size; }
+ * --------------------------------------------------------------
+ */
 
-$color-gray-dark-1: #808080;
-$color-gray-dark-2: #666;
-$color-gray-dark-3: #4d4d4d;
-$color-gray-dark-4: #333;
-$color-gray-dark-5: #242424;
-$color-gray-dark-6: #121212;
-
-// -----------------------------
-// Typography
-// -----------------------------
-
-// Fony families
 $font-family-heading: sans-serif;
-$font-family-secondary: serif;
 $font-family-body: sans-serif;
 
-// Font sizes
-$font-size-xs: 12px;
-$font-size-sm: 14px;
-$font-size-md: 18px; // 👈 <html> default
-$font-size-lg: 24px;
-$font-size-xl: 30px;
-$font-size-2xl: 36px;
-$font-size-3xl: 48px;
-$font-size-4xl: 60px;
+$steller-custom-font-families: (
+	'accent': cursive,
+);
 
-// Font weights
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 16px; // 👈 <html> default
+$font-size-lg: 22px;
+$font-size-xl: 28px;
+$font-size-2xl: 34px;
+$font-size-3xl: 46px;
+$font-size-4xl: 58px;
+
 $font-weight-bold: 700;
 $font-weight-medium: 500;
 $font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-thin: 100;
 
-// Line heights
 $leading-sm: 1.25em;
 $leading-md: 1.5em;
 $leading-lg: 2em;
 
-// -----------------------------
-// Breakpoints
-// -----------------------------
+/**
+ * --------------------------------------------------------------
+ * Breakpoints
+ *
+ * To determine the responsive breakpoint prefixed class variants
+ * --------------------------------------------------------------
+ */
 
 $breakpoint-sm: 320px;
 $breakpoint-md: 600px;
@@ -83,14 +94,23 @@ $breakpoint-lg: 1024px;
 
 /**
  * --------------------------------------------------------------
- * Layout
+ * Container
  *
- * Grid, Container, Spacing, & Borders
+ * Sets the max width on the .container element
  * --------------------------------------------------------------
  */
 
-// Container
 $container-width: 1140px;
+
+/**
+ * --------------------------------------------------------------
+ * Grid
+ *
+ * .col-{$columns} --> { grid-column: span $columns; }
+ * .row-{$rows} --> { grid-row: span $rows; }
+ * .col-start-{$offset} --> { grid-column: $offset / span $columns; }
+ * --------------------------------------------------------------
+ */
 
 // Grid
 $grid-columns: 12;
@@ -142,90 +162,10 @@ $speed-extra-fast: 100ms;
  * --------------------------------------------------------------
  * Effects
  *
- * Box Shadow
+ * .shadow-{$size} --> { box-shadow: $size; }
  * --------------------------------------------------------------
  */
 
 $box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
 $box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
 $box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-
-/**
- * --------------------------------------------------------------
- * Generated Variables
- *
- * Not meant to be altered
- * --------------------------------------------------------------
- */
-
-$color-primary-light-1: lighten($color-primary, 5%);
-$color-primary-light-2: lighten($color-primary, 10%);
-$color-primary-light-3: lighten($color-primary, 15%);
-$color-primary-light-4: lighten($color-primary, 20%);
-$color-primary-light-5: rgba($color-primary, 0.1);
-
-$color-primary-dark-1: darken($color-primary, 5%);
-$color-primary-dark-2: darken($color-primary, 10%);
-$color-primary-dark-3: darken($color-primary, 15%);
-$color-primary-dark-4: darken($color-primary, 20%);
-$color-primary-dark-5: darken($color-primary, 30%);
-
-$color-secondary-light-1: lighten($color-secondary, 5%);
-$color-secondary-light-2: lighten($color-secondary, 10%);
-$color-secondary-light-3: lighten($color-secondary, 15%);
-$color-secondary-light-4: lighten($color-secondary, 20%);
-$color-secondary-light-5: rgba($color-secondary, 0.1);
-
-$color-secondary-dark-1: darken($color-secondary, 5%);
-$color-secondary-dark-2: darken($color-secondary, 10%);
-$color-secondary-dark-3: darken($color-secondary, 15%);
-$color-secondary-dark-4: darken($color-secondary, 20%);
-$color-secondary-dark-5: darken($color-secondary, 30%);
-
-$color-success-light-1: lighten($color-success, 5%);
-$color-success-light-2: lighten($color-success, 10%);
-$color-success-light-3: lighten($color-success, 15%);
-$color-success-light-4: lighten($color-success, 20%);
-$color-success-light-5: rgba($color-success, 0.1);
-
-$color-success-dark-1: darken($color-success, 5%);
-$color-success-dark-2: darken($color-success, 10%);
-$color-success-dark-3: darken($color-success, 15%);
-$color-success-dark-4: darken($color-success, 20%);
-$color-success-dark-5: darken($color-success, 30%);
-
-$color-info-light-1: lighten($color-info, 5%);
-$color-info-light-2: lighten($color-info, 10%);
-$color-info-light-3: lighten($color-info, 15%);
-$color-info-light-4: lighten($color-info, 20%);
-$color-info-light-5: rgba($color-info, 0.1);
-
-$color-info-dark-1: darken($color-info, 5%);
-$color-info-dark-2: darken($color-info, 10%);
-$color-info-dark-3: darken($color-info, 15%);
-$color-info-dark-4: darken($color-info, 20%);
-$color-info-dark-5: darken($color-info, 30%);
-
-$color-warning-light-1: lighten($color-warning, 5%);
-$color-warning-light-2: lighten($color-warning, 10%);
-$color-warning-light-3: lighten($color-warning, 15%);
-$color-warning-light-4: lighten($color-warning, 20%);
-$color-warning-light-5: rgba($color-warning, 0.1);
-
-$color-warning-dark-1: darken($color-warning, 5%);
-$color-warning-dark-2: darken($color-warning, 10%);
-$color-warning-dark-3: darken($color-warning, 15%);
-$color-warning-dark-4: darken($color-warning, 20%);
-$color-warning-dark-5: darken($color-warning, 30%);
-
-$color-danger-light-1: lighten($color-danger, 5%);
-$color-danger-light-2: lighten($color-danger, 10%);
-$color-danger-light-3: lighten($color-danger, 15%);
-$color-danger-light-4: lighten($color-danger, 20%);
-$color-danger-light-5: rgba($color-danger, 0.1);
-
-$color-danger-dark-1: darken($color-danger, 5%);
-$color-danger-dark-2: darken($color-danger, 10%);
-$color-danger-dark-3: darken($color-danger, 15%);
-$color-danger-dark-4: darken($color-danger, 20%);
-$color-danger-dark-5: darken($color-danger, 30%);

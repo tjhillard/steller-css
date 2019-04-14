@@ -1,13 +1,93 @@
 // -----------------------------
-// General
+// Default Config
+// -----------------------------
+
+$steller-colors: () !default;
+
+// Main font families
+$font-family-heading: sans-serif !default;
+$font-family-body: sans-serif !default;
+
+$steller-custom-font-families: () !default;
+
+$font-size-xs: 12px !default;
+$font-size-sm: 14px !default;
+$font-size-md: 18px !default;
+$font-size-lg: 24px !default;
+$font-size-xl: 30px !default;
+$font-size-2xl: 36px !default;
+$font-size-3xl: 48px !default;
+$font-size-4xl: 60px !default;
+
+$font-weight-bold: 700 !default;
+$font-weight-medium: 500 !default;
+$font-weight-regular: 400 !default;
+
+$leading-sm: 1.25em !default;
+$leading-md: 1.5em !default;
+$leading-lg: 2em !default;
+
+// -----------------------------
+// Breakpoints
+// -----------------------------
+
+$breakpoint-sm: 320px !default;
+$breakpoint-md: 600px !default;
+$breakpoint-lg: 1024px !default;
+
+$container-width: 1140px !default;
+
+$grid-columns: 12 !default;
+
+$column-gutter-sm: 16px !default;
+$column-gutter-md: 16px !default;
+$column-gutter-lg: 24px !default;
+
+$row-gutter-sm: 8px !default;
+$row-gutter-md: 8px !default;
+$row-gutter-lg: 16px !default;
+
+$spacing-xs: 4px !default;
+$spacing-sm: 8px !default;
+$spacing-md: 16px !default;
+$spacing-lg: 24px !default;
+$spacing-xl: 32px !default;
+$spacing-2xl: 48px !default;
+$spacing-3xl: 64px !default;
+
+$border-radius-sm: 5px !default;
+$border-radius-md: 10px !default;
+$border-radius-lg: 15px !default;
+$border-radius-xl: 20px !default;
+
+$border-width-xs: 1px !default;
+$border-width-sm: 2px !default;
+$border-width-md: 4px !default;
+$border-width-lg: 6px !default;
+$border-width-xl: 8px !default;
+
+$speed-extra-slow: 500ms !default;
+$speed-slow: 400ms !default;
+$speed-normal: 300ms !default;
+$speed-fast: 200ms !default;
+$speed-extra-fast: 100ms !default;
+
+$box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06) !default;
+$box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07) !default;
+$box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1) !default;
+
+
+// -----------------------------
+// Element Defaults
 // -----------------------------
 
 html {
   font-size: $font-size-md;
+  font-family: $font-family-body;
 }
 
 * {
-	color: $color-gray-dark-4;
+	color: #333;
 	line-height: $leading-md;
 }
 
@@ -15,10 +95,6 @@ span, p {
   @include below-media(breakpoint-sm) {
     line-height: $leading-sm;
   }
-}
-
-a {
-	color: $color-primary;
 }
 
 // -----------------------------
@@ -37,7 +113,6 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: $font-size-md * 2;
   line-height: 1.25;
-  font-family: $font-family-heading;
   font-weight: 700;
 }
 
@@ -58,7 +133,6 @@ h1 {
 h2 {
   font-size: $font-size-md * 1.625;
   line-height: 1.15384615;
-  font-family: $font-family-heading;
   font-weight: 400;
 }
 
@@ -79,7 +153,6 @@ h2 {
 h3 {
   font-size: $font-size-md * 1.375;
   line-height: 1.13636364;
-  font-family: $font-family-heading;
   font-weight: 400;
 }
 
@@ -100,7 +173,6 @@ h3 {
 h4 {
   font-size: $font-size-md * 1.125;
   line-height: 1.11111111;
-  font-family: $font-family-heading;
   font-weight: 400;
 }
 

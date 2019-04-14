@@ -3,24 +3,28 @@
 // -----------------------------
 
 $borders-classes-map: (
-  // border color
-  'border-primary': (border-color: $color-primary),
-  'border-secondary': (border-color: $color-secondary),
-  'border-success': (border-color: $color-success),
-  'border-info': (border-color: $color-info),
-  'border-warning': (border-color: $color-warning),
-  'border-danger': (border-color: $color-danger),
-
   // border radius
   'rounded-full':  (border-radius: 9999px),
 
   // border style
-  'border-solid': (border-style: solid),
-  'border-dashed': (border-style: dashed),
-  'border-dotted': (border-style: dotted),
-  'border-inset': (border-style: inset),
-  'border-outset': (border-style: outset),
+  'border-style-solid': (border-style: solid),
+  'border-style-dashed': (border-style: dashed),
+  'border-style-dotted': (border-style: dotted),
+  'border-style-inset': (border-style: inset),
+  'border-style-outset': (border-style: outset),
 );
+
+@each $steller-color-name, $steller-color-value in $steller-colors {
+  $map: ();
+
+  $map: map-merge($map, (
+    'border-#{$steller-color-name}': (
+      border-color: inspect($steller-color-value)
+    ),
+  ));
+
+  $borders-classes-map: map-merge($borders-classes-map, $map);
+}
 
 $border-radius-map: (
   (sm, $border-radius-sm),

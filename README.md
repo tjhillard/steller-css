@@ -34,7 +34,123 @@ yarn add steller-css
 @import '~steller-css/index'; // Steller
 ```
 
-## Docs
+## Config
+
+All config variables are technically "optional". Override them as you need.
+
+### Colors
+
+```scss
+$steller-colors: (
+  'dwight-schrute': #0FF1C3,
+  'a-song-of-this-and-fire': #1CE,
+);
+```
+
+### Typogrpahy
+
+```scss
+$font-family-heading: 'Some trendy web font', sans-serif;
+$font-family-body: 'Comic Sans', sans-serif;
+
+$steller-custom-font-families: (
+  'accent': cursive,
+);
+
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-md: 16px; // 👈 <html> default
+$font-size-lg: 22px;
+$font-size-xl: 28px;
+$font-size-2xl: 34px;
+$font-size-3xl: 46px;
+$font-size-4xl: 58px;
+
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-thin: 100;
+
+$leading-sm: 1.25em;
+$leading-md: 1.5em;
+$leading-lg: 2em;
+```
+
+### Breakpoints
+
+```scss
+$breakpoint-sm: 380px;
+$breakpoint-md: 600px;
+$breakpoint-lg: 980px;
+```
+
+### Container
+
+```scss
+$container-width: 1140px;
+```
+
+### Grid
+
+```scss
+$grid-columns: 12;
+
+$column-gutter-sm: 16px;
+$column-gutter-md: 16px;
+$column-gutter-lg: 24px;
+
+$row-gutter-sm: 8px;
+$row-gutter-md: 8px;
+$row-gutter-lg: 16px;
+```
+
+### Spacing
+
+```scss
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+$spacing-3xl: 64px;
+```
+
+### Borders
+
+```scss
+$border-radius-sm: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 15px;
+$border-radius-xl: 20px;
+
+$border-width-xs: 1px;
+$border-width-sm: 2px;
+$border-width-md: 4px;
+$border-width-lg: 6px;
+$border-width-xl: 8px;
+```
+
+### Motion
+
+```scss
+$speed-extra-slow: 500ms;
+$speed-slow: 400ms;
+$speed-normal: 300ms;
+$speed-fast: 200ms;
+$speed-extra-fast: 100ms;
+```
+
+### Effects
+
+```scss
+$box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
+$box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
+$box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+```
+
+## Functional Classes
 
 ### Container
 | Class | Properties |
@@ -232,7 +348,8 @@ For breakpoint specific stylings, add the breakpoint label prefix to the beginni
 
 ```html
 <span class="text-success md:text-danger">
-  I am naturally the success color, but I am the danger color above the medium breakpoint
+  I am naturally the success color,
+  but I am the danger color above the medium breakpoint
 </span>
 ```
 
@@ -248,19 +365,18 @@ To apply a style on hover, prefix the normal class with `hover:`.
 
 #### Roadmap
 
-* Allow for n amount of custom colors with custom names
-* Allow for n amount of custom font famalies with custom names
-
-#### Want to learn more about functional/atomic/utility-frist CSS?
-
-* [CSS and Scalability by Adam Morse](http://mrmrs.cc/writing/2016/03/24/scalable-css/)
-* [Functional CSS at Scale: Clean & composable UI on a massive app](https://www.youtube.com/watch?v=uHVqbCPnOwU)
+* WIP
 
 #### Example applications using steller-css
 
-* [tjhillard.com](https://github.com/tjhillard/tjhillard.com)
+* [tjhillard.com | GitHub](https://github.com/tjhillard/tjhillard.com)
 
 #### Steller family
 
 * steller-vue-components (wip)
 * steller-vue-transitions (wip)
+
+#### Want to learn more about functional/atomic/utility-frist CSS?
+
+* [CSS and Scalability by Adam Morse](http://mrmrs.cc/writing/2016/03/24/scalable-css/)
+* [Functional CSS at Scale: Clean & composable UI on a massive app](https://www.youtube.com/watch?v=uHVqbCPnOwU)
