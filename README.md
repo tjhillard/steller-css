@@ -72,18 +72,6 @@ To configure, adjsut the variables in `breakpoints.scss` and `grid.scss` as need
 
 ### Spacing
 
-```scss
-$spacing-sizes: (
-  (4px, 'xs'),
-  (8px, 'sm'),
-  (16px, 'md'),
-  (24px, 'lg'),
-  (32px, 'xl'),
-  (48px, "2xl"),
-  (64px, "3xl"),
-);
-```
-
 | Class | Properties |
 | --- | --- |
 | .m-{$size} | margin: $size; |
