@@ -1,0 +1,51 @@
+@import '../classes';
+
+$responsive-classes-maps: (
+  ($colors-classes-map),
+  ($colors-background-classes-map),
+  ($grid-columns-rows-classes-map),
+  ($flexbox-classes-map),
+  ($sizing-classes-map),
+	($spacing-classes-map),
+  ($layout-classes-map),
+	($typography-classes-map),
+	($borders-classes-map),
+);
+
+// sm / Small / Mobile
+@each $classes-map in $responsive-classes-maps {
+  @each $class-name, $attributes-map in $classes-map {
+    .#{$class-name},
+    .sm\:#{$class-name} {
+      @each $key, $value in $attributes-map {
+        #{inspect($key)}: #{inspect($value)};
+      }
+    }
+  }
+}
+
+// md / Medium / Tablet
+@include above-media(breakpoint-md) {
+  @each $classes-map in $responsive-classes-maps {
+    @each $class-name, $attributes-map in $classes-map {
+      .md\:#{$class-name} {
+        @each $key, $value in $attributes-map {
+          #{inspect($key)}: #{inspect($value)};
+        }
+      }
+    }
+  }
+}
+
+// lg / Large / Desktop and above
+@include above-media(breakpoint-lg) {
+  @each $classes-map in $responsive-classes-maps {
+    @each $class-name, $attributes-map in $classes-map {
+      .lg\:#{$class-name} {
+        @each $key, $value in $attributes-map {
+          #{inspect($key)}: #{inspect($value)};
+        }
+      }
+    }
+  }
+}

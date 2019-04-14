@@ -8,11 +8,11 @@
 */
 
 $speeds: (
-  ("extra-slow", 500ms),
-  ("slow", 400ms),
-  ("normal", 300ms),
-  ("fast", 200ms),
-  ("extra-fast", 100ms),
+  ("extra-slow", $speed-extra-slow),
+  ("slow", $speed-slow),
+  ("normal", $speed-normal),
+  ("fast", $speed-fast),
+  ("extra-fast", $speed-extra-fast),
 );
 
 // -----------------------------

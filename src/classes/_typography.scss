@@ -1,0 +1,38 @@
+// -----------------------------
+// Typography
+// -----------------------------
+
+$typography-classes-map: (
+  // font family
+  'font-family-heading': (font-family: $font-family-heading),
+  'font-family-secondary': (font-family: $font-family-secondary),
+  'font-family-body': (font-family: $font-family-body),
+
+  // font size
+  'font-size-xs': (font-size: $font-size-xs),
+  'font-size-sm': (font-size: $font-size-sm),
+  'font-size-md': (font-size: $font-size-md),
+  'font-size-lg': (font-size: $font-size-lg),
+  'font-size-xl': (font-size: $font-size-xl),
+  'font-size-2xl': (font-size: $font-size-2xl),
+  'font-size-3xl': (font-size: $font-size-3xl),
+  'font-size-4xl': (font-size: $font-size-4xl),
+
+  // font weight
+  'font-weight-bold': (font-weight: $font-weight-bold),
+  'font-weight-medium': (font-weight: $font-weight-medium),
+  'font-weight-regular': (font-weight: $font-weight-regular),
+
+  // leading
+  'leading-sm': (line-height: $leading-sm),
+  'leading-md': (line-height: $leading-md),
+  'leading-lg': (line-height: $leading-lg),
+
+  // font style / decoration
+  'italic': (font-style: italic),
+	'underline': (text-decoration: underline),
+	'no-underline': (text-decoration: none),
+	'lowercase': (text-transform: lowercase),
+	'uppercase': (text-transform: uppercase),
+	'capitalize': (text-transform: capitalize),
+);

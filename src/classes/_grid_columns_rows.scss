@@ -1,0 +1,27 @@
+$grid-columns-rows-classes-map: ();
+
+@for $i from 1 through $grid-columns {
+  $map: ();
+
+  $map: map-merge($map, (
+    'col-#{$i}': (
+      grid-column: 'span #{$i}'
+    )
+  ));
+
+  $map: map-merge($map, (
+    'row-#{$i}': (
+      grid-row: 'span #{$i}'
+    )
+  ));
+
+  @for $j from 1 through $grid-columns {
+    $map: map-merge($map, (
+      'col-#{$i}.col-start-#{$i}': (
+        grid-column: '#{$j} / span #{$i}'
+      )
+    ));
+  }
+
+  $grid-columns-rows-classes-map: map-merge($grid-columns-rows-classes-map, $map);
+}

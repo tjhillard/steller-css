@@ -1,0 +1,51 @@
+$layout-classes-map: (
+  // display
+  'block': (display: block),
+  'inline': (display: inline),
+  'inline-block': (display: inline-block),
+  'flex': (display: flex),
+  'hidden': (display: none),
+  'inline-flex': (display: inline-flex),
+
+  // text alignment
+  'text-center': (text-align: center),
+  'text-left': (text-align: left),
+  'text-right': (text-align: right),
+  'text-justify': (text-align: justify),
+
+  // float
+  'float-left': (float: left),
+  'float-right': (float: right),
+  'float-none': (float: none),
+
+  // positioning
+  'static': (position: static),
+  'fixed': (position: fixed),
+  'absolute': (position: absolute),
+  'relative': (position: relative),
+  'sticky': (position: sticky),
+  'pin': (
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+  ),
+  'pin-t': (top: 0),
+  'pin-r': (right: 0),
+  'pin-b': (bottom: 0),
+  'pin-l': (left: 0),
+
+  // visibility
+  'visible': (visibility: visible),
+  'invisible': (visibility: hidden),
+
+  // z-index
+  'z-0': (z-index: 0),
+  'z-1': (z-index: 1),
+  'z-10': (z-index: 10),
+  'z-20': (z-index: 20),
+  'z-max': (z-index: 2147483647),
+
+  // user select
+  'no-user-select': (user-select: none),
+);

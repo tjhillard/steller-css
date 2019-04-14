@@ -1,15 +1,19 @@
-@import 'packages/breakpoints';
-@import 'packages/grid';
-@import 'packages/colors';
-@import 'packages/typography';
-@import 'packages/borders';
-@import 'packages/container';
-@import 'packages/effects';
-@import 'packages/flexbox';
-@import 'packages/motion';
-@import 'packages/sizing';
-@import 'packages/spacing';
-@import 'packages/layout';
-@import 'packages/hover';
-@import 'packages/responsive';
-@import 'packages/defaults';
+@import 'mixins/media-queries';
+
+@import 'classes/grid';
+@import 'classes/grid_columns_rows';
+@import 'classes/colors';
+@import 'classes/typography';
+@import 'classes/borders';
+@import 'classes/container';
+@import 'classes/effects';
+@import 'classes/flexbox';
+@import 'classes/motion';
+@import 'classes/sizing';
+@import 'classes/spacing';
+@import 'classes/layout';
+
+@import 'variants/responsive';
+@import 'variants/hover';
+
+@import 'defaults';

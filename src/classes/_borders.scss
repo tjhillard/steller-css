@@ -1,0 +1,67 @@
+// -----------------------------
+// Borders
+// -----------------------------
+
+$borders-classes-map: (
+  // border color
+  'border-primary': (border-color: $color-primary),
+  'border-secondary': (border-color: $color-secondary),
+  'border-success': (border-color: $color-success),
+  'border-info': (border-color: $color-info),
+  'border-warning': (border-color: $color-warning),
+  'border-danger': (border-color: $color-danger),
+
+  // border radius
+  'rounded-full':  (border-radius: 9999px),
+);
+
+$border-radius-map: (
+  (sm, $border-radius-sm),
+  (md, $border-radius-md),
+  (lg, $border-radius-lg),
+  (xl, $border-radius-xl),
+);
+
+$border-parts-map: (
+  (tl, 'top-left'),
+  (tr, 'top-right'),
+  (bl, 'bottom-left'),
+  (br, 'bottom-right'),
+  (t, 'top'),
+  (r, 'right'),
+  (b, 'bottom'),
+  (l, 'left'),
+);
+
+@each $size-label, $size in $border-radius-map {
+  $borders-classes-map: map-merge($borders-classes-map, (
+    'rounded-#{$size-label}': (border-radius: $size)
+  ));
+
+  @each $part-label, $part in $border-parts-map {
+    $borders-classes-map: map-merge($borders-classes-map, (
+      'rounded-#{$part-label}-#{$size-label}': ('border-#{$part}-radius': $size)
+    ));
+  }
+}
+
+$border-width-map: (
+  (xs, $border-width-xs),
+  (sm, $border-width-sm),
+  (md, $border-width-md),
+  (lg, $border-width-lg),
+  (xl, $border-width-xl),
+);
+
+@each $width-label, $width in $border-width-map {
+  $borders-classes-map: map-merge($borders-classes-map, (
+    'border-#{$width-label}': (border-width: $width)
+  ));
+
+  @each $part-label, $part in $border-parts-map {
+    $borders-classes-map: map-merge($borders-classes-map, (
+      'border-#{$part-label}-#{$width-label}': ('border-#{$part}-width': $width)
+    ));
+  }
+}
+

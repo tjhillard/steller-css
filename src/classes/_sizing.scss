@@ -1,3 +1,5 @@
+$sizing-classes-map: ();
+
 // -----------------------------
 // Width
 // -----------------------------
@@ -10,9 +12,9 @@ $width-map: (
 );
 
 @each $width-label, $width in $width-map {
-  .w-#{$width-label} {
-    width: $width;
-  }
+  $sizing-classes-map: map-merge($sizing-classes-map, (
+    'w-#{$width-label}': (width: $width)
+  ));
 }
 
 // -----------------------------
@@ -27,9 +29,9 @@ $height-map: (
 );
 
 @each $height-label, $height in $height-map {
-  .h-#{$height-label} {
-    height: $height;
-  }
+  $sizing-classes-map: map-merge($sizing-classes-map, (
+    'h-#{$height-label}': (height: $height)
+  ));
 }
 
 // -----------------------------
@@ -44,9 +46,9 @@ $min-width-map: (
 );
 
 @each $min-width-label, $min-width in $min-width-map {
-  .min-w-#{$min-width-label} {
-    min-width: $min-width;
-  }
+  $sizing-classes-map: map-merge($sizing-classes-map, (
+    'min-w-#{$min-width-label}': (min-width: $min-width)
+  ));
 }
 
 // -----------------------------
@@ -61,9 +63,9 @@ $min-height-map: (
 );
 
 @each $min-height-label, $min-height in $min-height-map {
-  .min-h-#{$min-height-label} {
-    min-height: $min-height;
-  }
+  $sizing-classes-map: map-merge($sizing-classes-map, (
+    'min-h-#{$min-height-label}': (min-height: $min-height)
+  ));
 }
 
 // -----------------------------
@@ -78,9 +80,9 @@ $max-width-map: (
 );
 
 @each $max-width-label, $max-width in $max-width-map {
-  .min-w-#{$max-width-label} {
-    max-width: $max-width;
-  }
+  $sizing-classes-map: map-merge($sizing-classes-map, (
+    'max-w-#{$max-width-label}': (max-width: $max-width)
+  ));
 }
 
 // -----------------------------
@@ -96,7 +98,7 @@ $max-height-map: (
 );
 
 @each $max-height-label, $max-height in $max-height-map {
-  .max-h-#{$max-height-label} {
-    max-height: $max-height;
-  }
+  $sizing-classes-map: map-merge($sizing-classes-map, (
+    'max-h-#{$max-height-label}': (max-height: $max-height)
+  ));
 }

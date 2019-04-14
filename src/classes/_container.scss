@@ -1,0 +1,21 @@
+.container {
+  margin: 0 auto;
+  max-width: $container-width;
+  position: relative;
+  font-family: $font-family-body;
+
+  @include above-media(breakpoint-sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  @include above-media(breakpoint-md) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @include above-media(breakpoint-lg) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

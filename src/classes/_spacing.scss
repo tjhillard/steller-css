@@ -1,0 +1,59 @@
+$spacing-classes-map: ();
+
+// -----------------------------
+// Spacing
+// -----------------------------
+
+$spacing-sizes-map: (
+  (4px, 'xs'),
+  (8px, 'sm'),
+  (16px, 'md'),
+  (24px, 'lg'),
+  (32px, 'xl'),
+  (48px, "2xl"),
+  (64px, "3xl"),
+);
+
+$sides-labels-map: (
+  (top, t),
+  (right, r),
+  (bottom, b),
+  (left, l),
+);
+
+$size-types-map: (
+  (margin, m),
+  (padding, p),
+);
+
+@each $spacing, $spacing-label in $spacing-sizes-map {
+  @each $type, $type-label in $size-types-map {
+    // t, r, b, l
+    @each $side, $side-label in $sides-labels-map {
+      $spacing-classes-map: map-merge($spacing-classes-map, (
+        '#{$type-label}#{$side-label}-#{$spacing-label}': ('#{$type}-#{$side}': '#{$spacing}')
+      ));
+    }
+
+    // x
+    $spacing-classes-map: map-merge($spacing-classes-map, (
+      '#{$type-label}x-#{$spacing-label}': (
+        '#{$type}-left': '#{$spacing}',
+        '#{$type}-right': '#{$spacing}',
+      )
+    ));
+
+    // y
+    $spacing-classes-map: map-merge($spacing-classes-map, (
+      '#{$type-label}y-#{$spacing-label}': (
+        '#{$type}-top': '#{$spacing}',
+        '#{$type}-bottom': '#{$spacing}',
+      )
+    ));
+
+    // all
+    $spacing-classes-map: map-merge($spacing-classes-map, (
+      '#{$type-label}-#{$spacing-label}': ('#{$type}': '#{$spacing}')
+    ));
+  }
+}
