@@ -1,6 +1,6 @@
 $grid-columns-rows-classes-map: ();
 
-@for $i from 1 through $grid-columns {
+@for $i from 1 through $steller-grid-columns {
   $map: ();
 
   $map: map-merge($map, (
@@ -15,7 +15,7 @@ $grid-columns-rows-classes-map: ();
     )
   ));
 
-  @for $j from 1 through $grid-columns {
+  @for $j from 1 through $steller-grid-columns {
     $map: map-merge($map, (
       'col-#{$i}.col-start-#{$i}': (
         grid-column: '#{$j} / span #{$i}'

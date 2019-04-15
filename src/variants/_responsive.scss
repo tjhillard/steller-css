@@ -1,4 +1,4 @@
-@import '../classes/index.scss';
+@import '../classes/index';
 
 $responsive-classes-maps: (
   ($colors-classes-map),
@@ -8,7 +8,8 @@ $responsive-classes-maps: (
 	($spacing-classes-map),
   ($layout-classes-map),
 	($typography-classes-map),
-	($borders-classes-map),
+  ($borders-classes-map),
+  ($transform-classes-map),
 );
 
 // sm / Small / Mobile

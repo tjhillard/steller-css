@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: $container-width;
+  max-width: $steller-container-width;
   position: relative;
 
   @include above-media(breakpoint-sm) {

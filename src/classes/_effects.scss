@@ -3,9 +3,9 @@
 // -----------------------------
 
 $box-shadow-map: (
-  (sm, $box-shadow-sm),
-  (md, $box-shadow-md),
-  (lg, $box-shadow-lg),
+  (sm, $steller-box-shadow-sm),
+  (md, $steller-box-shadow-md),
+  (lg, $steller-box-shadow-lg),
 );
 
 @each $box-shadow-label, $box-shadow-value in $box-shadow-map {

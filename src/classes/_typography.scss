@@ -4,30 +4,30 @@
 
 $typography-classes-map: (
   // font family
-  'font-heading': (font-family: $font-family-heading),
-  'font-body': (font-family: $font-family-body),
+  'font-heading': (font-family: $steller-font-family-heading),
+  'font-body': (font-family: $steller-font-family-body),
 
   // font size
-  'font-size-xs': (font-size: $font-size-xs),
-  'font-size-sm': (font-size: $font-size-sm),
-  'font-size-md': (font-size: $font-size-md),
-  'font-size-lg': (font-size: $font-size-lg),
-  'font-size-xl': (font-size: $font-size-xl),
-  'font-size-2xl': (font-size: $font-size-2xl),
-  'font-size-3xl': (font-size: $font-size-3xl),
-  'font-size-4xl': (font-size: $font-size-4xl),
+  'font-size-xs': (font-size: $steller-font-size-xs),
+  'font-size-sm': (font-size: $steller-font-size-sm),
+  'font-size-md': (font-size: $steller-font-size-md),
+  'font-size-lg': (font-size: $steller-font-size-lg),
+  'font-size-xl': (font-size: $steller-font-size-xl),
+  'font-size-2xl': (font-size: $steller-font-size-2xl),
+  'font-size-3xl': (font-size: $steller-font-size-3xl),
+  'font-size-4xl': (font-size: $steller-font-size-4xl),
 
   // font weight
-  'font-weight-bold': (font-weight: $font-weight-bold),
-  'font-weight-medium': (font-weight: $font-weight-medium),
-  'font-weight-regular': (font-weight: $font-weight-regular),
-  'font-weight-light': (font-weight: $font-weight-light),
-  'font-weight-thin': (font-weight: $font-weight-thin),
+  'font-weight-bold': (font-weight: $steller-font-weight-bold),
+  'font-weight-medium': (font-weight: $steller-font-weight-medium),
+  'font-weight-regular': (font-weight: $steller-font-weight-regular),
+  'font-weight-light': (font-weight: $steller-font-weight-light),
+  'font-weight-thin': (font-weight: $steller-font-weight-thin),
 
   // leading
-  'leading-sm': (line-height: $leading-sm),
-  'leading-md': (line-height: $leading-md),
-  'leading-lg': (line-height: $leading-lg),
+  'leading-sm': (line-height: $steller-leading-sm),
+  'leading-md': (line-height: $steller-leading-md),
+  'leading-lg': (line-height: $steller-leading-lg),
 
   // font style / decoration
   'italic': (font-style: italic),

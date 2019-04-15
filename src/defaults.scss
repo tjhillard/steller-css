@@ -2,100 +2,105 @@
 // Default Config
 // -----------------------------
 
+// Colors
 $steller-colors: () !default;
 
-// Main font families
-$font-family-heading: sans-serif !default;
-$font-family-body: sans-serif !default;
+// Typography
+$steller-font-family-heading: sans-serif !default;
+$steller-font-family-body: sans-serif !default;
 
 $steller-custom-font-families: () !default;
 
-$font-size-xs: 12px !default;
-$font-size-sm: 14px !default;
-$font-size-md: 18px !default;
-$font-size-lg: 24px !default;
-$font-size-xl: 30px !default;
-$font-size-2xl: 36px !default;
-$font-size-3xl: 48px !default;
-$font-size-4xl: 60px !default;
+$steller-font-size-xs: 10px !default;
+$steller-font-size-sm: 12px !default;
+$steller-font-size-md: 16px !default;
+$steller-font-size-lg: 22px !default;
+$steller-font-size-xl: 28px !default;
+$steller-font-size-2xl: 34px !default;
+$steller-font-size-3xl: 46px !default;
+$steller-font-size-4xl: 58px !default;
 
-$font-weight-bold: 700 !default;
-$font-weight-medium: 500 !default;
-$font-weight-regular: 400 !default;
-$font-weight-light: 300 !default;
-$font-weight-thin: 100 !default;
+$steller-font-weight-bold: 700 !default;
+$steller-font-weight-medium: 500 !default;
+$steller-font-weight-regular: 400 !default;
+$steller-font-weight-light: 300 !default;
+$steller-font-weight-thin: 100 !default;
 
-$leading-sm: 1.25em !default;
-$leading-md: 1.5em !default;
-$leading-lg: 2em !default;
+$steller-leading-sm: 1.25em !default;
+$steller-leading-md: 1.5em !default;
+$steller-leading-lg: 2em !default;
 
-// -----------------------------
 // Breakpoints
+$steller-breakpoint-sm: 320px !default;
+$steller-breakpoint-md: 600px !default;
+$steller-breakpoint-lg: 1024px !default;
+
+// Container
+$steller-container-width: 1140px !default;
+
+// Grid
+$steller-grid-columns: 12 !default;
+
+$steller-column-gutter-sm: 16px !default;
+$steller-column-gutter-md: 16px !default;
+$steller-column-gutter-lg: 24px !default;
+
+$steller-row-gutter-sm: 8px !default;
+$steller-row-gutter-md: 8px !default;
+$steller-row-gutter-lg: 16px !default;
+
+// Spacing
+$steller-spacing-xs: 4px !default;
+$steller-spacing-sm: 8px !default;
+$steller-spacing-md: 16px !default;
+$steller-spacing-lg: 24px !default;
+$steller-spacing-xl: 32px !default;
+$steller-spacing-2xl: 48px !default;
+$steller-spacing-3xl: 64px !default;
+
+// Borders
+$steller-border-radius-sm: 5px !default;
+$steller-border-radius-md: 10px !default;
+$steller-border-radius-lg: 15px !default;
+$steller-border-radius-xl: 20px !default;
+
+$steller-border-width-xs: 1px !default;
+$steller-border-width-sm: 2px !default;
+$steller-border-width-md: 4px !default;
+$steller-border-width-lg: 6px !default;
+$steller-border-width-xl: 8px !default;
+
+// Motion
+$steller-speed-extra-slow: 500ms !default;
+$steller-speed-slow: 400ms !default;
+$steller-speed-normal: 300ms !default;
+$steller-speed-fast: 200ms !default;
+$steller-speed-extra-fast: 100ms !default;
+
+// Effects
+$steller-box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06) !default;
+$steller-box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07) !default;
+$steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1) !default;
+
+// Transforms
+$steller-transform-distance-xs: 1px !default;
+$steller-transform-distance-sm: 2px !default;
+$steller-transform-distance-md: 4px !default;
+$steller-transform-distance-lg: 6px !default;
+$steller-transform-distance-xl: 8px !default;
+
+// -----------------------------
+// HTML Defaults
 // -----------------------------
 
-$breakpoint-sm: 320px !default;
-$breakpoint-md: 600px !default;
-$breakpoint-lg: 1024px !default;
+:root {
+  font-size: $steller-font-size-md;
+  font-family: $steller-font-family-body;
+  color: #333;
+  line-height: $steller-leading-md;
 
-$container-width: 1140px !default;
-
-$grid-columns: 12 !default;
-
-$column-gutter-sm: 16px !default;
-$column-gutter-md: 16px !default;
-$column-gutter-lg: 24px !default;
-
-$row-gutter-sm: 8px !default;
-$row-gutter-md: 8px !default;
-$row-gutter-lg: 16px !default;
-
-$spacing-xs: 4px !default;
-$spacing-sm: 8px !default;
-$spacing-md: 16px !default;
-$spacing-lg: 24px !default;
-$spacing-xl: 32px !default;
-$spacing-2xl: 48px !default;
-$spacing-3xl: 64px !default;
-
-$border-radius-sm: 5px !default;
-$border-radius-md: 10px !default;
-$border-radius-lg: 15px !default;
-$border-radius-xl: 20px !default;
-
-$border-width-xs: 1px !default;
-$border-width-sm: 2px !default;
-$border-width-md: 4px !default;
-$border-width-lg: 6px !default;
-$border-width-xl: 8px !default;
-
-$speed-extra-slow: 500ms !default;
-$speed-slow: 400ms !default;
-$speed-normal: 300ms !default;
-$speed-fast: 200ms !default;
-$speed-extra-fast: 100ms !default;
-
-$box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06) !default;
-$box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07) !default;
-$box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1) !default;
-
-
-// -----------------------------
-// Element Defaults
-// -----------------------------
-
-html {
-  font-size: $font-size-md;
-  font-family: $font-family-body;
-}
-
-* {
-	color: #333;
-	line-height: $leading-md;
-}
-
-span, p {
-  @include below-media(breakpoint-sm) {
-    line-height: $leading-sm;
+  @include below-media(steller-breakpoint-sm) {
+    line-height: $steller-leading-sm;
   }
 }
 
@@ -104,7 +109,7 @@ span, p {
 // -----------------------------
 
 h1, h2, h3, h4, h5 {
-  font-family: $font-family-heading;
+  font-family: $steller-font-family-heading;
 }
 
 // -----------------------------
@@ -113,67 +118,67 @@ h1, h2, h3, h4, h5 {
 // -----------------------------
 
 h1 {
-  font-size: $font-size-md * 2;
+  font-size: $steller-font-size-md * 2;
   line-height: 1.25;
   font-weight: 700;
 }
 
 @include above-media(breakpoint-md) {
   h1 {
-    font-size: $font-size-md * 2.5;
+    font-size: $steller-font-size-md * 2.5;
     line-height: 1.125;
   }
 }
 
 @include above-media(breakpoint-lg) {
   h1 {
-    font-size: $font-size-md * 3;
+    font-size: $steller-font-size-md * 3;
     line-height: 1.05;
   }
 }
 
 h2 {
-  font-size: $font-size-md * 1.625;
+  font-size: $steller-font-size-md * 1.625;
   line-height: 1.15384615;
   font-weight: 400;
 }
 
 @include above-media(breakpoint-md) {
   h2 {
-    font-size: $font-size-md * 2;
+    font-size: $steller-font-size-md * 2;
     line-height: 1.25;
   }
 }
 
 @include above-media(breakpoint-lg) {
   h2 {
-    font-size: $font-size-md * 2.25;
+    font-size: $steller-font-size-md * 2.25;
     line-height: 1.25;
   }
 }
 
 h3 {
-  font-size: $font-size-md * 1.375;
+  font-size: $steller-font-size-md * 1.375;
   line-height: 1.13636364;
   font-weight: 400;
 }
 
 @include above-media(breakpoint-md) {
   h3 {
-    font-size: $font-size-md * 1.5;
+    font-size: $steller-font-size-md * 1.5;
     line-height: 1.25;
   }
 }
 
 @include above-media(breakpoint-lg) {
   h3 {
-    font-size: $font-size-md * 1.75;
+    font-size: $steller-font-size-md * 1.75;
     line-height: 1.25;
   }
 }
 
 h4 {
-  font-size: $font-size-md * 1.125;
+  font-size: $steller-font-size-md * 1.125;
   line-height: 1.11111111;
   font-weight: 400;
 }

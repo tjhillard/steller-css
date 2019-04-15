@@ -1,0 +1,31 @@
+$transform-classes-map: ();
+
+$transform-distances-map: (
+	($steller-transform-distance-xs, 'xs'),
+	($steller-transform-distance-sm, 'sm'),
+	($steller-transform-distance-md, 'md'),
+	($steller-transform-distance-lg, 'lg'),
+	($steller-transform-distance-xl, 'xl'),
+);
+
+@each $transform-distance, $transform-distance-label in $transform-distances-map {
+	// up
+	$sizing-classes-map: map-merge($sizing-classes-map, (
+    'shift-up-#{$transform-distance-label}': (transform: translateY($transform-distance * -1))
+	));
+
+	// right
+	$sizing-classes-map: map-merge($sizing-classes-map, (
+    'shift-right-#{$transform-distance-label}': (transform: translateX($transform-distance))
+	));
+
+	// bottom
+	$sizing-classes-map: map-merge($sizing-classes-map, (
+    'shift-bottom-#{$transform-distance-label}': (transform: translateY($transform-distance))
+	));
+
+	// left
+	$sizing-classes-map: map-merge($sizing-classes-map, (
+    'shift-left-#{$transform-distance-label}': (transform: translateX($transform-distance * -1))
+  ));
+}

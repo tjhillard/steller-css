@@ -3,20 +3,17 @@
 // -----------------------------
 
 $grid-breakpoints-gutters-map: (
-  (sm, null, $column-gutter-sm, $row-gutter-sm),
-  (md, tablet-vertical, $column-gutter-md, $row-gutter-md),
-  (lg, desktop, $column-gutter-lg, $row-gutter-lg),
+  (sm, null, $steller-column-gutter-sm, $steller-row-gutter-sm),
+  (md, breakpoint-md, $steller-column-gutter-md, $steller-row-gutter-md),
+  (lg, breakpoint-lg, $steller-column-gutter-lg, $steller-row-gutter-lg),
 );
 
-// NB - ideally we handle all functional class responsiveness in `responsive_class_variants.scss`, but
-// grid responsiveness is a unique case in that it has different attribute values (the gutter values) at
-// different media sizes, so it is handled separately
 .grid {
   display: grid;
-  grid-template-columns: repeat($grid-columns, 1fr);
+  grid-template-columns: repeat($steller-grid-columns, 1fr);
 
   @each $prefix, $min-width-label, $col-gutter, $row-gutter in $grid-breakpoints-gutters-map {
-    @if $prefix == sm { // mobile first!
+    @if $prefix == sm {
       grid-column-gap: $col-gutter;
       grid-row-gap: $row-gutter;
     }

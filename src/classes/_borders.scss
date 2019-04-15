@@ -27,10 +27,10 @@ $borders-classes-map: (
 }
 
 $border-radius-map: (
-  (sm, $border-radius-sm),
-  (md, $border-radius-md),
-  (lg, $border-radius-lg),
-  (xl, $border-radius-xl),
+  (sm, $steller-border-radius-sm),
+  (md, $steller-border-radius-md),
+  (lg, $steller-border-radius-lg),
+  (xl, $steller-border-radius-xl),
 );
 
 $border-parts-map: (
@@ -57,11 +57,11 @@ $border-parts-map: (
 }
 
 $border-width-map: (
-  (xs, $border-width-xs),
-  (sm, $border-width-sm),
-  (md, $border-width-md),
-  (lg, $border-width-lg),
-  (xl, $border-width-xl),
+  (xs, $steller-border-width-xs),
+  (sm, $steller-border-width-sm),
+  (md, $steller-border-width-md),
+  (lg, $steller-border-width-lg),
+  (xl, $steller-border-width-xl),
 );
 
 @each $width-label, $width in $border-width-map {

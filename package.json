@@ -1,8 +1,11 @@
 {
   "name": "steller-css",
-  "version": "0.1.0",
+  "version": "0.1.1-beta.0",
   "description": "A functional CSS framework for creating design systems",
   "main": "index.js",
   "author": "TJ Hillard",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "build": "sass --update src/index.scss:dist/index.css"
+  }
 }

@@ -1,27 +1,27 @@
 @mixin when-media($media) {
   @if $media == breakpoint-sm {
-    @media only screen and (max-width: $breakpoint-sm) { @content; }
+    @media only screen and (max-width: $steller-breakpoint-sm) { @content; }
   }
   @else if $media == breakpoint-md {
-    @media only screen and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1) { @content; }
+    @media only screen and (min-width: $steller-breakpoint-sm) and (max-width: $steller-breakpoint-md - 1) { @content; }
   }
   @else if $media == breakpoint-lg {
-    @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1) { @content; }
+    @media only screen and (min-width: $steller-breakpoint-md) and (max-width: $steller-breakpoint-lg - 1) { @content; }
   }
   @else if $media == breakpoint-lg {
-    @media only screen and (min-width: $breakpoint-lg) { @content; }
+    @media only screen and (min-width: $steller-breakpoint-lg) { @content; }
   }
 }
 
 @mixin below-media($media) {
   @if $media == breakpoint-sm {
-    @media only screen and (max-width: $breakpoint-sm - 1) { @content; }
+    @media only screen and (max-width: $steller-breakpoint-sm - 1) { @content; }
   }
   @else if $media == breakpoint-md {
-    @media only screen and (max-width: $breakpoint-md - 1) { @content; }
+    @media only screen and (max-width: $steller-breakpoint-md - 1) { @content; }
   }
   @else if $media == breakpoint-lg {
-    @media only screen and (max-width: $breakpoint-lg - 1) { @content; }
+    @media only screen and (max-width: $steller-breakpoint-lg - 1) { @content; }
   } else {
     @media only screen and (min-width: $media) { @content; }
   }
@@ -29,12 +29,12 @@
 
 @mixin above-media($media) {
   @if $media == breakpoint-sm {
-    @media only screen and (min-width: $breakpoint-sm) { @content; }
+    @media only screen and (min-width: $steller-breakpoint-sm) { @content; }
   }
   @else if $media == breakpoint-md {
-    @media only screen and (min-width: $breakpoint-md) { @content; }
+    @media only screen and (min-width: $steller-breakpoint-md) { @content; }
   }
   @else if $media == breakpoint-lg {
-    @media only screen and (min-width: $breakpoint-lg) { @content; }
+    @media only screen and (min-width: $steller-breakpoint-lg) { @content; }
   }
 }

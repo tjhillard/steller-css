@@ -1,4 +1,4 @@
-@import '../classes/index.scss';
+@import '../classes/index';
 
 $hover-classes-maps: (
   ($colors-classes-map),
@@ -6,7 +6,8 @@ $hover-classes-maps: (
 	($spacing-classes-map),
   ($layout-classes-map),
 	($typography-classes-map),
-	($borders-classes-map),
+  ($borders-classes-map),
+  ($transform-classes-map),
 );
 
 @each $classes-map in $responsive-classes-maps {
