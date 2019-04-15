@@ -2,13 +2,13 @@
 Steller is a functional (aka "atomic" or "utility-first") CSS framework for serving as the foundation of your application's design system. It includes several built-in smart defaults for building responsive, accesible, and usable user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
 
 ## Features
-* Simple, centralized configuration
-* Grid system built with CSS Grid
-* Class variants for responsive & hover states
-* Built-in responsive typography best practices
-* Clear, predictable class syntax
-* SASS based (No JS-in-CSS complexity)
-* Only 12kb gzipped
+* Simple, centralized configuration ⚙️
+* Grid system built with CSS Grid 📏
+* Class variants for responsive & hover states 📱
+* Built-in responsive typography best practices ✍️
+* Clear, predictable class syntax 🔍
+* SASS based (No JS-in-CSS complexity) ✨
+* Only 12kb gzipped 🚀
 
 ## Installation
 
