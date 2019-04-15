@@ -7,7 +7,7 @@ Steller is a functional (aka "atomic" or "utility-first") CSS framework for serv
 * Class variants for responsive & hover states 📱
 * Built-in responsive typography best practices ✍️
 * Clear, predictable class syntax 🔍
-* SASS based (No JS-in-CSS complexity) ✨
+* SASS based (No CSS-in-JS complexity) ✨
 * Only 12kb gzipped 🚀
 
 ## Installation
