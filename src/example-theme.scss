@@ -61,14 +61,14 @@ $steller-custom-font-families: (
 	'accent': cursive,
 );
 
-$steller-font-size-xs: 10px;
-$steller-font-size-sm: 12px;
-$steller-font-size-md: 16px; // 👈 <html> default
-$steller-font-size-lg: 22px;
-$steller-font-size-xl: 28px;
-$steller-font-size-2xl: 34px;
-$steller-font-size-3xl: 46px;
-$steller-font-size-4xl: 58px;
+$steller-font-size-xs: 0.75rem !default;
+$steller-font-size-sm: 0.875rem !default;
+$steller-font-size-md: 1rem !default;
+$steller-font-size-lg: 1.5rem !default;
+$steller-font-size-xl: 1.875rem !default;
+$steller-font-size-2xl: 2.25rem !default;
+$steller-font-size-3xl: 3rem !default;
+$steller-font-size-4xl: 3.75rem !default;
 
 $steller-font-weight-bold: 700;
 $steller-font-weight-medium: 500;

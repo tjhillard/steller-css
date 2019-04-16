@@ -50,104 +50,104 @@ $steller-colors: (
 ### Typogrpahy
 
 ```scss
-$font-family-heading: 'Some trendy web font', sans-serif;
-$font-family-body: 'Comic Sans', sans-serif;
+$steller-font-family-heading: 'Some trendy web font', sans-serif;
+$steller-font-family-body: 'Comic Sans', sans-serif;
 
 $steller-custom-font-families: (
   'accent': cursive,
 );
 
-$font-size-xs: 10px;
-$font-size-sm: 12px;
-$font-size-md: 16px; // 👈 <html> default
-$font-size-lg: 22px;
-$font-size-xl: 28px;
-$font-size-2xl: 34px;
-$font-size-3xl: 46px;
-$font-size-4xl: 58px;
+$steller-font-size-xs: 0.75rem;
+$steller-font-size-sm: 0.875rem;
+$steller-font-size-md: 1rem;
+$steller-font-size-lg: 1.5rem;
+$steller-font-size-xl: 1.875rem;
+$steller-font-size-2xl: 2.25rem;
+$steller-font-size-3xl: 3rem;
+$steller-font-size-4xl: 3.75rem;
 
-$font-weight-bold: 700;
-$font-weight-medium: 500;
-$font-weight-regular: 400;
-$font-weight-light: 300;
-$font-weight-thin: 100;
+$steller-font-weight-bold: 700;
+$steller-font-weight-medium: 500;
+$steller-font-weight-regular: 400;
+$steller-font-weight-light: 300;
+$steller-font-weight-thin: 100;
 
-$leading-sm: 1.25em;
-$leading-md: 1.5em;
-$leading-lg: 2em;
+$steller-leading-sm: 1.25em;
+$steller-leading-md: 1.5em;
+$steller-leading-lg: 2em;
 ```
 
 ### Breakpoints
 
 ```scss
-$breakpoint-sm: 380px;
-$breakpoint-md: 600px;
-$breakpoint-lg: 980px;
+$steller-breakpoint-sm: 380px;
+$steller-breakpoint-md: 600px;
+$steller-breakpoint-lg: 980px;
 ```
 
 ### Container
 
 ```scss
-$container-width: 1140px;
+$steller-container-width: 1140px;
 ```
 
 ### Grid
 
 ```scss
-$grid-columns: 12;
+$steller-grid-columns: 12;
 
-$column-gutter-sm: 16px;
-$column-gutter-md: 16px;
-$column-gutter-lg: 24px;
+$steller-column-gutter-sm: 16px;
+$steller-column-gutter-md: 16px;
+$steller-column-gutter-lg: 24px;
 
-$row-gutter-sm: 8px;
-$row-gutter-md: 8px;
-$row-gutter-lg: 16px;
+$steller-row-gutter-sm: 8px;
+$steller-row-gutter-md: 8px;
+$steller-row-gutter-lg: 16px;
 ```
 
 ### Spacing
 
 ```scss
-$spacing-xs: 4px;
-$spacing-sm: 8px;
-$spacing-md: 16px;
-$spacing-lg: 24px;
-$spacing-xl: 32px;
-$spacing-2xl: 48px;
-$spacing-3xl: 64px;
+$steller-spacing-xs: 4px;
+$steller-spacing-sm: 8px;
+$steller-spacing-md: 16px;
+$steller-spacing-lg: 24px;
+$steller-spacing-xl: 32px;
+$steller-spacing-2xl: 48px;
+$steller-spacing-3xl: 64px;
 ```
 
 ### Borders
 
 ```scss
-$border-radius-sm: 5px;
-$border-radius-md: 10px;
-$border-radius-lg: 15px;
-$border-radius-xl: 20px;
+$steller-border-radius-sm: 5px;
+$steller-border-radius-md: 10px;
+$steller-border-radius-lg: 15px;
+$steller-border-radius-xl: 20px;
 
-$border-width-xs: 1px;
-$border-width-sm: 2px;
-$border-width-md: 4px;
-$border-width-lg: 6px;
-$border-width-xl: 8px;
+$steller-border-width-xs: 1px;
+$steller-border-width-sm: 2px;
+$steller-border-width-md: 4px;
+$steller-border-width-lg: 6px;
+$steller-border-width-xl: 8px;
 ```
 
 ### Motion
 
 ```scss
-$speed-extra-slow: 500ms;
-$speed-slow: 400ms;
-$speed-normal: 300ms;
-$speed-fast: 200ms;
-$speed-extra-fast: 100ms;
+$steller-speed-extra-slow: 500ms;
+$steller-speed-slow: 400ms;
+$steller-speed-normal: 300ms;
+$steller-speed-fast: 200ms;
+$steller-speed-extra-fast: 100ms;
 ```
 
 ### Effects
 
 ```scss
-$box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
-$box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
-$box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+$steller-box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
+$steller-box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
+$steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 ```
 
 ## Functional Classes
