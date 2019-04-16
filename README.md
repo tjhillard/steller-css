@@ -4,7 +4,7 @@ Steller is a functional (aka "atomic" or "utility-first") CSS framework for serv
 ## Features
 * Simple, centralized configuration ⚙️
 * Grid system built with CSS Grid 📏
-* Class variants for responsive & hover states 📱
+* Encourages mobile-first development 📱
 * Built-in responsive typography best practices ✍️
 * Clear, predictable class syntax 🔍
 * SASS based (No CSS-in-JS complexity) ✨
@@ -222,7 +222,6 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .z-10 | z-index: 10; |
 | .z-20 | z-index: 20; |
 | .z-max | z-index: 2147483647; |
-| .no-user-select | user-select: none; |
 
 ### Spacing
 
@@ -337,8 +336,32 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | Class | Properties |
 | --- | --- |
 | .shadow-{$size} | box-shadow: $size; |
+| .opacity-100 | opacity: 1; |
+| .opacity-75 | opacity: 0.75; |
+| .opacity-50 | opacity: 0.5; |
+| .opacity-25 | opacity: 0.25; |
+| .opacity-0 | opacity: 0; |
 
-(Box Shadow sizes are defined in your steller config)
+## Interactivity
+
+| Class | Properties |
+| --- | --- |
+| .appearance-none | appearance: none; |
+| .cursor-auto | cursor: auto; |
+| .cursor-default | cursor: default; |
+| .cursor-pointer | cursor: pointer; |
+| .cursor-wait | cursor: wait; |
+| .cursor-move | cursor: move; |
+| .cursor-not-allowed | cursor: not-allowed; |
+| .outline-none | outline: none; |
+| .pointer-events-none | pointer-events: none; |
+| .pointer-events-auto | pointer-events: auto; |
+| .resize-none | resize: none; |
+| .resizable | resize: both; |
+| .resizable-y | resize: vertical; |
+| .resizable-x | resize: horizontal; |
+| .user-select-text | user-select: text; |
+| .user-select-none | user-select: none; |
 
 ## State Variants
 
@@ -365,7 +388,8 @@ To apply a style on hover, prefix the normal class with `hover:`.
 
 #### Roadmap
 
-* WIP
+* Focus state class variants
+* Active state class variants
 
 #### Example applications using steller-css
 

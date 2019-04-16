@@ -7,7 +7,9 @@ $hover-classes-maps: (
   ($layout-classes-map),
 	($typography-classes-map),
   ($borders-classes-map),
+  ($effects-classes-map),
   ($transform-classes-map),
+  ($interactivity-classes-map),
 );
 
 @each $classes-map in $responsive-classes-maps {

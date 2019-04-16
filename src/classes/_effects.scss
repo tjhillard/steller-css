@@ -2,14 +2,16 @@
 // Box Shadow
 // -----------------------------
 
-$box-shadow-map: (
-  (sm, $steller-box-shadow-sm),
-  (md, $steller-box-shadow-md),
-  (lg, $steller-box-shadow-lg),
-);
+$effects-classes-map: (
+	// box shadow
+  'box-shadow-sm': (box-shadow: $steller-box-shadow-sm),
+  'box-shadow-md': (box-shadow: $steller-box-shadow-md),
+  'box-shadow-lg': (box-shadow: $steller-box-shadow-lg),
 
-@each $box-shadow-label, $box-shadow-value in $box-shadow-map {
-  .shadow-#{$box-shadow-label} {
-    box-shadow: $box-shadow-value;
-  }
-}
+  // opacity
+  'opacity-100': (opacity: 1),
+  'opacity-75': (opacity: 0.75),
+  'opacity-50': (opacity: 0.5),
+  'opacity-25': (opacity: 0.25),
+  'opacity-0': (opacity: 0),
+);

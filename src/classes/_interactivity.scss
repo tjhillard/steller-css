@@ -1,0 +1,29 @@
+$interactivity-classes-map: (
+	// appearance
+	'appearance-none': (appearance: none),
+
+	// cursor
+	'cursor-auto': (cursor: auto),
+	'cursor-default': (cursor: default),
+	'cursor-pointer': (cursor: pointer),
+	'cursor-wait': (cursor: wait),
+	'cursor-move': (cursor: move),
+	'cursor-not-allowed': (cursor: not-allowed),
+
+	// outline
+	'outline-none': (outline: none),
+
+	// pointer events
+	'pointer-events-none': (pointer-events: none),
+	'pointer-events-auto': (pointer-events: auto),
+
+	// resize
+	'resize-none': (resize: none),
+	'resizable': (resize: both),
+	'resizable-y': (resize: vertical),
+	'resizable-x': (resize: horizontal),
+
+	// user select
+	'user-select-text': (user-select: text),
+	'user-select-none': (user-select: none),
+);
