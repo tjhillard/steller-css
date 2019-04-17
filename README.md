@@ -406,7 +406,7 @@ To apply a style on hover, prefix the normal class with `hover:`.
 * steller-vue-components (wip)
 * steller-vue-transitions (wip)
 
-#### Want to learn more about functional/atomic/utility-frist CSS?
+#### Want to learn more about functional/atomic/utility-first CSS?
 
 * [CSS and Scalability by Adam Morse](http://mrmrs.cc/writing/2016/03/24/scalable-css/)
 * [Functional CSS at Scale: Clean & composable UI on a massive app](https://www.youtube.com/watch?v=uHVqbCPnOwU)
