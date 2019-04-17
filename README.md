@@ -386,6 +386,12 @@ To apply a style on hover, prefix the normal class with `hover:`.
 </span>
 ```
 
+---
+
+#### Contributors
+
+* [Peter Glennon (@pcrglennon)](https://github.com/pcrglennon)
+
 #### Roadmap
 
 * Focus state class variants
