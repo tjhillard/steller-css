@@ -1,0 +1,25 @@
+@import '../classes/index';
+
+$hover-classes-maps: (
+  ($colors-classes-map),
+  ($grid-columns-rows-classes-map),
+  ($flexbox-classes-map),
+  ($sizing-classes-map),
+	($spacing-classes-map),
+  ($layout-classes-map),
+	($typography-classes-map),
+  ($borders-classes-map),
+  ($effects-classes-map),
+  ($transform-classes-map),
+  ($interactivity-classes-map),
+);
+
+:root {
+	@each $classes-map in $responsive-classes-maps {
+		@each $class-name, $attributes-map in $classes-map {
+			@each $key, $value in $attributes-map {
+				--#{$class-name}: #{inspect($value)};
+			}
+		}
+	}
+}

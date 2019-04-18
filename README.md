@@ -22,7 +22,7 @@ yarn add steller-css
 
 ## Usage
 
-1. Create a `theme.scss` or `variables.scss`, or whatever name you prefer
+1. Create a `theme.scss` (or any name you prefer)
 2. Copy pasta the values in the [example config](https://github.com/tjhillard/steller-css/blob/master/src/example-theme.scss)
 3. Adjust the theme variables to your design system's needs.
 4. In your `index.scss` or equivilent, import your newly created `theme.scss` at the top of your entry point sass file
@@ -396,6 +396,7 @@ To apply a style on hover, prefix the normal class with `hover:`.
 
 * Focus state class variants
 * Active state class variants
+* Background position, attachment, etc classes
 
 #### Example applications using steller-css
 
