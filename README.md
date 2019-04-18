@@ -394,8 +394,6 @@ To apply a style on hover, prefix the normal class with `hover:`.
 
 #### Roadmap
 
-* Focus state class variants
-* Active state class variants
 * Background position, attachment, etc classes
 
 #### Example applications using steller-css
