@@ -2,5 +2,78 @@
 	// colors
   @each $steller-color-name, $steller-color-value in $steller-colors {
     --color-#{$steller-color-name}: #{inspect($steller-color-value)};
-  }
+	}
+
+	// typography
+	--font-family-heading: #{inspect($steller-font-family-heading)};
+	--font-family-body: #{inspect($steller-font-family-body)};
+
+	@each $steller-custom-font-family-name, $steller-custom-font-family-value in $steller-custom-font-families {
+    --font-family-#{$steller-custom-font-family-name}: #{inspect($steller-custom-font-family-value)};
+	}
+
+	--font-size-xs: #{inspect($steller-font-size-xs)};
+	--font-size-sm: #{inspect($steller-font-size-sm)};
+	--font-size-md: #{inspect($steller-font-size-md)};
+	--font-size-lg: #{inspect($steller-font-size-lg)};
+	--font-size-xl: #{inspect($steller-font-size-xl)};
+	--font-size-2xl: #{inspect($steller-font-size-2xl)};
+	--font-size-3xl: #{inspect($steller-font-size-3xl)};
+	--font-size-4xl: #{inspect($steller-font-size-4xl)};
+
+	--font-weight-bold: #{inspect($steller-font-weight-bold)};
+	--font-weight-medium: #{inspect($steller-font-weight-medium)};
+	--font-weight-regular: #{inspect($steller-font-weight-regular)};
+	--font-weight-light: #{inspect($steller-font-weight-light)};
+	--font-weight-thin: #{inspect($steller-font-weight-thin)};
+
+	--leading-sm: #{inspect($steller-leading-sm)};
+	--leading-md: #{inspect($steller-leading-md)};
+	--leading-lg: #{inspect($steller-leading-lg)};
+
+	// breakpoints
+	--breakpoint-sm: #{inspect($steller-breakpoint-sm)};
+	--breakpoint-md: #{inspect($steller-breakpoint-md)};
+	--breakpoint-lg: #{inspect($steller-breakpoint-lg)};
+
+	// container
+	--container-width: #{inspect($steller-container-width)};
+
+	// grid
+	--grid-columns: #{inspect($steller-grid-columns)};
+
+	--column-gutter-sm: #{inspect($steller-column-gutter-sm)};
+	--column-gutter-md: #{inspect($steller-column-gutter-md)};
+	--column-gutter-lg: #{inspect($steller-column-gutter-lg)};
+
+	--row-gutter-sm: #{inspect($steller-row-gutter-sm)};
+	--row-gutter-md: #{inspect($steller-row-gutter-md)};
+	--row-gutter-lg: #{inspect($steller-row-gutter-lg)};
+
+	// spacing
+	--spacing-xs: #{inspect($steller-spacing-xs)};
+	--spacing-sm: #{inspect($steller-spacing-sm)};
+	--spacing-md: #{inspect($steller-spacing-md)};
+	--spacing-lg: #{inspect($steller-spacing-lg)};
+	--spacing-xl: #{inspect($steller-spacing-xl)};
+	--spacing-2xl: #{inspect($steller-spacing-2xl)};
+	--spacing-3xl: #{inspect($steller-spacing-3xl)};
+
+	// borders
+	--border-radius-sm: #{inspect($steller-border-radius-sm)};
+	--border-radius-md: #{inspect($steller-border-radius-md)};
+	--border-radius-lg: #{inspect($steller-border-radius-lg)};
+	--border-radius-xl: #{inspect($steller-border-radius-sm)};
+
+	// motion
+	--speed-extra-slow: #{inspect($steller-speed-extra-slow)};
+	--speed-slow: #{inspect($steller-speed-slow)};
+	--speed-normal: #{inspect($steller-speed-normal)};
+	--speed-extra-fast: #{inspect($steller-speed-extra-fast)};
+	--speed-extra-fast: #{inspect($steller-speed-extra-fast)};
+
+	// effects
+	--box-shadow-sm: #{inspect($steller-box-shadow-sm)};
+	--box-shadow-md: #{inspect($steller-box-shadow-md)};
+	--box-shadow-lg: #{inspect($steller-box-shadow-lg)};
 }
