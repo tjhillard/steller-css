@@ -1,1 +1,6 @@
-@import 'colors';
+:root {
+	// colors
+  @each $steller-color-name, $steller-color-value in $steller-colors {
+    --color-#{$steller-color-name}: #{inspect($steller-color-value)};
+  }
+}
