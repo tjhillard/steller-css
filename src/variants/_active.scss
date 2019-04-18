@@ -1,6 +1,6 @@
 @import '../classes/index';
 
-$hover-classes-maps: (
+$active-classes-maps: (
   ($colors-classes-map),
   ($sizing-classes-map),
 	($spacing-classes-map),
@@ -12,9 +12,9 @@ $hover-classes-maps: (
   ($interactivity-classes-map),
 );
 
-@each $classes-map in $hover-classes-maps {
+@each $classes-map in $active-classes-maps {
   @each $class-name, $attributes-map in $classes-map {
-		.hover\:#{$class-name}:hover {
+		.active\:#{$class-name}:active {
       @each $key, $value in $attributes-map {
         #{inspect($key)}: #{inspect($value)};
       }

@@ -1,6 +1,6 @@
 @import '../classes/index';
 
-$hover-classes-maps: (
+$css-vars-classes-maps: (
   ($colors-classes-map),
   ($grid-columns-rows-classes-map),
   ($flexbox-classes-map),
@@ -15,7 +15,7 @@ $hover-classes-maps: (
 );
 
 :root {
-	@each $classes-map in $responsive-classes-maps {
+	@each $classes-map in $css-vars-classes-maps {
 		@each $class-name, $attributes-map in $classes-map {
 			@each $key, $value in $attributes-map {
 				--#{$class-name}: #{inspect($value)};
