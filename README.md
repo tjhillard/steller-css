@@ -36,7 +36,7 @@ yarn add steller-css
 
 ## Config
 
-All config variables are technically "optional". Override them as you need.
+All config variables are "optional" to define as they already have default values. [You can take a look at them here.](https://github.com/tjhillard/steller-css/blob/master/src/defaults.scss).
 
 ### Colors
 
@@ -189,7 +189,7 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .text-{$color} | color: $color; |
 | .bg-{$color} | background-color: $color; |
 
-## Layout
+### Layout
 
 | Class | Properties |
 | --- | --- |
@@ -316,7 +316,7 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .max-h-1px | max-height: 1px; |
 | .max-h-0 | max-height: 0; |
 
-## Borders
+### Borders
 
 | Class | Properties |
 | --- | --- |
@@ -331,7 +331,7 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .border-inset | border-style: inset; |
 | .border-outset | border-style: outset; |
 
-## Effects
+### Effects
 
 | Class | Properties |
 | --- | --- |
@@ -385,6 +385,30 @@ To apply a style on hover, prefix the normal class with `hover:`.
   I am undelrined on hover!
 </span>
 ```
+
+### Focus
+
+To apply a style on focus, prefix the normal class with `focus:`.
+
+```html
+<span class="focus:underline">
+  I am undelrined on focus!
+</span>
+```
+
+### Active
+
+To apply a style on active, prefix the normal class with `active:`.
+
+```html
+<span class="active:underline">
+  I am undelrined on active!
+</span>
+```
+
+## Custom Styling
+
+Within a "functional CSS" paradigm, you hopefully won't be writing that much "custom styling" in CSS/SCSS files, but you'll likely need to write some for the occasional complex component or feature. Steller recognizes and exposes all of your theme config variables as [CSS Custom Properties (CSS Variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to help you.
 
 ---
 
