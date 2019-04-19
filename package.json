@@ -4,7 +4,7 @@
   "description": "A functional CSS framework for creating design systems",
   "main": "index.js",
   "author": "TJ Hillard",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "build": "sass --update src/index.scss:dist/index.css"
   }
