@@ -154,7 +154,7 @@ $steller-box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 
 $steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 ```
 
-## Functional Classes
+## Utility Classes
 
 ### Container
 | Class | Properties |

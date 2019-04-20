@@ -30,9 +30,9 @@ $typography-classes-map: (
   'leading-lg': (line-height: $steller-leading-lg),
 
   // letter spacing
-  'letter-spacing-tight': (letter-spacing: $steller-line-height-tight),
-  'letter-spacing-normal': (letter-spacing: $steller-line-height-normal),
-  'letter-spacing-wide': (letter-spacing: $steller-line-height-wide),
+  'letter-spacing-tight': (letter-spacing: $steller-letter-spacing-tight),
+  'letter-spacing-normal': (letter-spacing: $steller-letter-spacing-normal),
+  'letter-spacing-wide': (letter-spacing: $steller-letter-spacing-wide),
 
 
   // font style / decoration

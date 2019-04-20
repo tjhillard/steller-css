@@ -31,9 +31,9 @@
 	--leading-md: #{inspect($steller-leading-md)};
 	--leading-lg: #{inspect($steller-leading-lg)};
 
-	--line-height-tight: #{inspect($steller-line-height-tight)};
-	--line-height-normal: #{inspect($steller-line-height-normal)};
-	--line-height-wide: #{inspect($steller-line-height-wide)};
+	--letter-spacing-tight: #{inspect($steller-letter-spacing-tight)};
+	--letter-spacing-normal: #{inspect($steller-letter-spacing-normal)};
+	--letter-spacing-wide: #{inspect($steller-letter-spacing-wide)};
 
 	// breakpoints
 	--breakpoint-sm: #{inspect($steller-breakpoint-sm)};
