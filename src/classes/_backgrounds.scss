@@ -1,0 +1,32 @@
+// -----------------------------
+// Backgrounds
+// -----------------------------
+
+$backgrounds-classes-map: (
+	// background attachment
+	'bg-attachment-fixed': (background-attachment: fixed),
+	'bg-attachment-local': (background-attachment: local),
+	'bg-attachment-scroll': (background-attachment: scroll),
+
+	// background position
+	'bg-position-bottom': (background-position: bottom),
+	'bg-position-center': (background-position: center),
+	'bg-position-left': (background-position: left),
+	'bg-position-left-bottom': (background-position: left bottom),
+	'bg-position-left-top': (background-position: left top),
+	'bg-position-right': (background-position: right),
+	'bg-position-right-bottom': (background-position: right bottom),
+	'bg-position-right-top': (background-position: right top),
+	'bg-position-top': (background-position: top),
+
+	// background repeat
+	'bg-repeat': (background-repeat: repeat),
+	'bg-no-repeat': (background-repeat: no-repeat),
+	'bg-repeat-x': (background-repeat: repeat-x),
+	'bg-repeat-y': (background-repeat: repeat-y),
+
+	// background size
+	'bg-size-auto': (background-size: auto),
+	'bg-size-cover': (background-size: cover),
+	'bg-size-contain': (background-size: contain),
+);

@@ -408,7 +408,13 @@ To apply a style on active, prefix the normal class with `active:`.
 
 ## Custom Styling
 
-Within a "functional CSS" paradigm, you hopefully won't be writing that much "custom styling" in CSS/SCSS files, but you'll likely need to write some for the occasional complex component or feature. Steller recognizes and exposes all of your theme config variables as [CSS Custom Properties (CSS Variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to help you.
+Within a functional CSS paradigm, you hopefully won't be writing that much custom styling in CSS/SCSS files, but you'll likely need to write some for the occasional complex component or feature. Steller recognizes this and exposes all of your theme config variables as [CSS Custom Properties (CSS Variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to help you.
+
+```scss
+.some-complex-element {
+  background: linear-gradient(var(--color-primary), var(--color-secondary));
+}
+```
 
 ---
 
