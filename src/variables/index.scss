@@ -31,6 +31,10 @@
 	--leading-md: #{inspect($steller-leading-md)};
 	--leading-lg: #{inspect($steller-leading-lg)};
 
+	--line-height-tight: #{inspect($steller-line-height-tight)};
+	--line-height-normal: #{inspect($steller-line-height-normal)};
+	--line-height-wide: #{inspect($steller-line-height-wide)};
+
 	// breakpoints
 	--breakpoint-sm: #{inspect($steller-breakpoint-sm)};
 	--breakpoint-md: #{inspect($steller-breakpoint-md)};

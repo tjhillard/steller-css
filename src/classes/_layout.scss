@@ -46,4 +46,12 @@ $layout-classes-map: (
   'z-10': (z-index: 10),
   'z-20': (z-index: 20),
   'z-max': (z-index: 2147483647),
+
+  // vertical align
+  'vertical-align-baseline': (vertical-align: baseline),
+  'vertical-align-top': (vertical-align: top),
+  'vertical-align-middle': (vertical-align: middle),
+  'vertical-align-bottom': (vertical-align: bottom),
+  'vertical-align-text-top': (vertical-align: text-top),
+  'vertical-align-text-bottom': (vertical-align: text-bottom),
 );

@@ -29,13 +29,34 @@ $typography-classes-map: (
   'leading-md': (line-height: $steller-leading-md),
   'leading-lg': (line-height: $steller-leading-lg),
 
+  // letter spacing
+  'letter-spacing-tight': (letter-spacing: $steller-line-height-tight),
+  'letter-spacing-normal': (letter-spacing: $steller-line-height-normal),
+  'letter-spacing-wide': (letter-spacing: $steller-line-height-wide),
+
+
   // font style / decoration
   'italic': (font-style: italic),
 	'underline': (text-decoration: underline),
 	'no-underline': (text-decoration: none),
 	'lowercase': (text-transform: lowercase),
 	'uppercase': (text-transform: uppercase),
-	'capitalize': (text-transform: capitalize),
+  'capitalize': (text-transform: capitalize),
+
+  // lists
+  'list-reset': (list-style: none, padding: 0),
+
+  // whitespace
+  'whitespace-normal': (white-space: normal),
+  'whitespace-no-wrap': (white-space: nowrap),
+  'whitespace-pre': (white-space: pre),
+  'whitespace-pre-line': (white-space: pre-line),
+  'whitespace-pre-wrap': (white-space: pre-wrap),
+
+  // word wrap
+  'break-word': (word-wrap: break-word),
+  'break-normal': (word-wrap: normal),
+  'truncate': (overflow: hidden, text-overflow: ellipses, white-space: nowrap),
 );
 
 // custom font famailies

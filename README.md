@@ -75,6 +75,10 @@ $steller-font-weight-thin: 100;
 $steller-leading-sm: 1.25em;
 $steller-leading-md: 1.5em;
 $steller-leading-lg: 2em;
+
+$steller-line-height-tight: -0.05em;
+$steller-line-height-normal: 0em;
+$steller-line-height-wide: 0.05em;
 ```
 
 ### Breakpoints
@@ -181,6 +185,18 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .lowercase | text-transform: lowercase; |
 | .uppercase | text-transform: uppercase; |
 | .capitalize | text-transform: captialize; |
+| .letter-spacing-tight | letter-spacing: -0.05em; |
+| .letter-spacing-normal | letter-spacing: 0em; |
+| .letter-spacing-wide | letter-spacing: 0.05em; |
+| .list-reset | list-style: none; padding: 0; |
+| .whitespace-normal | white-space: normal; |
+| .whitespace-no-wrap | white-space: nowrap; |
+| .whitespace-pre | white-space: pre; |
+| .whitespace-pre-line | white-space: pre-line; |
+| .whitespace-pre-wrap | white-space: pre-wrap; |
+| .break-word | word-wrap: break-word; |
+| .break-word | word-wrap: normal; |
+| .truncate | overflow: hidden; text-overflow: ellipses; white-space: nowrap; |
 
 ### Color
 
@@ -222,6 +238,12 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .z-10 | z-index: 10; |
 | .z-20 | z-index: 20; |
 | .z-max | z-index: 2147483647; |
+| .vertical-align-baseline | vertical-align: baseline; |
+| .vertical-align-top | vertical-align: top; |
+| .vertical-align-middle | vertical-align: middle; |
+| .vertical-align-bottom | vertical-align: bottom; |
+| .vertical-align-text-top | vertical-align: text-top; |
+| .vertical-align-text-bottom | vertical-align: text-bottom; |
 
 ### Spacing
 
@@ -342,7 +364,31 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .opacity-25 | opacity: 0.25; |
 | .opacity-0 | opacity: 0; |
 
-## Interactivity
+### Backgrounds
+
+| Class | Properties |
+| --- | --- |
+| .bg-attachment-fixed | background-attachment: fixed; |
+| .bg-attachment-local | background-attachment: local; |
+| .bg-attachment-scroll | background-attachment: scroll; |
+| .bg-position-bottom | background-position: bottom; |
+| .bg-position-center | background-position: center; |
+| .bg-position-left | background-position: left; |
+| .bg-position-left-bottom | background-position: left-bottom; |
+| .bg-position-left-top | background-position: left-top; |
+| .bg-position-right | background-position: right; |
+| .bg-position-right-bottom | background-position: right-bottom; |
+| .bg-position-right-top | background-position: right-top; |
+| .bg-position-top | background-position: top; |
+| .bg-repeat | background-repeat: repeat; |
+| .bg-no-repeat | background-repeat: no-repeat; |
+| .bg-repeat-x | background-repeat: repeat-x; |
+| .bg-repeat-y | background-repeat: repeat-y; |
+| .bg-size-auto | background-size: auto; |
+| .bg-size-cover | background-size: cover; |
+| .bg-size-contain | background-size: contain; |
+
+### Interactivity
 
 | Class | Properties |
 | --- | --- |
@@ -410,9 +456,23 @@ To apply a style on active, prefix the normal class with `active:`.
 
 Within a functional CSS paradigm, you hopefully won't be writing that much custom styling in CSS/SCSS files, but you'll likely need to write some for the occasional complex component or feature. Steller recognizes this and exposes all of your theme config variables as [CSS Custom Properties (CSS Variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to help you.
 
+Your config
 ```scss
+$steller-colors: (
+  'primary': lightblue,
+  'secondary': pink,
+);
+
+$steller-custom-font-families: (
+  'classy': ('Comic Sans', cursive),
+);
+```
+
+Your feature
+```css
 .some-complex-element {
   background: linear-gradient(var(--color-primary), var(--color-secondary));
+  font-family: var(--font-family-classy);
 }
 ```
 
@@ -424,7 +484,8 @@ Within a functional CSS paradigm, you hopefully won't be writing that much custo
 
 #### Roadmap
 
-* Background position, attachment, etc classes
+* Add Theme Custom Gradient Variables
+* Tests
 
 #### Example applications using steller-css
 
