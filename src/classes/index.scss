@@ -1,3 +1,4 @@
+@import 'backgrounds';
 @import 'borders';
 @import 'colors';
 @import 'container';
@@ -5,10 +6,12 @@
 @import 'flexbox';
 @import 'grid_columns_rows';
 @import 'grid';
+@import 'interactivity';
 @import 'layout';
 @import 'motion';
 @import 'sizing';
 @import 'spacing';
-@import 'typography';
+@import 'svg';
+@import 'tables';
 @import 'transforms';
-@import 'interactivity';
+@import 'typography';

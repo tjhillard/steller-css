@@ -1,4 +1,4 @@
-$transform-classes-map: ();
+$transforms-classes-map: ();
 
 $transform-distances-map: (
 	($steller-transform-distance-xs, 'xs'),
@@ -10,22 +10,22 @@ $transform-distances-map: (
 
 @each $transform-distance, $transform-distance-label in $transform-distances-map {
 	// up
-	$sizing-classes-map: map-merge($sizing-classes-map, (
+	$transforms-classes-map: map-merge($transforms-classes-map, (
     'shift-up-#{$transform-distance-label}': (transform: translateY($transform-distance * -1))
 	));
 
 	// right
-	$sizing-classes-map: map-merge($sizing-classes-map, (
+	$transforms-classes-map: map-merge($transforms-classes-map, (
     'shift-right-#{$transform-distance-label}': (transform: translateX($transform-distance))
 	));
 
 	// bottom
-	$sizing-classes-map: map-merge($sizing-classes-map, (
+	$transforms-classes-map: map-merge($transforms-classes-map, (
     'shift-bottom-#{$transform-distance-label}': (transform: translateY($transform-distance))
 	));
 
 	// left
-	$sizing-classes-map: map-merge($sizing-classes-map, (
+	$transforms-classes-map: map-merge($transforms-classes-map, (
     'shift-left-#{$transform-distance-label}': (transform: translateX($transform-distance * -1))
   ));
 }

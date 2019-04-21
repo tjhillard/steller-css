@@ -409,6 +409,22 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | .user-select-text | user-select: text; |
 | .user-select-none | user-select: none; |
 
+### Table
+
+| Class | Properties |
+| --- | --- |
+| .table-auto | table-layout: auto; |
+| .table-fixed | table-layout: fixed; |
+| .border-collapse | border-collapse: collapse; |
+| .border-seperate | border-collapse: separate; |
+
+### SVG
+
+| Class | Properties |
+| --- | --- |
+| .fill-current | fill: currentColor; |
+| .stroke-current | stroke: currentColor; |
+
 ## State Variants
 
 ### Responsive
