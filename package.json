@@ -8,7 +8,7 @@
   "scripts": {
     "build": "sass --update src/index.scss:dist/index.css",
     "build-test": "sass --update __test__/index.scss:__test__/index.css",
-    "test": "yarn build-test && jest --env=jsdom --verbose",
+    "test": "yarn build-test && jest --env=jsdom --verbose --passWithNoTests",
     "test:watch": "yarn build-test && jest --env=jsdom --watch",
     "lint": "eslint __test__ --ext .js && stylelint stylelint 'src/**/*.scss'",
     "lint:fix": "eslint __test__ --ext .js --fix && stylelint stylelint 'src/**/*.scss' --fix"
@@ -24,10 +24,5 @@
     "sass": "^1.19.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }

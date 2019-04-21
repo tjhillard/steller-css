@@ -1712,19 +1712,9 @@ h4 {
   display: inline-block;
 }
 
-.flex,
-.sm\:flex {
-  display: flex;
-}
-
 .hidden,
 .sm\:hidden {
   display: none;
-}
-
-.inline-flex,
-.sm\:inline-flex {
-  display: inline-flex;
 }
 
 .text-center,
@@ -3580,16 +3570,8 @@ h4 {
     display: inline-block;
   }
 
-  .md\:flex {
-    display: flex;
-  }
-
   .md\:hidden {
     display: none;
-  }
-
-  .md\:inline-flex {
-    display: inline-flex;
   }
 
   .md\:text-center {
@@ -5247,16 +5229,8 @@ h4 {
     display: inline-block;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:inline-flex {
-    display: inline-flex;
   }
 
   .lg\:text-center {
@@ -7186,16 +7160,8 @@ h4 {
   display: inline-block;
 }
 
-.hover\:flex:hover {
-  display: flex;
-}
-
 .hover\:hidden:hover {
   display: none;
-}
-
-.hover\:inline-flex:hover {
-  display: inline-flex;
 }
 
 .hover\:text-center:hover {
@@ -8993,16 +8959,8 @@ h4 {
   display: inline-block;
 }
 
-.focus\:flex:focus {
-  display: flex;
-}
-
 .focus\:hidden:focus {
   display: none;
-}
-
-.focus\:inline-flex:focus {
-  display: inline-flex;
 }
 
 .focus\:text-center:focus {
@@ -10800,16 +10758,8 @@ h4 {
   display: inline-block;
 }
 
-.active\:flex:active {
-  display: flex;
-}
-
 .active\:hidden:active {
   display: none;
-}
-
-.active\:inline-flex:active {
-  display: inline-flex;
 }
 
 .active\:text-center:active {
