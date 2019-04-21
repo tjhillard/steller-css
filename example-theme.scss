@@ -21,25 +21,25 @@
  */
 
 $steller-colors: (
-	// Brand
-	'primary': #3F7CAC,
-	'secondary': #E2CB9E,
+  // Brand
+  'primary': #3F7CAC,
+  'secondary': #E2CB9E,
 
-	// Accents
-	'accent-green': #73937E,
-	'accent-teal': #86BBD8,
+  // Accents
+  'accent-green': #73937E,
+  'accent-teal': #86BBD8,
 
-	// System
-	'success': #4cd964,
-	'info': #86BBD8,
-	'warning': #ffcc00,
-	'danger': #FF7F66,
+  // System
+  'success': #4cd964,
+  'info': #86BBD8,
+  'warning': #ffcc00,
+  'danger': #FF7F66,
 
-	// Grayscale
-	'white': #fff,
-	'black': #000,
-	'dark-grey': #393D3F,
-	'light-grey': lighten(#393D3F, 22%),
+  // Grayscale
+  'white': #fff,
+  'black': #000,
+  'dark-grey': #393D3F,
+  'light-grey': lighten(#393D3F, 22%),
 );
 
 /**
@@ -58,7 +58,7 @@ $steller-font-family-heading: sans-serif;
 $steller-font-family-body: sans-serif;
 
 $steller-custom-font-families: (
-	'accent': cursive,
+  'accent': cursive,
 );
 
 $steller-font-size-xs: 0.75rem;
