@@ -3,14 +3,17 @@ $colors-classes-map: ();
 @each $steller-color-name, $steller-color-value in $steller-colors {
   $map: ();
 
-  $map: map-merge($map, (
-    'text-#{$steller-color-name}': (
-      color: inspect($steller-color-value)
-    ),
-    'bg-#{$steller-color-name}': (
-      background-color: inspect($steller-color-value)
-    ),
-  ));
+  $map: map-merge(
+    $map,
+    (
+      'text-#{$steller-color-name}': (
+        color: inspect($steller-color-value)
+      ),
+      'bg-#{$steller-color-name}': (
+        background-color: inspect($steller-color-value)
+      ),
+    )
+  );
 
   $colors-classes-map: map-merge($colors-classes-map, $map);
 }

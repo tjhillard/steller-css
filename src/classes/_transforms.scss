@@ -1,31 +1,43 @@
 $transforms-classes-map: ();
 
 $transform-distances-map: (
-	($steller-transform-distance-xs, 'xs'),
-	($steller-transform-distance-sm, 'sm'),
-	($steller-transform-distance-md, 'md'),
-	($steller-transform-distance-lg, 'lg'),
-	($steller-transform-distance-xl, 'xl'),
+  ($steller-transform-distance-xs, 'xs'),
+  ($steller-transform-distance-sm, 'sm'),
+  ($steller-transform-distance-md, 'md'),
+  ($steller-transform-distance-lg, 'lg'),
+  ($steller-transform-distance-xl, 'xl'),
 );
 
 @each $transform-distance, $transform-distance-label in $transform-distances-map {
-	// up
-	$transforms-classes-map: map-merge($transforms-classes-map, (
-    'shift-up-#{$transform-distance-label}': (transform: translateY($transform-distance * -1))
-	));
+  // up
+  $transforms-classes-map: map-merge(
+    $transforms-classes-map,
+    (
+      'shift-up-#{$transform-distance-label}': (transform: translateY($transform-distance * -1))
+    )
+  );
 
-	// right
-	$transforms-classes-map: map-merge($transforms-classes-map, (
-    'shift-right-#{$transform-distance-label}': (transform: translateX($transform-distance))
-	));
+  // right
+  $transforms-classes-map: map-merge(
+    $transforms-classes-map,
+    (
+      'shift-right-#{$transform-distance-label}': (transform: translateX($transform-distance))
+    )
+  );
 
-	// bottom
-	$transforms-classes-map: map-merge($transforms-classes-map, (
-    'shift-bottom-#{$transform-distance-label}': (transform: translateY($transform-distance))
-	));
+  // bottom
+  $transforms-classes-map: map-merge(
+    $transforms-classes-map,
+    (
+      'shift-bottom-#{$transform-distance-label}': (transform: translateY($transform-distance))
+    )
+  );
 
-	// left
-	$transforms-classes-map: map-merge($transforms-classes-map, (
-    'shift-left-#{$transform-distance-label}': (transform: translateX($transform-distance * -1))
-  ));
+  // left
+  $transforms-classes-map: map-merge(
+    $transforms-classes-map,
+    (
+      'shift-left-#{$transform-distance-label}': (transform: translateX($transform-distance * -1))
+    )
+  );
 }

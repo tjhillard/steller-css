@@ -17,6 +17,7 @@ $grid-breakpoints-gutters-map: (
       grid-column-gap: $col-gutter;
       grid-row-gap: $row-gutter;
     }
+
     @else {
       @include above-media($min-width-label) {
         grid-column-gap: $col-gutter;

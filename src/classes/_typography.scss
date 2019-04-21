@@ -37,10 +37,10 @@ $typography-classes-map: (
 
   // font style / decoration
   'italic': (font-style: italic),
-	'underline': (text-decoration: underline),
-	'no-underline': (text-decoration: none),
-	'lowercase': (text-transform: lowercase),
-	'uppercase': (text-transform: uppercase),
+  'underline': (text-decoration: underline),
+  'no-underline': (text-decoration: none),
+  'lowercase': (text-transform: lowercase),
+  'uppercase': (text-transform: uppercase),
   'capitalize': (text-transform: capitalize),
 
   // lists
@@ -63,11 +63,14 @@ $typography-classes-map: (
 @each $steller-font-family-name, $steller-font-family-value in $steller-custom-font-families {
   $map: ();
 
-  $map: map-merge($map, (
-    'font-#{$steller-font-family-name}': (
-      font-family: inspect($steller-font-family-value)
-    ),
-  ));
+  $map: map-merge(
+    $map,
+    (
+      'font-#{$steller-font-family-name}': (
+        font-family: inspect($steller-font-family-value)
+      ),
+    )
+  );
 
   $typography-classes-map: map-merge($typography-classes-map, $map);
 }

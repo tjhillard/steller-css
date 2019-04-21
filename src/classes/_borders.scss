@@ -17,11 +17,14 @@ $borders-classes-map: (
 @each $steller-color-name, $steller-color-value in $steller-colors {
   $map: ();
 
-  $map: map-merge($map, (
-    'border-#{$steller-color-name}': (
-      border-color: inspect($steller-color-value)
-    ),
-  ));
+  $map: map-merge(
+    $map,
+    (
+      'border-#{$steller-color-name}': (
+        border-color: inspect($steller-color-value)
+      ),
+    )
+  );
 
   $borders-classes-map: map-merge($borders-classes-map, $map);
 }
@@ -41,14 +44,20 @@ $border-corners-map: (
 );
 
 @each $size-label, $size in $border-radius-map {
-  $borders-classes-map: map-merge($borders-classes-map, (
-    'rounded-#{$size-label}': (border-radius: $size)
-  ));
+  $borders-classes-map: map-merge(
+    $borders-classes-map,
+    (
+      'rounded-#{$size-label}': (border-radius: $size)
+    )
+  );
 
   @each $corner-label, $corner in $border-corners-map {
-    $borders-classes-map: map-merge($borders-classes-map, (
-      'rounded-#{$corner-label}-#{$size-label}': (border-#{$corner}-radius: $size)
-    ));
+    $borders-classes-map: map-merge(
+      $borders-classes-map,
+      (
+        'rounded-#{$corner-label}-#{$size-label}': (border-#{$corner}-radius: $size)
+      )
+    );
   }
 }
 
@@ -61,13 +70,19 @@ $border-width-map: (
 );
 
 @each $width-label, $width in $border-width-map {
-  $borders-classes-map: map-merge($borders-classes-map, (
-    'border-#{$width-label}': (border-width: $width)
-  ));
+  $borders-classes-map: map-merge(
+    $borders-classes-map,
+    (
+      'border-#{$width-label}': (border-width: $width)
+    )
+  );
 
   @each $corner-label, $corner in $border-corners-map {
-    $borders-classes-map: map-merge($borders-classes-map, (
-      'border-#{$corner-label}-#{$width-label}': (border-#{$corner}-width: $width)
-    ));
+    $borders-classes-map: map-merge(
+      $borders-classes-map,
+      (
+        'border-#{$corner-label}-#{$width-label}': (border-#{$corner}-width: $width)
+      )
+    );
   }
 }

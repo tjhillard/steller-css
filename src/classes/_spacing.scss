@@ -30,30 +30,42 @@ $size-types-map: (
   @each $type, $type-label in $size-types-map {
     // t, r, b, l
     @each $side, $side-label in $sides-labels-map {
-      $spacing-classes-map: map-merge($spacing-classes-map, (
-        '#{$type-label}#{$side-label}-#{$spacing-label}': ('#{$type}-#{$side}': '#{$spacing}')
-      ));
+      $spacing-classes-map: map-merge(
+        $spacing-classes-map,
+        (
+          '#{$type-label}#{$side-label}-#{$spacing-label}': ('#{$type}-#{$side}': '#{$spacing}')
+        )
+      );
     }
 
     // x
-    $spacing-classes-map: map-merge($spacing-classes-map, (
-      '#{$type-label}x-#{$spacing-label}': (
-        '#{$type}-left': '#{$spacing}',
-        '#{$type}-right': '#{$spacing}',
+    $spacing-classes-map: map-merge(
+      $spacing-classes-map,
+      (
+        '#{$type-label}x-#{$spacing-label}': (
+          '#{$type}-left': '#{$spacing}',
+          '#{$type}-right': '#{$spacing}',
+        )
       )
-    ));
+    );
 
     // y
-    $spacing-classes-map: map-merge($spacing-classes-map, (
-      '#{$type-label}y-#{$spacing-label}': (
-        '#{$type}-top': '#{$spacing}',
-        '#{$type}-bottom': '#{$spacing}',
+    $spacing-classes-map: map-merge(
+      $spacing-classes-map,
+      (
+        '#{$type-label}y-#{$spacing-label}': (
+          '#{$type}-top': '#{$spacing}',
+          '#{$type}-bottom': '#{$spacing}',
+        )
       )
-    ));
+    );
 
     // all
-    $spacing-classes-map: map-merge($spacing-classes-map, (
-      '#{$type-label}-#{$spacing-label}': ('#{$type}': '#{$spacing}')
-    ));
+    $spacing-classes-map: map-merge(
+      $spacing-classes-map,
+      (
+        '#{$type-label}-#{$spacing-label}': ('#{$type}': '#{$spacing}')
+      )
+    );
   }
 }

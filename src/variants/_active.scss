@@ -3,9 +3,9 @@
 $active-classes-maps: (
   ($colors-classes-map),
   ($sizing-classes-map),
-	($spacing-classes-map),
+  ($spacing-classes-map),
   ($layout-classes-map),
-	($typography-classes-map),
+  ($typography-classes-map),
   ($borders-classes-map),
   ($effects-classes-map),
   ($transforms-classes-map),
@@ -14,10 +14,10 @@ $active-classes-maps: (
 
 @each $classes-map in $active-classes-maps {
   @each $class-name, $attributes-map in $classes-map {
-		.active\:#{$class-name}:active {
+    .active\:#{$class-name}:active {
       @each $key, $value in $attributes-map {
         #{inspect($key)}: #{inspect($value)};
       }
     }
-	}
+  }
 }
