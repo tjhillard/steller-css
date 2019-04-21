@@ -894,8 +894,8 @@ h4 {
   flex-wrap: wrap-reverse;
 }
 
-.items-strech,
-.sm\:items-strech {
+.items-stretch,
+.sm\:items-stretch {
   align-items: stretch;
 }
 
@@ -2920,7 +2920,7 @@ h4 {
     flex-wrap: wrap-reverse;
   }
 
-  .md\:items-strech {
+  .md\:items-stretch {
     align-items: stretch;
   }
 
@@ -4587,7 +4587,7 @@ h4 {
     flex-wrap: wrap-reverse;
   }
 
-  .lg\:items-strech {
+  .lg\:items-stretch {
     align-items: stretch;
   }
 

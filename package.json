@@ -9,7 +9,7 @@
     "build": "sass --update src/index.scss:dist/index.css",
     "build-test": "sass --update __test__/index.scss:__test__/index.css",
     "test": "yarn build-test && jest --env=jsdom --verbose",
-    "test:watch": "yarn build-test && jest --env=jsdom --verbose --watch",
+    "test:watch": "yarn build-test && jest --env=jsdom --watch",
     "lint": "eslint __test__ --ext .js && stylelint stylelint 'src/**/*.scss'",
     "lint:fix": "eslint __test__ --ext .js --fix && stylelint stylelint 'src/**/*.scss' --fix"
   },

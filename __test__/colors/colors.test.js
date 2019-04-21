@@ -6,8 +6,8 @@ const injectStellerCSSDistFile = require('../utils/injectStellerCSSDistFile');
 
 // module specific
 const css = fs.readFileSync(path.resolve(__dirname, '../index.css'), 'utf8');
-const html = fs.readFileSync(path.resolve(__dirname, './borders.html'), 'utf8');
-const classesWithExpectedStyles = require('./borders.classes');
+const html = fs.readFileSync(path.resolve(__dirname, './colors.html'), 'utf8');
+const classesWithExpectedStyles = require('./colors.classes');
 
 jest.dontMock('fs');
 
