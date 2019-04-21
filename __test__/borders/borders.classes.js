@@ -106,6 +106,31 @@ module.exports = [
       ['border-width', '8px'],
     ],
   },
+  // border width (individual sides)
+  {
+    className: '.border-t-md',
+    expectedCSS: [
+      ['border-top-width', '4px'],
+    ],
+  },
+  {
+    className: '.border-r-md',
+    expectedCSS: [
+      ['border-right-width', '4px'],
+    ],
+  },
+  {
+    className: '.border-b-md',
+    expectedCSS: [
+      ['border-bottom-width', '4px'],
+    ],
+  },
+  {
+    className: '.border-l-md',
+    expectedCSS: [
+      ['border-left-width', '4px'],
+    ],
+  },
   // border style
   {
     className: '.border-style-solid',

@@ -69,6 +69,13 @@ $border-width-map: (
   (xl, $steller-border-width-xl),
 );
 
+$border-sides-map: (
+  (t, 'top'),
+  (r, 'right'),
+  (b, 'bottom'),
+  (l, 'left'),
+);
+
 @each $width-label, $width in $border-width-map {
   $borders-classes-map: map-merge(
     $borders-classes-map,
@@ -77,11 +84,11 @@ $border-width-map: (
     )
   );
 
-  @each $corner-label, $corner in $border-corners-map {
+  @each $side-label, $side in $border-sides-map {
     $borders-classes-map: map-merge(
       $borders-classes-map,
       (
-        'border-#{$corner-label}-#{$width-label}': (border-#{$corner}-width: $width)
+        'border-#{$side-label}-#{$width-label}': (border-#{$side}-width: $width)
       )
     );
   }

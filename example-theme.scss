@@ -22,24 +22,24 @@
 
 $steller-colors: (
   // Brand
-  'primary': #3F7CAC,
-  'secondary': #E2CB9E,
+  'primary': #3f7cac,
+  'secondary': #e2cb9e,
 
   // Accents
-  'accent-green': #73937E,
-  'accent-teal': #86BBD8,
+  'accent-green': #73937e,
+  'accent-teal': #86bbd8,
 
   // System
   'success': #4cd964,
-  'info': #86BBD8,
-  'warning': #ffcc00,
-  'danger': #FF7F66,
+  'info': #86bbd8,
+  'warning': #fc0,
+  'danger': #ff7f66,
 
   // Grayscale
   'white': #fff,
   'black': #000,
-  'dark-grey': #393D3F,
-  'light-grey': lighten(#393D3F, 22%),
+  'dark-grey': #393d3f,
+  'light-grey': lighten(#393d3f, 22%),
 );
 
 /**

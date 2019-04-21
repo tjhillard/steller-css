@@ -1,3 +1,3 @@
 module.exports = {
-  '*': ['yarn lint', 'yarn test', 'git add'],
+  '*.{js,scss}': ['yarn lint', 'yarn test', 'git add'],
 };
