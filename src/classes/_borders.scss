@@ -33,15 +33,11 @@ $border-radius-map: (
   (xl, $steller-border-radius-xl),
 );
 
-$border-parts-map: (
+$border-corners-map: (
   (tl, 'top-left'),
   (tr, 'top-right'),
   (bl, 'bottom-left'),
   (br, 'bottom-right'),
-  (t, 'top'),
-  (r, 'right'),
-  (b, 'bottom'),
-  (l, 'left'),
 );
 
 @each $size-label, $size in $border-radius-map {
@@ -49,9 +45,9 @@ $border-parts-map: (
     'rounded-#{$size-label}': (border-radius: $size)
   ));
 
-  @each $part-label, $part in $border-parts-map {
+  @each $corner-label, $corner in $border-corners-map {
     $borders-classes-map: map-merge($borders-classes-map, (
-      'rounded-#{$part-label}-#{$size-label}': ('border-#{$part}-radius': $size)
+      'rounded-#{$corner-label}-#{$size-label}': (border-#{$corner}-radius: $size)
     ));
   }
 }
@@ -69,9 +65,9 @@ $border-width-map: (
     'border-#{$width-label}': (border-width: $width)
   ));
 
-  @each $part-label, $part in $border-parts-map {
+  @each $corner-label, $corner in $border-corners-map {
     $borders-classes-map: map-merge($borders-classes-map, (
-      'border-#{$part-label}-#{$width-label}': ('border-#{$part}-width': $width)
+      'border-#{$corner-label}-#{$width-label}': (border-#{$corner}-width: $width)
     ));
   }
 }

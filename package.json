@@ -6,7 +6,9 @@
   "author": "TJ Hillard",
   "license": "MIT",
   "scripts": {
-    "build": "sass --update src/index.scss:dist/index.css"
+    "build": "sass --update src/index.scss:dist/index.css",
+    "build-test": "sass --update __test__/index.scss:__test__/index.css",
+    "test": "yarn build-test && jest --env=jsdom --verbose"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
