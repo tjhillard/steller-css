@@ -76,9 +76,9 @@ $steller-leading-sm: 1.25em;
 $steller-leading-md: 1.5em;
 $steller-leading-lg: 2em;
 
-$steller-line-height-tight: -0.05em;
-$steller-line-height-normal: 0em;
-$steller-line-height-wide: 0.05em;
+$steller-letter-spacing-tight: -0.05em;
+$steller-letter-spacing-normal: 0em;
+$steller-letter-spacing-wide: 0.05em;
 ```
 
 ### Breakpoints
