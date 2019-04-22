@@ -168,8 +168,8 @@ Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 | Class | Properties |
 | --- | --- |
 | .grid | display: grid; grid-template-columns: repeat($grid-columns, 1fr); |
-| .col-{$breakpont}-{$span} | grid-column: span $span; |
-| .row-{$breakpont}-{$span} | grid-row: span $span; |
+| .{$breakpont}:col-{$span} | grid-column: span $span; |
+| .{$breakpont}:row-{$span} | grid-row: span $span; |
 | .col-start-{$breakpont}-{$span} | grid-column: $span / span $i; |
 
 ### Typography
