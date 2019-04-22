@@ -33,7 +33,7 @@ $size-types-map: (
       $spacing-classes-map: map-merge(
         $spacing-classes-map,
         (
-          '#{$type-label}#{$side-label}-#{$spacing-label}': ('#{$type}-#{$side}': '#{$spacing}')
+          '#{$type-label}#{$side-label}-#{$spacing-label}': (#{$type}-#{$side}: #{$spacing})
         )
       );
     }
@@ -43,8 +43,8 @@ $size-types-map: (
       $spacing-classes-map,
       (
         '#{$type-label}x-#{$spacing-label}': (
-          '#{$type}-left': '#{$spacing}',
-          '#{$type}-right': '#{$spacing}',
+          #{$type}-left: #{$spacing},
+          #{$type}-right: #{$spacing},
         )
       )
     );
@@ -54,8 +54,8 @@ $size-types-map: (
       $spacing-classes-map,
       (
         '#{$type-label}y-#{$spacing-label}': (
-          '#{$type}-top': '#{$spacing}',
-          '#{$type}-bottom': '#{$spacing}',
+          #{$type}-top: #{$spacing},
+          #{$type}-bottom: #{$spacing},
         )
       )
     );
@@ -64,7 +64,7 @@ $size-types-map: (
     $spacing-classes-map: map-merge(
       $spacing-classes-map,
       (
-        '#{$type-label}-#{$spacing-label}': ('#{$type}': '#{$spacing}')
+        #{$type-label}-#{$spacing-label}: (#{$type}: #{$spacing})
       )
     );
   }

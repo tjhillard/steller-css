@@ -36,7 +36,7 @@ yarn add steller-css
 
 ## Config
 
-All config variables are "optional" to define as they already have default values. [You can take a look at them here.](https://github.com/tjhillard/steller-css/blob/master/src/defaults.scss).
+All config variables are optional to define as they already have default values. [You can take a look at them here](https://github.com/tjhillard/steller-css/blob/master/src/defaults.scss).
 
 ### Colors
 
@@ -162,8 +162,6 @@ $steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 
 | .container | margin: 0 auto; max-width: $container-width; position: relative; |
 
 ### Grid
-
-Codepen Example: https://codepen.io/tjhillard/pen/WmYEJG
 
 | Class | Properties |
 | --- | --- |
