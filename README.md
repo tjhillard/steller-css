@@ -487,6 +487,7 @@ Your feature
 .some-complex-element {
   background: linear-gradient(var(--color-primary), var(--color-secondary));
   font-family: var(--font-family-classy);
+  font-size: var(--font-size-2xl);
 }
 ```
 
