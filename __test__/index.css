@@ -2713,6 +2713,11 @@ h4 {
   stroke: currentColor;
 }
 
+.bg-gradient-snazzy,
+.sm\:bg-gradient-snazzy {
+  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+}
+
 @media only screen and (min-width: 600px) {
   .md\:text-primary {
     color: #3f7cac;
@@ -4370,6 +4375,10 @@ h4 {
 
   .md\:stroke-current {
     stroke: currentColor;
+  }
+
+  .md\:bg-gradient-snazzy {
+    background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -6029,6 +6038,10 @@ h4 {
 
   .lg\:stroke-current {
     stroke: currentColor;
+  }
+
+  .lg\:bg-gradient-snazzy {
+    background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
   }
 }
 .container {
@@ -7830,6 +7843,10 @@ h4 {
   user-select: none;
 }
 
+.hover\:bg-gradient-snazzy:hover {
+  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -9629,6 +9646,10 @@ h4 {
   user-select: none;
 }
 
+.focus\:bg-gradient-snazzy:focus {
+  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -11426,6 +11447,10 @@ h4 {
 
 .active\:user-select-none:active {
   user-select: none;
+}
+
+.active\:bg-gradient-snazzy:active {
+  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
 }
 
 :root {

@@ -10,6 +10,7 @@ $hover-classes-maps: (
   ($effects-classes-map),
   ($transforms-classes-map),
   ($interactivity-classes-map),
+  ($gradients-classes-map),
 );
 
 @each $classes-map in $hover-classes-maps {

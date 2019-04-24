@@ -1,0 +1,12 @@
+$gradients-classes-map: ();
+
+@each $steller-gradient-name, $steller-gradient-value in $steller-gradients {
+  $gradients-classes-map: map-merge(
+    $gradients-classes-map,
+    (
+      'bg-gradient-#{$steller-gradient-name}': (
+        background-image: inspect($steller-gradient-value)
+      ),
+    )
+  );
+}
