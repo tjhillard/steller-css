@@ -1,0 +1,4 @@
+// Returns a font family value from $steller-custom-font-families by given name
+@function font-family($font-family) {
+  @return map-get($steller-custom-font-families, '#{$font-family}');
+}

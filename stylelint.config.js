@@ -12,6 +12,7 @@ module.exports = {
         'else',
         'for',
         'else',
+        'return',
       ],
     }],
     'selector-type-no-unknown': [true, {

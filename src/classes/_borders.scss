@@ -15,18 +15,14 @@ $borders-classes-map: (
 );
 
 @each $steller-color-name, $steller-color-value in $steller-colors {
-  $map: ();
-
-  $map: map-merge(
-    $map,
+  $borders-classes-map: map-merge(
+    $borders-classes-map,
     (
       'border-#{$steller-color-name}': (
         border-color: inspect($steller-color-value)
       ),
     )
   );
-
-  $borders-classes-map: map-merge($borders-classes-map, $map);
 }
 
 $border-radius-map: (

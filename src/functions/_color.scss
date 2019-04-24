@@ -1,0 +1,4 @@
+// Returns a color value from $steller-colors by given name
+@function color($color) {
+  @return map-get($steller-colors, '#{$color}');
+}

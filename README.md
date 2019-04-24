@@ -1,5 +1,5 @@
 # Steller CSS
-Steller is a functional (aka "atomic" or "utility-first") CSS framework for serving as the foundation of your application's design system. It includes several built-in smart defaults for building responsive, accesible, and usable user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
+Steller is a functional (aka "atomic" or "utility-first") CSS framework that serves as the foundation of your application's design system. It includes built-in smart defaults for building responsive, accesible, and elegant user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
 
 ## Features
 * Simple, centralized configuration ⚙️
@@ -466,7 +466,7 @@ To apply a style on active, prefix the normal class with `active:`.
 </span>
 ```
 
-## Custom Styling
+## Custom CSS
 
 Within a functional CSS paradigm, you hopefully won't be writing that much custom styling in CSS/SCSS files, but you'll likely need to write some for the occasional complex component or feature. Steller recognizes this and exposes all of your theme config variables as [CSS Custom Properties (CSS Variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to help you.
 
