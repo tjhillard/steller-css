@@ -491,6 +491,17 @@ Your feature
 }
 ```
 
+If you need to support IE and thus can't use CSS variables, you can just reference the Steller theme variables directly or use one of the helper sass functions Steller provides.
+
+```scss
+.foo {
+  // finds the color named 'primary' in your $steller-colors theme var
+  background-color: color('primary');
+  // finds the font family named 'classy' in your $steller-custom-font-families theme var
+  font-family: font-family('classy');
+}
+```
+
 ---
 
 #### Contributors
