@@ -2715,7 +2715,7 @@ h4 {
 
 .bg-gradient-snazzy,
 .sm\:bg-gradient-snazzy {
-  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+  background-image: linear-gradient(to right, #55c1ff, green);
 }
 
 @media only screen and (min-width: 600px) {
@@ -4378,7 +4378,7 @@ h4 {
   }
 
   .md\:bg-gradient-snazzy {
-    background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+    background-image: linear-gradient(to right, #55c1ff, green);
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -6041,7 +6041,7 @@ h4 {
   }
 
   .lg\:bg-gradient-snazzy {
-    background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+    background-image: linear-gradient(to right, #55c1ff, green);
   }
 }
 .container {
@@ -7844,7 +7844,7 @@ h4 {
 }
 
 .hover\:bg-gradient-snazzy:hover {
-  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+  background-image: linear-gradient(to right, #55c1ff, green);
 }
 
 .container {
@@ -9647,7 +9647,7 @@ h4 {
 }
 
 .focus\:bg-gradient-snazzy:focus {
-  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+  background-image: linear-gradient(to right, #55c1ff, green);
 }
 
 .container {
@@ -11450,7 +11450,7 @@ h4 {
 }
 
 .active\:bg-gradient-snazzy:active {
-  background-image: linear-gradient(to right, #55c1ff 0, #55c1ff 100%);
+  background-image: linear-gradient(to right, #55c1ff, green);
 }
 
 :root {
