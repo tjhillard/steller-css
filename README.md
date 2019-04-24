@@ -1,5 +1,5 @@
 # Steller CSS
-Steller is a functional (aka "atomic" or "utility-first") CSS framework that serves as the foundation of your application's design system. It includes built-in smart defaults for building responsive, accesible, and elegant user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
+Steller is a utility-first CSS framework that serves as the foundation of your application's design system. It includes built-in smart defaults for building responsive, accesible, and visually consistent user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
 
 ## Features
 * Simple, centralized configuration ⚙️
