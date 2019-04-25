@@ -158,7 +158,7 @@ $steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 
 
 ```scss
 $steller-gradients: (
-  'cta-gradient': linear-gradient(to right, #55c1ff, #5863f8),
+  'cta-primary': linear-gradient(to right, #55c1ff, #5863f8),
 );
 ```
 
