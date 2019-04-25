@@ -2328,18 +2328,18 @@ h4 {
   border-left-width: 8px;
 }
 
-.box-shadow-sm,
-.sm\:box-shadow-sm {
+.shadow-sm,
+.sm\:shadow-sm {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
 }
 
-.box-shadow-md,
-.sm\:box-shadow-md {
+.shadow-md,
+.sm\:shadow-md {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
 }
 
-.box-shadow-lg,
-.sm\:box-shadow-lg {
+.shadow-lg,
+.sm\:shadow-lg {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -2643,18 +2643,18 @@ h4 {
   background-size: contain;
 }
 
-.box-shadow-sm,
-.sm\:box-shadow-sm {
+.shadow-sm,
+.sm\:shadow-sm {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
 }
 
-.box-shadow-md,
-.sm\:box-shadow-md {
+.shadow-md,
+.sm\:shadow-md {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
 }
 
-.box-shadow-lg,
-.sm\:box-shadow-lg {
+.shadow-lg,
+.sm\:shadow-lg {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -4069,15 +4069,15 @@ h4 {
     border-left-width: 8px;
   }
 
-  .md\:box-shadow-sm {
+  .md\:shadow-sm {
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
   }
 
-  .md\:box-shadow-md {
+  .md\:shadow-md {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
   }
 
-  .md\:box-shadow-lg {
+  .md\:shadow-lg {
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -4321,15 +4321,15 @@ h4 {
     background-size: contain;
   }
 
-  .md\:box-shadow-sm {
+  .md\:shadow-sm {
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
   }
 
-  .md\:box-shadow-md {
+  .md\:shadow-md {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
   }
 
-  .md\:box-shadow-lg {
+  .md\:shadow-lg {
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -5732,15 +5732,15 @@ h4 {
     border-left-width: 8px;
   }
 
-  .lg\:box-shadow-sm {
+  .lg\:shadow-sm {
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
   }
 
-  .lg\:box-shadow-md {
+  .lg\:shadow-md {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
   }
 
-  .lg\:box-shadow-lg {
+  .lg\:shadow-lg {
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -5984,15 +5984,15 @@ h4 {
     background-size: contain;
   }
 
-  .lg\:box-shadow-sm {
+  .lg\:shadow-sm {
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
   }
 
-  .lg\:box-shadow-md {
+  .lg\:shadow-md {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
   }
 
-  .lg\:box-shadow-lg {
+  .lg\:shadow-lg {
     box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
   }
 
@@ -7667,15 +7667,15 @@ h4 {
   border-left-width: 8px;
 }
 
-.hover\:box-shadow-sm:hover {
+.hover\:shadow-sm:hover {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
 }
 
-.hover\:box-shadow-md:hover {
+.hover\:shadow-md:hover {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
 }
 
-.hover\:box-shadow-lg:hover {
+.hover\:shadow-lg:hover {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -9470,15 +9470,15 @@ h4 {
   border-left-width: 8px;
 }
 
-.focus\:box-shadow-sm:focus {
+.focus\:shadow-sm:focus {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
 }
 
-.focus\:box-shadow-md:focus {
+.focus\:shadow-md:focus {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
 }
 
-.focus\:box-shadow-lg:focus {
+.focus\:shadow-lg:focus {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -11273,15 +11273,15 @@ h4 {
   border-left-width: 8px;
 }
 
-.active\:box-shadow-sm:active {
+.active\:shadow-sm:active {
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
 }
 
-.active\:box-shadow-md:active {
+.active\:shadow-md:active {
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
 }
 
-.active\:box-shadow-lg:active {
+.active\:shadow-lg:active {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 

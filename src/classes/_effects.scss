@@ -4,9 +4,9 @@
 
 $effects-classes-map: (
   // box shadow
-  'box-shadow-sm': (box-shadow: $steller-box-shadow-sm),
-  'box-shadow-md': (box-shadow: $steller-box-shadow-md),
-  'box-shadow-lg': (box-shadow: $steller-box-shadow-lg),
+  'shadow-sm': (box-shadow: $steller-box-shadow-sm),
+  'shadow-md': (box-shadow: $steller-box-shadow-md),
+  'shadow-lg': (box-shadow: $steller-box-shadow-lg),
 
   // opacity
   'opacity-100': (opacity: 1),
