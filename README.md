@@ -154,6 +154,14 @@ $steller-box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 
 $steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 ```
 
+### Gradients
+
+```scss
+$steller-gradients: (
+  'cta-gradient': linear-gradient(to right, #55c1ff, #5863f8),
+);
+```
+
 ## Utility Classes
 
 ### Container
@@ -361,6 +369,12 @@ $steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 
 | .opacity-50 | opacity: 0.5; |
 | .opacity-25 | opacity: 0.25; |
 | .opacity-0 | opacity: 0; |
+
+### Gradients
+
+| Class | Properties |
+| --- | --- |
+| .bg-gradient-{$gradient-name} | background-image: $gradient; |
 
 ### Backgrounds
 
