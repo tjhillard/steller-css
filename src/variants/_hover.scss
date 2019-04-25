@@ -11,6 +11,7 @@ $hover-classes-maps: (
   ($transforms-classes-map),
   ($interactivity-classes-map),
   ($gradients-classes-map),
+  ($overflow-classes-map),
 );
 
 @each $classes-map in $hover-classes-maps {

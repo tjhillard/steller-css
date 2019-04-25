@@ -2718,6 +2718,76 @@ h4 {
   background-image: linear-gradient(to right, #55c1ff, green);
 }
 
+.overflow-auto,
+.sm\:overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden,
+.sm\:overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible,
+.sm\:overflow-visible {
+  overflow: visible;
+}
+
+.overflow-scroll,
+.sm\:overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-auto,
+.sm\:overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-x-hidden,
+.sm\:overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-x-visible,
+.sm\:overflow-x-visible {
+  overflow-x: visible;
+}
+
+.overflow-x-scroll,
+.sm\:overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-auto,
+.sm\:overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-hidden,
+.sm\:overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overflow-y-visible,
+.sm\:overflow-y-visible {
+  overflow-y: visible;
+}
+
+.overflow-y-scroll,
+.sm\:overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.overflow-scrolling-auto,
+.sm\:overflow-scrolling-auto {
+  -webkit-overflow-scrolling: auto;
+}
+
+.overflow-scrolling-touch,
+.sm\:overflow-scrolling-touch {
+  -webkit-overflow-scrolling: touch;
+}
+
 @media only screen and (min-width: 600px) {
   .md\:text-primary {
     color: #3f7cac;
@@ -4379,6 +4449,62 @@ h4 {
 
   .md\:bg-gradient-snazzy {
     background-image: linear-gradient(to right, #55c1ff, green);
+  }
+
+  .md\:overflow-auto {
+    overflow: auto;
+  }
+
+  .md\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .md\:overflow-visible {
+    overflow: visible;
+  }
+
+  .md\:overflow-scroll {
+    overflow: scroll;
+  }
+
+  .md\:overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .md\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .md\:overflow-x-scroll {
+    overflow-x: scroll;
+  }
+
+  .md\:overflow-y-auto {
+    overflow-y: auto;
+  }
+
+  .md\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .md\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
+  .md\:overflow-y-scroll {
+    overflow-y: scroll;
+  }
+
+  .md\:overflow-scrolling-auto {
+    -webkit-overflow-scrolling: auto;
+  }
+
+  .md\:overflow-scrolling-touch {
+    -webkit-overflow-scrolling: touch;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -6042,6 +6168,62 @@ h4 {
 
   .lg\:bg-gradient-snazzy {
     background-image: linear-gradient(to right, #55c1ff, green);
+  }
+
+  .lg\:overflow-auto {
+    overflow: auto;
+  }
+
+  .lg\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .lg\:overflow-visible {
+    overflow: visible;
+  }
+
+  .lg\:overflow-scroll {
+    overflow: scroll;
+  }
+
+  .lg\:overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .lg\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
+  .lg\:overflow-x-visible {
+    overflow-x: visible;
+  }
+
+  .lg\:overflow-x-scroll {
+    overflow-x: scroll;
+  }
+
+  .lg\:overflow-y-auto {
+    overflow-y: auto;
+  }
+
+  .lg\:overflow-y-hidden {
+    overflow-y: hidden;
+  }
+
+  .lg\:overflow-y-visible {
+    overflow-y: visible;
+  }
+
+  .lg\:overflow-y-scroll {
+    overflow-y: scroll;
+  }
+
+  .lg\:overflow-scrolling-auto {
+    -webkit-overflow-scrolling: auto;
+  }
+
+  .lg\:overflow-scrolling-touch {
+    -webkit-overflow-scrolling: touch;
   }
 }
 .container {
@@ -7847,6 +8029,62 @@ h4 {
   background-image: linear-gradient(to right, #55c1ff, green);
 }
 
+.hover\:overflow-auto:hover {
+  overflow: auto;
+}
+
+.hover\:overflow-hidden:hover {
+  overflow: hidden;
+}
+
+.hover\:overflow-visible:hover {
+  overflow: visible;
+}
+
+.hover\:overflow-scroll:hover {
+  overflow: scroll;
+}
+
+.hover\:overflow-x-auto:hover {
+  overflow-x: auto;
+}
+
+.hover\:overflow-x-hidden:hover {
+  overflow-x: hidden;
+}
+
+.hover\:overflow-x-visible:hover {
+  overflow-x: visible;
+}
+
+.hover\:overflow-x-scroll:hover {
+  overflow-x: scroll;
+}
+
+.hover\:overflow-y-auto:hover {
+  overflow-y: auto;
+}
+
+.hover\:overflow-y-hidden:hover {
+  overflow-y: hidden;
+}
+
+.hover\:overflow-y-visible:hover {
+  overflow-y: visible;
+}
+
+.hover\:overflow-y-scroll:hover {
+  overflow-y: scroll;
+}
+
+.hover\:overflow-scrolling-auto:hover {
+  -webkit-overflow-scrolling: auto;
+}
+
+.hover\:overflow-scrolling-touch:hover {
+  -webkit-overflow-scrolling: touch;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -9650,6 +9888,62 @@ h4 {
   background-image: linear-gradient(to right, #55c1ff, green);
 }
 
+.focus\:overflow-auto:focus {
+  overflow: auto;
+}
+
+.focus\:overflow-hidden:focus {
+  overflow: hidden;
+}
+
+.focus\:overflow-visible:focus {
+  overflow: visible;
+}
+
+.focus\:overflow-scroll:focus {
+  overflow: scroll;
+}
+
+.focus\:overflow-x-auto:focus {
+  overflow-x: auto;
+}
+
+.focus\:overflow-x-hidden:focus {
+  overflow-x: hidden;
+}
+
+.focus\:overflow-x-visible:focus {
+  overflow-x: visible;
+}
+
+.focus\:overflow-x-scroll:focus {
+  overflow-x: scroll;
+}
+
+.focus\:overflow-y-auto:focus {
+  overflow-y: auto;
+}
+
+.focus\:overflow-y-hidden:focus {
+  overflow-y: hidden;
+}
+
+.focus\:overflow-y-visible:focus {
+  overflow-y: visible;
+}
+
+.focus\:overflow-y-scroll:focus {
+  overflow-y: scroll;
+}
+
+.focus\:overflow-scrolling-auto:focus {
+  -webkit-overflow-scrolling: auto;
+}
+
+.focus\:overflow-scrolling-touch:focus {
+  -webkit-overflow-scrolling: touch;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -11451,6 +11745,62 @@ h4 {
 
 .active\:bg-gradient-snazzy:active {
   background-image: linear-gradient(to right, #55c1ff, green);
+}
+
+.active\:overflow-auto:active {
+  overflow: auto;
+}
+
+.active\:overflow-hidden:active {
+  overflow: hidden;
+}
+
+.active\:overflow-visible:active {
+  overflow: visible;
+}
+
+.active\:overflow-scroll:active {
+  overflow: scroll;
+}
+
+.active\:overflow-x-auto:active {
+  overflow-x: auto;
+}
+
+.active\:overflow-x-hidden:active {
+  overflow-x: hidden;
+}
+
+.active\:overflow-x-visible:active {
+  overflow-x: visible;
+}
+
+.active\:overflow-x-scroll:active {
+  overflow-x: scroll;
+}
+
+.active\:overflow-y-auto:active {
+  overflow-y: auto;
+}
+
+.active\:overflow-y-hidden:active {
+  overflow-y: hidden;
+}
+
+.active\:overflow-y-visible:active {
+  overflow-y: visible;
+}
+
+.active\:overflow-y-scroll:active {
+  overflow-y: scroll;
+}
+
+.active\:overflow-scrolling-auto:active {
+  -webkit-overflow-scrolling: auto;
+}
+
+.active\:overflow-scrolling-touch:active {
+  -webkit-overflow-scrolling: touch;
 }
 
 :root {

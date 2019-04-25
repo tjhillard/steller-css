@@ -524,8 +524,8 @@ If you need to support IE and thus can't use CSS variables, you can just referen
 
 #### Roadmap
 
-* Add Theme Custom Gradient Variables
-* Tests
+* Transform transition speed classes
+* Pull out motion classes into seperate steller family package
 
 #### Example applications using steller-css
 
