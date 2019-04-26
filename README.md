@@ -521,6 +521,34 @@ If you need to support IE and thus can't use CSS variables, you can just referen
 }
 ```
 
+## Extending Steller
+
+Steller is extensible via first or third-party modules. Simply add a sass map to the `$steller-modules` variable in your theme conifg (or anywhere before your steller-css import).
+[Example.](https://github.com/tjhillard/steller-vue-transitions/blob/master/__test__/index.scss)
+
+```scss
+$steller-modules: (
+  $my-module-name,
+);
+```
+
+Your module variable should look something along these lines:
+
+```scss
+$my-module-name: (
+  'wumbo': font-size: 100pt,
+  'cant-see-u': (opacity: 0, visibility: hidden),
+);
+```
+
+```html
+<span class="cant-see-u md:wumbo">
+  Custom classes! :tada:
+</span>
+```
+
+Classes via steller-modules automatically have all prefixed variants generated.
+
 ---
 
 #### Contributors
@@ -530,12 +558,10 @@ If you need to support IE and thus can't use CSS variables, you can just referen
 #### Roadmap
 
 * Transform transition speed classes
-* Pull out motion classes into seperate steller family package
 
 #### Steller family
 
-* steller-vue-components (wip)
-* steller-vue-transitions (wip)
+* [steller-vue-transitions](https://github.com/tjhillard/steller-vue-transitions)
 
 #### Want to learn more about functional/atomic/utility-first CSS?
 
