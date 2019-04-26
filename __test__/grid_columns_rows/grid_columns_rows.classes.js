@@ -13,4 +13,10 @@ module.exports = [
       ['grid-row', '"span 1"'],
     ],
   },
+  {
+    className: '.col-1-start-2',
+    expectedCSS: [
+      ['grid-column', '"2 / span 1"'],
+    ],
+  },
 ];

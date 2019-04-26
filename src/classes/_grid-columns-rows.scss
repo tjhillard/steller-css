@@ -25,7 +25,7 @@ $grid-columns-rows-classes-map: ();
     $map: map-merge(
       $map,
       (
-        'col-#{$i}.col-start-#{$i}': (
+        'col-#{$i}-start-#{$j}': (
           grid-column: '#{$j} / span #{$i}'
         )
       )

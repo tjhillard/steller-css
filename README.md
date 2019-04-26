@@ -176,7 +176,7 @@ $steller-gradients: (
 | .grid | display: grid; grid-template-columns: repeat($grid-columns, 1fr); |
 | .{$breakpont}:col-{$span} | grid-column: span $span; |
 | .{$breakpont}:row-{$span} | grid-row: span $span; |
-| .col-start-{$breakpont}-{$span} | grid-column: $span / span $i; |
+| .{$breakpont}:col-{$span}-start-{$grid-column-start} | grid-column: $grid-column-start / span $span; |
 
 ### Typography
 
