@@ -129,18 +129,6 @@ $steller-border-width-xl: 8px;
 
 /**
  * --------------------------------------------------------------
- * Motion
- * --------------------------------------------------------------
- */
-
-$steller-speed-extra-slow: 500ms;
-$steller-speed-slow: 400ms;
-$steller-speed-normal: 300ms;
-$steller-speed-fast: 200ms;
-$steller-speed-extra-fast: 100ms;
-
-/**
- * --------------------------------------------------------------
  * Effects
  * --------------------------------------------------------------
  */
@@ -160,3 +148,17 @@ $steller-transform-distance-sm: 2px;
 $steller-transform-distance-md: 4px;
 $steller-transform-distance-lg: 6px;
 $steller-transform-distance-xl: 8px;
+
+/**
+ * --------------------------------------------------------------
+ * Modules (WIP)
+ *
+ * Modules allow you to extend Steller by providing a map
+ * of additional classes. By default, modules are applied
+ * to all variant types (responsive, hover, focus, active).
+ * --------------------------------------------------------------
+ */
+
+// Example
+// @import '~steller-vue-transitions/index';
+// $steller-modules: ($steller-vue-transitions);
