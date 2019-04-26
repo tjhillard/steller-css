@@ -163,7 +163,7 @@ $steller-transform-distance-xl: 8px;
 
 /**
  * --------------------------------------------------------------
- * Modules (WIP)
+ * Modules
  *
  * Modules allow you to extend Steller by providing a map
  * of additional classes. By default, modules are applied
@@ -171,6 +171,4 @@ $steller-transform-distance-xl: 8px;
  * --------------------------------------------------------------
  */
 
-// Example
-// @import '~steller-vue-transitions/index';
-// $steller-modules: ($steller-vue-transitions);
+$steller-modules: ();

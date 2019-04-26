@@ -1,4 +1,4 @@
-# Steller CSS
+# StellerCSS
 Steller is a utility-first CSS framework that serves as the foundation of your application's design system. It includes built-in smart defaults for building responsive, accesible, and visually consistent user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
 
 ## Features
@@ -8,7 +8,7 @@ Steller is a utility-first CSS framework that serves as the foundation of your a
 * Built-in responsive typography best practices ✍️
 * Clear, predictable class syntax 🔍
 * SASS based (No CSS-in-JS complexity) ✨
-* Only 12kb gzipped 🚀
+* Add your own custom classes 🚀
 
 ## Installation
 
@@ -31,7 +31,7 @@ yarn add steller-css
 // Assuming you are using webpack
 
 @import 'steller-theme'; // Your config file
-@import '~steller-css/index'; // Steller
+@import '~steller-css/index'; // StellerCSS
 ```
 
 ## Example Projects
@@ -47,6 +47,10 @@ All config variables are optional to define as they already have default values.
 
 ```scss
 $steller-colors: (
+  // brand colors
+  'primary': #586f7c,
+  'secondary': #b8dbd9,
+
   'dwight-schrute': #0FF1C3,
   'a-song-of-this-and-fire': #1CE,
 );
@@ -547,7 +551,7 @@ $my-module-name: (
 </span>
 ```
 
-Classes via steller-modules automatically have all prefixed variants generated.
+Classes via steller modules automatically have all prefixed variants generated.
 
 ---
 
@@ -559,7 +563,7 @@ Classes via steller-modules automatically have all prefixed variants generated.
 
 * Transform transition speed classes
 
-#### Steller family
+#### Steller Family
 
 * [steller-vue-transitions](https://github.com/tjhillard/steller-vue-transitions)
 
