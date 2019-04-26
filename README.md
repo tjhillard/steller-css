@@ -34,6 +34,11 @@ yarn add steller-css
 @import '~steller-css/index'; // Steller
 ```
 
+## Example Projects
+
+* [Steller + Vue CLI 3 | Codesandbox](https://codesandbox.io/s/qlpqoloq5j?fontsize=14)
+* [Steller + Nuxt.js | GitHub](https://github.com/tjhillard/tjhillard.com)
+
 ## Config
 
 All config variables are optional to define as they already have default values. [You can take a look at them here](https://github.com/tjhillard/steller-css/blob/master/src/defaults.scss).
@@ -526,10 +531,6 @@ If you need to support IE and thus can't use CSS variables, you can just referen
 
 * Transform transition speed classes
 * Pull out motion classes into seperate steller family package
-
-#### Example applications using steller-css
-
-* [tjhillard.com | GitHub](https://github.com/tjhillard/tjhillard.com)
 
 #### Steller family
 

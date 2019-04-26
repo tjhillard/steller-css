@@ -1,16 +1,17 @@
 /**
 * --------------------------------------------------------------
 * Vue Transitions 🎉
-* https://vuejs.org/v2/guide/transitions.html
 * --------------------------------------------------------------
 */
 
+$transition-classes-map: ();
+
 $speeds: (
-  ("extra-slow", $steller-speed-extra-slow),
-  ("slow", $steller-speed-slow),
-  ("normal", $steller-speed-normal),
-  ("fast", $steller-speed-fast),
-  ("extra-fast", $steller-speed-extra-fast),
+  ("extra-slow", 500ms),
+  ("slow", 400ms),
+  ("normal", 300ms),
+  ("fast", 200ms),
+  ("extra-fast", 100ms),
 );
 
 // -----------------------------
@@ -18,12 +19,17 @@ $speeds: (
 // -----------------------------
 
 @each $speed-name, $speed in $speeds {
-  .fade-#{$speed-name}-enter { opacity: 0; }
-  .fade-#{$speed-name}-enter-to { opacity: 1; }
-  .fade-#{$speed-name}-enter-active { transition: all #{$speed} ease-out; }
-  .fade-#{$speed-name}-leave { opacity: 1; }
-  .fade-#{$speed-name}-leave-active { transition: all #{$speed} ease-in; }
-  .fade-#{$speed-name}-leave-to { opacity: 0; }
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'fade-#{$speed-name}-enter': (opacity: 0),
+      'fade-#{$speed-name}-enter-to': (opacity: 1),
+      'fade-#{$speed-name}-enter-active': (transition: all #{$speed} ease-out),
+      'fade-#{$speed-name}-leave': (opacity: 1),
+      'fade-#{$speed-name}-leave-active': (transition: all #{$speed} ease-in),
+      'fade-#{$speed-name}-leave-to': (opacity: 0),
+    )
+  );
 }
 
 // -----------------------------
@@ -31,16 +37,14 @@ $speeds: (
 // -----------------------------
 
 @each $speed-name, $speed in $speeds {
-  .slide-in-from-top-#{$speed-name}-enter {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-
-  .slide-in-from-top-#{$speed-name}-enter-to {
-    transition: all #{$speed} ease-in-out;
-    opacity: 1;
-  }
-  .slide-in-from-top-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'slide-in-from-top-#{$speed-name}-enter': (transform: translateY(-40%), opacity: 0),
+      'slide-in-from-top-#{$speed-name}-enter-to': (transition: all #{$speed} ease-in-out),
+      'slide-in-from-top-#{$speed-name}-enter-active': (transition: all #{$speed} ease-in-out),
+    )
+  );
 }
 
 // -----------------------------
@@ -48,16 +52,14 @@ $speeds: (
 // -----------------------------
 
 @each $speed-name, $speed in $speeds {
-  .slide-in-from-bottom-#{$speed-name}-enter {
-    transform: translateY(10%);
-    opacity: 0;
-  }
-
-  .slide-in-from-bottom-#{$speed-name}-enter-to {
-    transition: all #{$speed} ease-in-out;
-    opacity: 1;
-  }
-  .slide-in-from-bottom-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'slide-in-from-bottom-#{$speed-name}-enter': (transform: translateY(40%), opacity: 0),
+      'slide-in-from-bottom-#{$speed-name}-enter-to': (transition: all #{$speed} ease-in-out),
+      'slide-in-from-bottom-#{$speed-name}-enter-active': (transition: all #{$speed} ease-in-out),
+    )
+  );
 }
 
 // -----------------------------
@@ -65,16 +67,14 @@ $speeds: (
 // -----------------------------
 
 @each $speed-name, $speed in $speeds {
-  .slide-in-from-right-#{$speed-name}-enter {
-    transform: translateX(10%);
-    opacity: 0;
-  }
-
-  .slide-in-from-right-#{$speed-name}-enter-to {
-    transition: all #{$speed} ease-in-out;
-    opacity: 1;
-  }
-  .slide-in-from-right-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'slide-in-from-right-#{$speed-name}-enter': (transform: translateX(40%), opacity: 0),
+      'slide-in-from-right-#{$speed-name}-enter-to': (transition: all #{$speed} ease-in-out),
+      'slide-in-from-right-#{$speed-name}-enter-active': (transition: all #{$speed} ease-in-out),
+    )
+  );
 }
 
 // -----------------------------
@@ -82,16 +82,14 @@ $speeds: (
 // -----------------------------
 
 @each $speed-name, $speed in $speeds {
-  .slide-in-from-left-#{$speed-name}-enter {
-    transform: translateX(-10%);
-    opacity: 0;
-  }
-
-  .slide-in-from-left-#{$speed-name}-enter-to {
-    transition: all #{$speed} ease-in-out;
-    opacity: 1;
-  }
-  .slide-in-from-left-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'slide-in-from-left-#{$speed-name}-enter': (transform: translateX(-40%), opacity: 0),
+      'slide-in-from-left-#{$speed-name}-enter-to': (transition: all #{$speed} ease-in-out),
+      'slide-in-from-left-#{$speed-name}-enter-active': (transition: all #{$speed} ease-in-out),
+    )
+  );
 }
 
 // -----------------------------
@@ -99,11 +97,16 @@ $speeds: (
 // -----------------------------
 
 @each $speed-name, $speed in $speeds {
-  .slide-in-from-top-fade-out-#{$speed-name}-enter { transform: translateY(-60%); }
-  .slide-in-from-top-fade-out-#{$speed-name}-enter-to { transform: translateX(0); }
-  .slide-in-from-top-fade-out-#{$speed-name}-enter-active { transition: all #{$speed} ease-in-out; }
-  .slide-in-from-top-fade-out-#{$speed-name}-leave-active { transition: opacity 0.5s; }
-  .slide-in-from-top-fade-out-#{$speed-name}-leave-to { opacity: 0; }
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'slide-in-from-top-fade-out-#{$speed-name}-enter': (transform: translateY(-60%)),
+      'slide-in-from-top-fade-out-#{$speed-name}-enter-to': (transform: translateX(0)),
+      'slide-in-from-top-fade-out-#{$speed-name}-enter-active': (transition: all #{$speed} ease-in-out),
+      'slide-in-from-top-fade-out-#{$speed-name}-leave-active': (transition: opacity 0.5s),
+      'slide-in-from-top-fade-out-#{$speed-name}-leave-to': (opacity: 0),
+    )
+  );
 }
 
 // -----------------------------
@@ -112,5 +115,10 @@ $speeds: (
 // -----------------------------
 
 @each $speed-name, $speed in $speeds {
-  .flip-list-#{$speed-name}-move { transition: transform #{$speed}; }
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'flip-list-#{$speed-name}-move': (transition: transform #{$speed}),
+    )
+  );
 }

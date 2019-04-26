@@ -10,13 +10,6 @@
 /**
  * --------------------------------------------------------------
  * Color
- *
- * As many colors as you need, and you get to name them.
- * The names chosen here, will align with their class names.
- *
- * .text-{$name} --> { color: $value; }
- * .bg-{$name} --> { background-color: $value; }
- * .border-{$name} --> { border-color: $value; }
  * --------------------------------------------------------------
  */
 
@@ -45,12 +38,6 @@ $steller-colors: (
 /**
  * --------------------------------------------------------------
  * Typography
- *
- *
- * .font-{$name} --> { font: $value; }
- * .font-size-{$size} --> { font-size: $value; }
- * .font-weight-{$weight} --> { font-weight: $value; }
- * .leading-{$size} --> { line-height: $size; }
  * --------------------------------------------------------------
  */
 
@@ -80,11 +67,13 @@ $steller-leading-sm: 1.25em;
 $steller-leading-md: 1.5em;
 $steller-leading-lg: 2em;
 
+$steller-letter-spacing-tight: -0.05em;
+$steller-letter-spacing-normal: 0;
+$steller-letter-spacing-wide: 0.05em;
+
 /**
  * --------------------------------------------------------------
  * Breakpoints
- *
- * To determine the responsive breakpoint prefixed class variants
  * --------------------------------------------------------------
  */
 
@@ -95,8 +84,6 @@ $steller-breakpoint-lg: 1024px;
 /**
  * --------------------------------------------------------------
  * Container
- *
- * Sets the max width on the .container element
  * --------------------------------------------------------------
  */
 
@@ -105,10 +92,6 @@ $steller-container-width: 1140px;
 /**
  * --------------------------------------------------------------
  * Grid
- *
- * .col-{$columns} --> { grid-column: span $columns; }
- * .row-{$rows} --> { grid-row: span $rows; }
- * .col-start-{$offset} --> { grid-column: $offset / span $columns; }
  * --------------------------------------------------------------
  */
 
@@ -147,8 +130,6 @@ $steller-border-width-xl: 8px;
 /**
  * --------------------------------------------------------------
  * Motion
- *
- * Transistions & Animations
  * --------------------------------------------------------------
  */
 
@@ -161,11 +142,21 @@ $steller-speed-extra-fast: 100ms;
 /**
  * --------------------------------------------------------------
  * Effects
- *
- * .shadow-{$size} --> { box-shadow: $size; }
  * --------------------------------------------------------------
  */
 
 $steller-box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
 $steller-box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
 $steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+
+/**
+ * --------------------------------------------------------------
+ * Transforms
+ * --------------------------------------------------------------
+ */
+
+$steller-transform-distance-xs: 1px;
+$steller-transform-distance-sm: 2px;
+$steller-transform-distance-md: 4px;
+$steller-transform-distance-lg: 6px;
+$steller-transform-distance-xl: 8px;
