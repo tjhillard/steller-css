@@ -1,6 +1,6 @@
 {
   "name": "steller-css",
-  "version": "0.2.1-beta.0",
+  "version": "0.2.1",
   "description": "A utility-first CSS framework that serves as the foundation of your application's design system",
   "main": "index.js",
   "author": "TJ Hillard",
