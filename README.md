@@ -1,11 +1,19 @@
-# StellerCSS
+# Steller CSS
+
+![CircleCI branch](https://img.shields.io/circleci/project/github/tjhillard/steller-css/master.svg)
+[![npm version](https://badge.fury.io/js/steller-css.svg)](https://badge.fury.io/js/steller-css)
+![npm](https://img.shields.io/npm/dm/steller-css.svg)
+![NPM](https://img.shields.io/npm/l/steller-css.svg)
+
 Steller is a utility-first CSS framework that serves as the foundation of your application's design system. It includes built-in smart defaults for building responsive, accesible, and visually consistent user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
+
+>*Open-source development of Steller is proudly sponsored by [Snap! Raise](https://www.snap-raise.com/).* 
 
 ## Features
 * Simple, centralized configuration ⚙️
 * Grid system built with CSS Grid 📏
 * Encourages mobile-first development 📱
-* Built-in responsive typography best practices ✍️
+* Built-in responsive typography ✍️
 * Clear, predictable class syntax 🔍
 * SASS based (No CSS-in-JS complexity) ✨
 * Add your own custom classes 🚀
@@ -51,6 +59,7 @@ $steller-colors: (
   'primary': #586f7c,
   'secondary': #b8dbd9,
 
+  // accents
   'dwight-schrute': #0FF1C3,
   'a-song-of-this-and-fire': #1CE,
 );
@@ -551,12 +560,13 @@ $my-module-name: (
 </span>
 ```
 
-Classes via steller modules automatically have all prefixed variants generated.
+Classes via steller modules automatically have all prefixed variants available.
 
 ---
 
 #### Contributors
 
+* [TJ Hillard (@tjhillard)](https://github.com/tjhillard)
 * [Peter Glennon (@pcrglennon)](https://github.com/pcrglennon)
 
 #### Roadmap
@@ -567,7 +577,7 @@ Classes via steller modules automatically have all prefixed variants generated.
 
 * [steller-vue-transitions](https://github.com/tjhillard/steller-vue-transitions)
 
-#### Want to learn more about functional/atomic/utility-first CSS?
+#### What is functional/atomic/utility-first CSS?
 
 * [CSS and Scalability by Adam Morse](http://mrmrs.cc/writing/2016/03/24/scalable-css/)
 * [Functional CSS at Scale: Clean & composable UI on a massive app](https://www.youtube.com/watch?v=uHVqbCPnOwU)
