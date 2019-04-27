@@ -2,12 +2,12 @@
 
 ![CircleCI branch](https://img.shields.io/circleci/project/github/tjhillard/steller-css/master.svg)
 [![npm version](https://badge.fury.io/js/steller-css.svg)](https://badge.fury.io/js/steller-css)
-![npm](https://img.shields.io/npm/dm/steller-css.svg)
+![npm](https://img.shields.io/npm/dt/steller-css.svg)
 ![NPM](https://img.shields.io/npm/l/steller-css.svg)
 
 Steller is a utility-first CSS framework that serves as the foundation of your application's design system. It includes built-in smart defaults for building responsive, accesible, and visually consistent user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
 
->*Open-source development of Steller is proudly sponsored by [Snap! Raise](https://www.snap-raise.com/).* 
+>Open-source development of Steller is proudly sponsored by [Snap! Raise](https://www.snap-raise.com/).
 
 ## Features
 * Simple, centralized configuration ⚙️
@@ -17,6 +17,7 @@ Steller is a utility-first CSS framework that serves as the foundation of your a
 * Clear, predictable class syntax 🔍
 * SASS based (No CSS-in-JS complexity) ✨
 * Add your own custom classes 🚀
+* Zero dependencies 🙌
 
 ## Installation
 
@@ -537,7 +538,7 @@ If you need to support IE and thus can't use CSS variables, you can just referen
 ## Extending Steller
 
 Steller is extensible via first or third-party modules. Simply add a sass map to the `$steller-modules` variable in your theme conifg (or anywhere before your steller-css import).
-[Example.](https://github.com/tjhillard/steller-vue-transitions/blob/master/__test__/index.scss)
+[Example.](https://github.com/tjhillard/steller-vue-transitions/blob/master/__tests__/index.scss)
 
 ```scss
 $steller-modules: (
