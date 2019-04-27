@@ -15,7 +15,7 @@ Steller is a utility-first CSS framework that serves as the foundation of your a
 * Encourages mobile-first development 📱
 * Built-in responsive typography ✍️
 * Clear, predictable class syntax 🔍
-* SASS based (No CSS-in-JS complexity) ✨
+* Sass based (No CSS-in-JS complexity) ✨
 * Add your own custom classes 🚀
 * Zero dependencies 🙌
 
@@ -56,7 +56,7 @@ All config variables are optional to define as they already have default values.
 
 ```scss
 $steller-colors: (
-  // brand colors
+  // brand
   'primary': #586f7c,
   'secondary': #b8dbd9,
 
