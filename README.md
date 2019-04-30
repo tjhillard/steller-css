@@ -10,13 +10,12 @@ Steller is a utility-first CSS framework that serves as the foundation of your a
 >Open-source development of Steller is proudly sponsored by [Snap! Raise](https://www.snap-raise.com/).
 
 ## Features
-* Simple, centralized configuration ⚙️
+* Simple configuration & setup ⚙️
 * Grid system built with CSS Grid 📏
+* Sass based ✨
 * Encourages mobile-first development 📱
 * Built-in responsive typography ✍️
-* Clear, predictable class syntax 🔍
-* Sass based (No CSS-in-JS complexity) ✨
-* Add your own custom classes 🚀
+* Extensible module system 🚀
 * Zero dependencies 🙌
 
 ## Installation
