@@ -188,6 +188,10 @@ $steller-gradients: (
 | --- | --- |
 | .container | margin: 0 auto; max-width: $container-width; position: relative; |
 
+```html
+<div class="container"></div>
+```
+
 ### Grid
 
 | Class | Properties |
@@ -196,6 +200,13 @@ $steller-gradients: (
 | .{$breakpont}:col-{$span} | grid-column: span $span; |
 | .{$breakpont}:row-{$span} | grid-row: span $span; |
 | .{$breakpont}:col-{$span}-start-{$grid-column-start} | grid-column: $grid-column-start / span $span; |
+
+```html
+<div class="grid">
+  <div class="col-12 md:col-6"></div>
+  <div class="col-12 md:col-6"></div>
+</div>
+```
 
 ### Typography
 
@@ -223,12 +234,33 @@ $steller-gradients: (
 | .break-word | word-wrap: normal; |
 | .truncate | overflow: hidden; text-overflow: ellipses; white-space: nowrap; |
 
+```html
+<!-- font size -->
+<div class="font-size-3xl"></div>
+
+<!-- font weight -->
+<div class="font-weight-bold"></div>
+
+<!-- leading (line height) -->
+<div class="leading-sm"></div>
+```
+
 ### Color
 
 | Class | Properties |
 | --- | --- |
 | .text-{$color} | color: $color; |
 | .bg-{$color} | background-color: $color; |
+
+```scss
+$steller-colors: (
+  'my-color-name': #586f7c,
+);
+```
+```html
+<div class="text-my-color-name"></div>
+<div class="bg-my-color-name"></div>
+```
 
 ### Layout
 
@@ -288,6 +320,13 @@ $steller-gradients: (
 | .pb-{$size} | padding-bottom: $size; |
 | .ml-{$size} | margin-left: $size; |
 | .pl-{$size} | padding-left: $size; |
+
+```html
+<div class="m-lg"></div>
+<div class="py-sm"></div>
+<div class="mt-2xl"></div>
+<div class="pr-xs"></div>
+```
 
 ### Flexbox
 
@@ -367,16 +406,32 @@ $steller-gradients: (
 
 | Class | Properties |
 | --- | --- |
+| .rounded-{$size} | border-radius: $size; |
 | .border-{$color} | border-color: auto; |
-| .border-{$radius} | border-radius: $radius; |
-| .border-{$corner-or-side}-{$radius} | border-{$corner-or-side}-radius: $radius; |
+| .border-{$corner}-{$radius} | border-{$corner}-radius: $radius; |
 | .border-{$width} | border-width: $width; |
-| .border-{$corner-or-side}-{$width} | border-{$corner-or-side}-width: $width; |
+| .border-{$side}-{$width} | border-{$side}-width: $width; |
 | .border-solid | border-style: solid; |
 | .border-dashed | border-style: dashed; |
 | .border-dotted | border-style: dotted; |
 | .border-inset | border-style: inset; |
 | .border-outset | border-style: outset; |
+
+```scss
+$steller-colors: (
+  'my-color-name': #586f7c,
+);
+```
+```html
+<!-- border radius (all 4 corners) -->
+<div class="rounded-lg"></div>
+
+<!-- border top -->
+<div class="border-top-xs border-my-color-name border-solid"></div>
+
+<!-- rounded bottom right corner only -->
+<div class="rounded-br-sm"></div>
+```
 
 ### Effects
 
@@ -389,11 +444,24 @@ $steller-gradients: (
 | .opacity-25 | opacity: 0.25; |
 | .opacity-0 | opacity: 0; |
 
+```html
+<div class="shadow-md"></div>
+```
+
 ### Gradients
 
 | Class | Properties |
 | --- | --- |
 | .bg-gradient-{$gradient-name} | background-image: $gradient; |
+
+```scss
+$steller-colors: (
+  'my-color-name': #586f7c,
+);
+```
+```html
+<div class="bg-gradient-my-gradient-name"></div>
+```
 
 ### Backgrounds
 
