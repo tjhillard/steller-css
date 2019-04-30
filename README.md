@@ -321,10 +321,19 @@ $steller-colors: (
 | .ml-{$size} | margin-left: $size; |
 | .pl-{$size} | padding-left: $size; |
 
+* Spacing Sizes: ('xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl')
+
 ```html
+<!-- margin all sides large -->
 <div class="m-lg"></div>
+
+<!-- padding top/bottom small -->
 <div class="py-sm"></div>
+
+<!-- margin top 2xl -->
 <div class="mt-2xl"></div>
+
+<!-- padding right extra small -->
 <div class="pr-xs"></div>
 ```
 
@@ -417,6 +426,9 @@ $steller-colors: (
 | .border-inset | border-style: inset; |
 | .border-outset | border-style: outset; |
 
+* Border Radius Sizes: ('sm', 'md', 'lg', 'xl')
+* Border Width Sizes: ('xs', 'sm', 'md', 'lg', 'xl')
+
 ```scss
 $steller-colors: (
   'my-color-name': #586f7c,
@@ -443,6 +455,8 @@ $steller-colors: (
 | .opacity-50 | opacity: 0.5; |
 | .opacity-25 | opacity: 0.25; |
 | .opacity-0 | opacity: 0; |
+
+* Box Shadow Sizes: ('sm', 'md', 'lg')
 
 ```html
 <div class="shadow-md"></div>
