@@ -3,37 +3,6 @@
 // -----------------------------
 
 $typography-classes-map: (
-  // font family
-  'font-heading': (font-family: $steller-font-family-heading),
-  'font-body': (font-family: $steller-font-family-body),
-
-  // font size
-  'font-size-xs': (font-size: $steller-font-size-xs),
-  'font-size-sm': (font-size: $steller-font-size-sm),
-  'font-size-md': (font-size: $steller-font-size-md),
-  'font-size-lg': (font-size: $steller-font-size-lg),
-  'font-size-xl': (font-size: $steller-font-size-xl),
-  'font-size-2xl': (font-size: $steller-font-size-2xl),
-  'font-size-3xl': (font-size: $steller-font-size-3xl),
-  'font-size-4xl': (font-size: $steller-font-size-4xl),
-
-  // font weight
-  'font-weight-bold': (font-weight: $steller-font-weight-bold),
-  'font-weight-medium': (font-weight: $steller-font-weight-medium),
-  'font-weight-regular': (font-weight: $steller-font-weight-regular),
-  'font-weight-light': (font-weight: $steller-font-weight-light),
-  'font-weight-thin': (font-weight: $steller-font-weight-thin),
-
-  // leading
-  'leading-sm': (line-height: $steller-leading-sm),
-  'leading-md': (line-height: $steller-leading-md),
-  'leading-lg': (line-height: $steller-leading-lg),
-
-  // letter spacing
-  'letter-spacing-tight': (letter-spacing: $steller-letter-spacing-tight),
-  'letter-spacing-normal': (letter-spacing: $steller-letter-spacing-normal),
-  'letter-spacing-wide': (letter-spacing: $steller-letter-spacing-wide),
-
   // font style / decoration
   'italic': (font-style: italic),
   'underline': (text-decoration: underline),
@@ -58,18 +27,62 @@ $typography-classes-map: (
   'truncate': (overflow: hidden, text-overflow: ellipses, white-space: nowrap),
 );
 
-// custom font famailies
-@each $steller-font-family-name, $steller-font-family-value in $steller-custom-font-families {
-  $map: ();
-
-  $map: map-merge(
-    $map,
+// font famailies
+@each $steller-font-family-name, $steller-font-family-value in $steller-font-families {
+  $typography-classes-map: map-merge(
+    $typography-classes-map,
     (
       'font-#{$steller-font-family-name}': (
         font-family: inspect($steller-font-family-value)
       ),
     )
   );
+}
 
-  $typography-classes-map: map-merge($typography-classes-map, $map);
+// font sizes
+@each $steller-font-size-name, $steller-font-size-value in $steller-font-sizes {
+  $typography-classes-map: map-merge(
+    $typography-classes-map,
+    (
+      'font-size-#{$steller-font-size-name}': (
+        font-size: inspect($steller-font-size-value)
+      ),
+    )
+  );
+}
+
+// font weights
+@each $steller-font-weight-name, $steller-font-weight-value in $steller-font-weights {
+  $typography-classes-map: map-merge(
+    $typography-classes-map,
+    (
+      'font-weight-#{$steller-font-weight-name}': (
+        font-weight: inspect($steller-font-weight-value)
+      ),
+    )
+  );
+}
+
+// leadings
+@each $steller-leading-name, $steller-leading-value in $steller-leadings {
+  $typography-classes-map: map-merge(
+    $typography-classes-map,
+    (
+      'leading-#{$steller-leading-name}': (
+        line-height: inspect($steller-leading-value)
+      ),
+    )
+  );
+}
+
+// letter spacing
+@each $steller-letter-spacing-name, $steller-letter-spacing-value in $steller-letter-spacings {
+  $typography-classes-map: map-merge(
+    $typography-classes-map,
+    (
+      'letter-spacing-#{$steller-letter-spacing-name}': (
+        letter-spacing: inspect($steller-letter-spacing-value)
+      ),
+    )
+  );
 }

@@ -1,0 +1,3 @@
+@function box-shadow($box-shadow) {
+  @return map-get($steller-box-shadows, '#{$box-shadow}');
+}

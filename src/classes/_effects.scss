@@ -3,11 +3,6 @@
 // -----------------------------
 
 $effects-classes-map: (
-  // box shadow
-  'shadow-sm': (box-shadow: $steller-box-shadow-sm),
-  'shadow-md': (box-shadow: $steller-box-shadow-md),
-  'shadow-lg': (box-shadow: $steller-box-shadow-lg),
-
   // opacity
   'opacity-100': (opacity: 1),
   'opacity-75': (opacity: 0.75),
@@ -15,3 +10,15 @@ $effects-classes-map: (
   'opacity-25': (opacity: 0.25),
   'opacity-0': (opacity: 0),
 );
+
+
+@each $box-shadow-name, $box-shadow-value in $steller-box-shadows {
+  $effects-classes-map: map-merge(
+    $effects-classes-map,
+    (
+      'shadow-#{$box-shadow-name}': (
+        box-shadow: inspect($box-shadow-value)
+      ),
+    )
+  );
+}

@@ -1,0 +1,3 @@
+@function speed($speed) {
+  @return map-get($steller-speeds, '#{$speed}');
+}

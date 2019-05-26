@@ -1,0 +1,3 @@
+@function column-gutter($column-gutter) {
+  @return map-get($steller-column-gutters, '#{$column-gutter}');
+}

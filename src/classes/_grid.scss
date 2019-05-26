@@ -2,27 +2,12 @@
 // Grid
 // -----------------------------
 
-$grid-breakpoints-gutters-map: (
-  (sm, null, $steller-column-gutter-sm, $steller-row-gutter-sm),
-  (md, breakpoint-md, $steller-column-gutter-md, $steller-row-gutter-md),
-  (lg, breakpoint-lg, $steller-column-gutter-lg, $steller-row-gutter-lg),
-);
-
 .grid {
   display: grid;
   grid-template-columns: repeat($steller-grid-columns, 1fr);
 
-  @each $prefix, $min-width-label, $col-gutter, $row-gutter in $grid-breakpoints-gutters-map {
-    @if $prefix == sm {
-      grid-column-gap: $col-gutter;
-      grid-row-gap: $row-gutter;
-    }
-
-    @else {
-      @include above-media($min-width-label) {
-        grid-column-gap: $col-gutter;
-        grid-row-gap: $row-gutter;
-      }
-    }
+  @each $breakpoint-label, $breakpoint-value in $steller-breakpoints {
+    grid-column-gap: column-gutter($breakpoint-label);
+    grid-row-gap: row-gutter($breakpoint-label);
   }
 }

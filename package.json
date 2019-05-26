@@ -1,6 +1,6 @@
 {
   "name": "steller-css",
-  "version": "0.2.2",
+  "version": "1.0.0-alpha.0",
   "description": "A utility-first CSS framework that serves as the foundation of your application's design system",
   "main": "index.js",
   "author": "TJ Hillard",
@@ -24,5 +24,6 @@
     "sass": "^1.19.0",
     "stylelint": "^10.0.1",
     "stylelint-config-standard": "^18.3.0"
-  }
+  },
+  "dependencies": {}
 }

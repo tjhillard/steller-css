@@ -4,16 +4,6 @@ $spacing-classes-map: ();
 // Spacing
 // -----------------------------
 
-$spacing-sizes-map: (
-  ($steller-spacing-xs, 'xs'),
-  ($steller-spacing-sm, 'sm'),
-  ($steller-spacing-md, 'md'),
-  ($steller-spacing-lg, 'lg'),
-  ($steller-spacing-xl, 'xl'),
-  ($steller-spacing-2xl, "2xl"),
-  ($steller-spacing-3xl, "3xl"),
-);
-
 $sides-labels-map: (
   (top, t),
   (right, r),
@@ -26,14 +16,14 @@ $size-types-map: (
   (padding, p),
 );
 
-@each $spacing, $spacing-label in $spacing-sizes-map {
+@each $spacing-label, $spacing-value in $steller-spacings {
   @each $type, $type-label in $size-types-map {
     // t, r, b, l
     @each $side, $side-label in $sides-labels-map {
       $spacing-classes-map: map-merge(
         $spacing-classes-map,
         (
-          '#{$type-label}#{$side-label}-#{$spacing-label}': (#{$type}-#{$side}: #{$spacing})
+          '#{$type-label}#{$side-label}-#{$spacing-label}': (#{$type}-#{$side}: #{$spacing-value})
         )
       );
     }
@@ -43,8 +33,8 @@ $size-types-map: (
       $spacing-classes-map,
       (
         '#{$type-label}x-#{$spacing-label}': (
-          #{$type}-left: #{$spacing},
-          #{$type}-right: #{$spacing},
+          #{$type}-left: #{$spacing-value},
+          #{$type}-right: #{$spacing-value},
         )
       )
     );
@@ -54,8 +44,8 @@ $size-types-map: (
       $spacing-classes-map,
       (
         '#{$type-label}y-#{$spacing-label}': (
-          #{$type}-top: #{$spacing},
-          #{$type}-bottom: #{$spacing},
+          #{$type}-top: #{$spacing-value},
+          #{$type}-bottom: #{$spacing-value},
         )
       )
     );
@@ -64,7 +54,7 @@ $size-types-map: (
     $spacing-classes-map: map-merge(
       $spacing-classes-map,
       (
-        #{$type-label}-#{$spacing-label}: (#{$type}: #{$spacing})
+        #{$type-label}-#{$spacing-label}: (#{$type}: #{$spacing-value})
       )
     );
   }

@@ -1,0 +1,3 @@
+@function spacing($spacing) {
+  @return map-get($steller-spacings, '#{$spacing}');
+}

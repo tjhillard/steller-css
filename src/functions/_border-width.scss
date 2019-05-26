@@ -1,0 +1,3 @@
+@function border-width($border-width) {
+  @return map-get($steller-border-widths, '#{$border-width}');
+}

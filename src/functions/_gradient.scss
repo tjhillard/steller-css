@@ -1,0 +1,3 @@
+@function gradient($gradient) {
+  @return map-get($steller-gradients, '#{$gradient}');
+}

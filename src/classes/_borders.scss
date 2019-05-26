@@ -25,13 +25,6 @@ $borders-classes-map: (
   );
 }
 
-$border-radius-map: (
-  (sm, $steller-border-radius-sm),
-  (md, $steller-border-radius-md),
-  (lg, $steller-border-radius-lg),
-  (xl, $steller-border-radius-xl),
-);
-
 $border-corners-map: (
   (tl, 'top-left'),
   (tr, 'top-right'),
@@ -39,7 +32,7 @@ $border-corners-map: (
   (br, 'bottom-right'),
 );
 
-@each $size-label, $size in $border-radius-map {
+@each $size-label, $size in $steller-border-radiuses {
   $borders-classes-map: map-merge(
     $borders-classes-map,
     (
@@ -57,14 +50,6 @@ $border-corners-map: (
   }
 }
 
-$border-width-map: (
-  (xs, $steller-border-width-xs),
-  (sm, $steller-border-width-sm),
-  (md, $steller-border-width-md),
-  (lg, $steller-border-width-lg),
-  (xl, $steller-border-width-xl),
-);
-
 $border-sides-map: (
   (t, 'top'),
   (r, 'right'),
@@ -72,7 +57,7 @@ $border-sides-map: (
   (l, 'left'),
 );
 
-@each $width-label, $width in $border-width-map {
+@each $width-label, $width in $steller-border-widths {
   $borders-classes-map: map-merge(
     $borders-classes-map,
     (

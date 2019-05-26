@@ -14,7 +14,6 @@ Steller is a utility-first CSS framework that serves as the foundation of your a
 * Grid system built with CSS Grid 📏
 * Sass based ✨
 * Encourages mobile-first development 📱
-* Built-in responsive typography ✍️
 * Extensible module system 🚀
 * Zero dependencies 🙌
 
@@ -68,43 +67,51 @@ $steller-colors: (
 ### Typogrpahy
 
 ```scss
-$steller-font-family-heading: 'Some trendy web font', sans-serif;
-$steller-font-family-body: 'Comic Sans', sans-serif;
-
-$steller-custom-font-families: (
+$steller-font-families: (
   'accent': cursive,
 );
 
-$steller-font-size-xs: 0.75rem;
-$steller-font-size-sm: 0.875rem;
-$steller-font-size-md: 1rem;
-$steller-font-size-lg: 1.5rem;
-$steller-font-size-xl: 1.875rem;
-$steller-font-size-2xl: 2.25rem;
-$steller-font-size-3xl: 3rem;
-$steller-font-size-4xl: 3.75rem;
+$steller-font-sizes: (
+  'xs': 0.75rem,
+  'sm': 0.875rem,
+  'md': 1rem,
+  'lg': 1.5,
+  'xl': 1.875rem,
+  '2xl': 2.25rem,
+  '3xl': 3rem,
+  '4xl': 3.75rem,
+);
 
-$steller-font-weight-bold: 700;
-$steller-font-weight-medium: 500;
-$steller-font-weight-regular: 400;
-$steller-font-weight-light: 300;
-$steller-font-weight-thin: 100;
+$steller-font-weights:(
+  'bold': 700,
+  'medium': 500,
+  'regular': 400,
+  'light': 300,
+  'thin': 100,
+);
 
-$steller-leading-sm: 1.25em;
-$steller-leading-md: 1.5em;
-$steller-leading-lg: 2em;
+$steller-leadings: (
+  'sm': 1.25rem,
+  'md': 1.5rem,
+  'lg': 1.75rem,
+  'xl': 2rem,
+);
 
-$steller-letter-spacing-tight: -0.05em;
-$steller-letter-spacing-normal: 0em;
-$steller-letter-spacing-wide: 0.05em;
+$steller-letter-spacings: (
+  'tight': -0.05rem,
+  'normal': 0,
+  'wide': 0.05rem,
+);
 ```
 
 ### Breakpoints
 
 ```scss
-$steller-breakpoint-sm: 380px;
-$steller-breakpoint-md: 600px;
-$steller-breakpoint-lg: 980px;
+$steller-breakpoints: (
+  'sm': 320px,
+  'md': 600px,
+  'lg': 1024px,
+);
 ```
 
 ### Container
@@ -118,58 +125,72 @@ $steller-container-width: 1140px;
 ```scss
 $steller-grid-columns: 12;
 
-$steller-column-gutter-sm: 16px;
-$steller-column-gutter-md: 16px;
-$steller-column-gutter-lg: 24px;
+$steller-column-gutters: (
+  'sm': 16px,
+  'md': 16px,
+  'lg': 24px,
+);
 
-$steller-row-gutter-sm: 8px;
-$steller-row-gutter-md: 8px;
-$steller-row-gutter-lg: 16px;
+$steller-row-gutters: (
+  'sm': 8px,
+  'md': 8px,
+  'lg': 16px,
+);
 ```
 
 ### Spacing
 
 ```scss
-$steller-spacing-xs: 4px;
-$steller-spacing-sm: 8px;
-$steller-spacing-md: 16px;
-$steller-spacing-lg: 24px;
-$steller-spacing-xl: 32px;
-$steller-spacing-2xl: 48px;
-$steller-spacing-3xl: 64px;
+$steller-spacings: (
+  'xs': 4px,
+  'sm': 8px,
+  'md': 16px,
+  'lg': 24px,
+  'xl': 32px,
+  '2xl': 48px,
+  '3xl': 64px,
+);
 ```
 
 ### Borders
 
 ```scss
-$steller-border-radius-sm: 5px;
-$steller-border-radius-md: 10px;
-$steller-border-radius-lg: 15px;
-$steller-border-radius-xl: 20px;
+$steller-border-radiuses: (
+  'sm': 5px,
+  'md': 10px,
+  'lg': 15px,
+  'xl': 20px,
+);
 
-$steller-border-width-xs: 1px;
-$steller-border-width-sm: 2px;
-$steller-border-width-md: 4px;
-$steller-border-width-lg: 6px;
-$steller-border-width-xl: 8px;
+$steller-border-widths: (
+  'xs': 1px,
+  'sm': 2px,
+  'md': 4px,
+  'lg': 6px,
+  'xl': 8px,
+);
 ```
 
 ### Motion
 
 ```scss
-$steller-speed-extra-slow: 500ms;
-$steller-speed-slow: 400ms;
-$steller-speed-normal: 300ms;
-$steller-speed-fast: 200ms;
-$steller-speed-extra-fast: 100ms;
+$steller-speeds: (
+  'extra-slow': 500ms,
+  'slow': 400ms,
+  'normal': 300ms,
+  'fast': 200ms,
+  'extra-fast': 100ms,
+);
 ```
 
 ### Effects
 
 ```scss
-$steller-box-shadow-sm: 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06);
-$steller-box-shadow-md: 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07);
-$steller-box-shadow-lg: 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+$steller-box-shadows: (
+  'sm': 0 7px 15px 0 rgba(0, 0, 0, 0.11), 0 1px 8px 0 rgba(0, 0, 0, 0.06),
+  'md': 0 10px 20px 0 rgba(0, 0, 0, 0.22), 0 3px 12px 0 rgba(0, 0, 0, 0.07),
+  'lg': 0 15px 30px 0 rgba(0, 0, 0, 0.33), 0 5px 15px 0 rgba(0, 0, 0, 0.1),
+);
 ```
 
 ### Gradients
@@ -605,7 +626,7 @@ Your feature
 }
 ```
 
-If you need to support IE and thus can't use CSS variables, you can just reference the Steller theme variables directly or use one of the helper sass functions Steller provides.
+Optionally, you can just reference the Steller theme variables directly or use one of the helper sass functions Steller provides.
 
 ```scss
 .foo {
@@ -615,6 +636,21 @@ If you need to support IE and thus can't use CSS variables, you can just referen
   font-family: font-family('classy');
 }
 ```
+
+List of all built-in functions like the above color & font-family example:
+
+* color()
+* font-family()
+* spacing()
+* border-radius()
+* border-width()
+* box-shadow()
+* breakpoint()
+* column-gutter()
+* row-gutter()
+* gradient()
+* speed()
+* transform-distance()
 
 ## Extending Steller
 

@@ -1,0 +1,3 @@
+@function border-radius($border-radius) {
+  @return map-get($steller-border-radiuses, '#{$border-radius}');
+}

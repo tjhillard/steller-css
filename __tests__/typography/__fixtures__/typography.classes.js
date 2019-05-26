@@ -2,14 +2,14 @@ const defaults = {
   fontFamilyHeading: 'sans-serif',
   fontFamilyBody: 'sans-serif',
   fontSizes: {
-    xs: '10px',
-    sm: '12px',
-    md: '16px',
-    lg: '22px',
-    xl: '28px',
-    '2xl': '34px',
-    '3xl': '46px',
-    '4xl': '58px',
+    xs: '0.75rem',
+    sm: '0.875rem',
+    md: '1rem',
+    lg: '1.5rem',
+    xl: '1.875rem',
+    '2xl': '2.25rem',
+    '3xl': '3rem',
+    '4xl': '3.75rem',
   },
   fontWeights: {
     bold: '700',
@@ -19,32 +19,20 @@ const defaults = {
     thin: '100',
   },
   leadings: {
-    sm: '1.25em',
-    md: '1.5em',
-    lg: '2em',
+    sm: '1.25rem',
+    md: '1.5rem',
+    lg: '1.75rem',
+    xl: '2rem',
   },
   letterSpacings: {
-    tight: '-0.05em',
+    tight: '-0.05rem',
     normal: '0',
-    wide: '0.05em',
+    wide: '0.05rem',
   },
 };
 
 module.exports = [
   // font family
-  {
-    className: '.font-heading',
-    expectedCSS: [
-      ['font-family', defaults.fontFamilyHeading],
-    ],
-  },
-  {
-    className: '.font-body',
-    expectedCSS: [
-      ['font-family', defaults.fontFamilyBody],
-    ],
-  },
-  // custom font family
   {
     className: '.font-accent',
     expectedCSS: [
