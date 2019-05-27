@@ -30,7 +30,7 @@ yarn add steller-css
 ## Usage
 
 1. Create a `theme.scss` (or any name you prefer)
-2. Copy pasta the values in the [example config](https://github.com/tjhillard/steller-css/blob/master/src/example-theme.scss)
+2. Copy and paste the values in the [example config](https://github.com/tjhillard/steller-css/blob/master/src/example-theme.scss)
 3. Adjust the theme variables to your design system's needs.
 4. In your `index.scss` or equivilent, import your newly created `theme.scss` at the top of your entry point sass file
 5. Import steller from node_modules
