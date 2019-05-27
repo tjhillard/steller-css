@@ -21,38 +21,29 @@ $responsive-classes-maps: (
   ($overflow-classes-map),
 );
 
-// sm / Small / Mobile
-@each $classes-map in $responsive-classes-maps {
-  @each $class-name, $attributes-map in $classes-map {
-    .#{$class-name},
-    .sm\:#{$class-name} {
-      @each $key, $value in $attributes-map {
-        #{inspect($key)}: #{inspect($value)};
-      }
-    }
-  }
-}
+$index: 0;
 
-// md / Medium / Tablet
-@include above-media(breakpoint-md) {
+@each $breakpoint-label, $breakpoint-value in $steller-breakpoints {
+  $index: $index + 1;
+
   @each $classes-map in $responsive-classes-maps {
     @each $class-name, $attributes-map in $classes-map {
-      .md\:#{$class-name} {
-        @each $key, $value in $attributes-map {
-          #{inspect($key)}: #{inspect($value)};
+      @if $index == 1 {
+        .#{$class-name},
+        .#{$breakpoint-label}\:#{$class-name} {
+          @each $key, $value in $attributes-map {
+            #{inspect($key)}: #{inspect($value)};
+          }
         }
       }
-    }
-  }
-}
 
-// lg / Large / Desktop and above
-@include above-media(breakpoint-lg) {
-  @each $classes-map in $responsive-classes-maps {
-    @each $class-name, $attributes-map in $classes-map {
-      .lg\:#{$class-name} {
-        @each $key, $value in $attributes-map {
-          #{inspect($key)}: #{inspect($value)};
+      @else {
+        @include above-media($breakpoint-label) {
+          .#{$breakpoint-label}\:#{$class-name} {
+            @each $key, $value in $attributes-map {
+              #{inspect($key)}: #{inspect($value)};
+            }
+          }
         }
       }
     }

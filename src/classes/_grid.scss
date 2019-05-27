@@ -2,12 +2,24 @@
 // Grid
 // -----------------------------
 
+@import '../functions/column-gutter';
+@import '../functions/row-gutter';
+
 .grid {
   display: grid;
   grid-template-columns: repeat($steller-grid-columns, 1fr);
 
   @each $breakpoint-label, $breakpoint-value in $steller-breakpoints {
-    grid-column-gap: column-gutter($breakpoint-label);
-    grid-row-gap: row-gutter($breakpoint-label);
+    @if $breakpoint-label == nth(nth($steller-breakpoints, 1), 1) {
+      grid-column-gap: column-gutter($breakpoint-label);
+      grid-row-gap: row-gutter($breakpoint-label);
+    }
+
+    @else {
+      @include above-media($breakpoint-label) {
+        grid-column-gap: column-gutter($breakpoint-label);
+        grid-row-gap: row-gutter($breakpoint-label);
+      }
+    }
   }
 }
