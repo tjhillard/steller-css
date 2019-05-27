@@ -85,6 +85,12 @@ $steller-letter-spacings: (
 
 $steller-container-width: 1140px;
 
+$steller-container-paddings: (
+  'sm': (padding: 8px),
+  'md': (padding: 12px),
+  'lg': (padding: 16px),
+);
+
 /**
  * --------------------------------------------------------------
  * Breakpoints

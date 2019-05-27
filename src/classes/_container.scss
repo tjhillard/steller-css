@@ -2,4 +2,20 @@
   margin: 0 auto;
   max-width: $steller-container-width;
   position: relative;
+
+  @each $breakpoint-label, $attributes-map in $steller-container-paddings {
+    @if $breakpoint-label == nth(nth($steller-breakpoints, 1), 1) {
+      @each $key, $value in $attributes-map {
+        #{inspect($key)}: #{inspect($value)};
+      }
+    }
+
+    @else {
+      @include above-media($breakpoint-label) {
+        @each $key, $value in $attributes-map {
+          #{inspect($key)}: #{inspect($value)};
+        }
+      }
+    }
+  }
 }

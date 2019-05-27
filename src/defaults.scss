@@ -50,6 +50,12 @@ $steller-breakpoints: (
 // Container
 $steller-container-width: 1140px !default;
 
+$steller-container-paddings: (
+  'sm': (padding: 8px),
+  'md': (padding: 12px),
+  'lg': (padding: 16px),
+) !default;
+
 // Grid
 $steller-grid-columns: 12 !default;
 
