@@ -19,6 +19,7 @@ $responsive-classes-maps: (
   ($svg-classes-map),
   ($gradients-classes-map),
   ($overflow-classes-map),
+  ($transition-classes-map),
 );
 
 $index: 0;
@@ -26,9 +27,9 @@ $index: 0;
 @each $breakpoint-label, $breakpoint-value in $steller-breakpoints {
   $index: $index + 1;
 
-  @each $classes-map in $responsive-classes-maps {
-    @each $class-name, $attributes-map in $classes-map {
-      @if $index == 1 {
+  @if $index == 1 {
+    @each $classes-map in $responsive-classes-maps {
+      @each $class-name, $attributes-map in $classes-map {
         .#{$class-name},
         .#{$breakpoint-label}\:#{$class-name} {
           @each $key, $value in $attributes-map {
@@ -36,9 +37,13 @@ $index: 0;
           }
         }
       }
+    }
+  }
 
-      @else {
-        @include above-media($breakpoint-label) {
+  @else {
+    @include above-media($breakpoint-label) {
+      @each $classes-map in $responsive-classes-maps {
+        @each $class-name, $attributes-map in $classes-map {
           .#{$breakpoint-label}\:#{$class-name} {
             @each $key, $value in $attributes-map {
               #{inspect($key)}: #{inspect($value)};

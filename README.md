@@ -174,7 +174,24 @@ $steller-border-widths: (
 ### Motion
 
 ```scss
-$steller-speeds: (
+$steller-transition-properties: (
+  all,
+  width,
+  height,
+  transform,
+  opacity,
+  border,
+  background,
+  background-color,
+  box-shadow,
+  margin,
+  padding,
+  visibility,
+);
+```
+
+```scss
+$steller-durations: (
   'extra-slow': 500ms,
   'slow': 400ms,
   'normal': 300ms,

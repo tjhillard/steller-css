@@ -59,7 +59,7 @@
   }
 
   // motion
-  @each $steller-speed-name, $steller-speed-value in $steller-speeds {
+  @each $steller-speed-name, $steller-speed-value in $steller-durations {
     --speed-#{$steller-speed-name}: #{inspect($steller-speed-value)};
   }
 
