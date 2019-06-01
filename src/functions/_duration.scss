@@ -1,0 +1,3 @@
+@function duration($duration) {
+  @return map-get($steller-durations, '#{$duration}');
+}

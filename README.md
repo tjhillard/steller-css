@@ -120,6 +120,14 @@ $steller-breakpoints: (
 $steller-container-width: 1140px;
 ```
 
+```scss
+$steller-container-paddings: (
+  'sm': (padding: 8px),
+  'md': (padding: 12px),
+  'lg': (padding: 16px),
+);
+```
+
 ### Grid
 
 ```scss

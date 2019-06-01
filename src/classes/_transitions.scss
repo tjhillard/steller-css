@@ -1,0 +1,35 @@
+// -----------------------------
+// Transitions
+// -----------------------------
+
+$transition-classes-map: (
+  'transition-timing-ease': (transition-timing-function: ease),
+  'transition-timing-ease-in': (transition-timing-function: ease-in),
+  'transition-timing-ease-out': (transition-timing-function: ease-out),
+  'transition-timing-ease-in-out': (transition-timing-function: ease-in-out),
+  'transition-timing-linear': (transition-timing-function: linear),
+);
+
+// transition-property
+@each $steller-transition-property in $steller-transition-properties {
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'transition-#{$steller-transition-property}': (
+        transition-property: inspect($steller-transition-property)
+      ),
+    )
+  );
+}
+
+// transition-duration
+@each $steller-transition-duration-name, $steller-transition-duration-value in $steller-durations {
+  $transition-classes-map: map-merge(
+    $transition-classes-map,
+    (
+      'transition-duration-#{$steller-transition-duration-name}': (
+        transition-duration: inspect($steller-transition-duration-value)
+      ),
+    )
+  );
+}
