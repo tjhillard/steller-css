@@ -29,15 +29,9 @@ yarn add steller-css
 
 ## Usage
 
-1. Create a `theme.scss` (or any name you prefer)
-2. Copy and paste the values in the [example config](https://github.com/tjhillard/steller-css/blob/master/src/example-theme.scss)
-3. Adjust the theme variables to your design system's needs.
-4. In your `index.scss` or equivilent, import your newly created `theme.scss` at the top of your entry point sass file
-5. Import steller from node_modules
+In you `index.scss` or equivilent, import `steller-css`.
 ```scss
 // Assuming you are using webpack
-
-@import 'steller-theme'; // Your config file
 @import '~steller-css/index'; // StellerCSS
 ```
 
@@ -49,6 +43,15 @@ yarn add steller-css
 ## Config
 
 All config variables are optional to define as they already have default values. [You can take a look at them here](https://github.com/tjhillard/steller-css/blob/master/src/defaults.scss).
+
+It is recommended to make a `steller-config.scss` file to be the centralized configuration file. Feel free to name this anything.
+
+```scss
+@import 'steller-config'; // Your config
+@import '~steller-css/index'; // StellerCSS
+```
+
+[Check out this example theme configuration file and feel free to copy/paste it into yours](https://github.com/tjhillard/steller-css/blob/master/example-theme.scss). The values are the same as the defaults above, but this config is your application's design system so get in there make it your own!
 
 ### Colors
 
@@ -637,7 +640,7 @@ $steller-colors: (
   'secondary': pink,
 );
 
-$steller-custom-font-families: (
+$steller-font-families: (
   'classy': ('Comic Sans', cursive),
 );
 ```
@@ -677,22 +680,22 @@ List of all built-in functions like the above color & font-family example:
 * speed()
 * transform-distance()
 
-## Extending Steller
+## Extending Steller / Custom Classes
 
 Steller is extensible via first or third-party modules. Simply add a sass map to the `$steller-modules` variable in your theme conifg (or anywhere before your steller-css import).
 [Example.](https://github.com/tjhillard/steller-vue-transitions/blob/master/__tests__/index.scss)
 
 ```scss
 $steller-modules: (
-  $my-module-name,
+  $my-custom-utils,
 );
 ```
 
 Your module variable should look something along these lines:
 
 ```scss
-$my-module-name: (
-  'wumbo': font-size: 100pt,
+$my-custom-utils: (
+  'wumbo': font-size: 100px,
   'cant-see-u': (opacity: 0, visibility: hidden),
 );
 ```
@@ -714,13 +717,26 @@ Classes via steller modules automatically have all prefixed variants available.
 
 #### Roadmap
 
-* Transform transition speed classes
+* Ship a stable, battle-tested 1.0 version
 
 #### Steller Family
 
-* [steller-vue-transitions](https://github.com/tjhillard/steller-vue-transitions)
+* [steller-vue-transitions (WIP)](https://github.com/tjhillard/steller-vue-transitions)
 
 #### What is functional/atomic/utility-first CSS?
 
 * [CSS and Scalability by Adam Morse](http://mrmrs.cc/writing/2016/03/24/scalable-css/)
 * [Functional CSS at Scale: Clean & composable UI on a massive app](https://www.youtube.com/watch?v=uHVqbCPnOwU)
+
+#### TailwindCSS vs StellerCSS
+
+The most similar framework to Steller is without a doubt [Tailwind CSS](https://tailwindcss.com/). Tailwind is awesome and it was half of the reason
+I first realized the true power of utility-first CSS to begin with. So why Steller then? At [Snap! Raise](https://snap-raise.com), we had a couple of primary reasons to roll our own framework.
+
+* **The Grid System.** [Tailwind doesn't have a built-in grid system](https://tailwindcss.com/components/grids/#app) and
+you're kinda stuck with hacking together a flexbox/width percentage solution as shown in their docs. A 12-column grid system is really important to us
+from both a design and developement perspective. The Steller grid system, which is built on top of CSS Grid, offers a lot more here.
+* **Sass vs JS.** Tailwind is written in PostCSS which is a tool for transforming styles via JavaScript plugins. Though a very powerfull tool, it is my
+opinion that it's benefits comes with the trade offs of a more complex setup and steeper learning curve. Our team was already familiar with and using Sass and we wanted to stay within that reliable paradigm. Jumping into a JavaScript file to change your base CSS configuration just seems like a context switch.
+
+Other than that, Steller and Tailwind are pretty much very similar tools. Like previously mentioned, the initial development of Steller was done with Tailwind as a key inspiration.

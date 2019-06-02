@@ -1,9 +1,19 @@
 @import '../functions/breakpoint';
 
-@mixin above-media($media) {
-  @each $breakpoint-label, $breakpoint-value in $steller-breakpoints {
-    @if $media == $breakpoint-label {
-      @media only screen and (min-width: breakpoint($breakpoint-label)) { @content; }
-    }
+@mixin above-breakpoint($breakpoint) {
+  @if breakpoint($breakpoint) {
+    @media only screen and (min-width: breakpoint($breakpoint)) { @content; }
+  }
+}
+
+@mixin below-breakpoint($breakpoint) {
+  @if breakpoint($breakpoint) {
+    @media only screen and (max-width: breakpoint($breakpoint)) { @content; }
+  }
+}
+
+@mixin between-breakpoints($breakpoint-small, $breakpoint-big) {
+  @if breakpoint($breakpoint-small) and breakpoint($breakpoint-big) {
+    @media only screen and (min-width: breakpoint($breakpoint-small) and (max-width: breakpoint($breakpoint-big))) { @content; }
   }
 }

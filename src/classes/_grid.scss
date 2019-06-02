@@ -16,7 +16,7 @@
     }
 
     @else {
-      @include above-media($breakpoint-label) {
+      @include above-breakpoint($breakpoint-label) {
         grid-column-gap: column-gutter($breakpoint-label);
         grid-row-gap: row-gutter($breakpoint-label);
       }

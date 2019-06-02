@@ -11,7 +11,7 @@
     }
 
     @else {
-      @include above-media($breakpoint-label) {
+      @include above-breakpoint($breakpoint-label) {
         @each $key, $value in $attributes-map {
           #{inspect($key)}: #{inspect($value)};
         }

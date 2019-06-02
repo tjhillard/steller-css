@@ -34,6 +34,11 @@
   }
 }
 
+.custom-util,
+.sm\:custom-util {
+  color: pink;
+}
+
 .text-primary,
 .sm\:text-primary {
   color: #3f7cac;
@@ -2939,6 +2944,10 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .md\:custom-util {
+    color: pink;
+  }
+
   .md\:text-primary {
     color: #3f7cac;
   }
@@ -5270,6 +5279,10 @@
   }
 }
 @media only screen and (min-width: 1024px) {
+  .lg\:custom-util {
+    color: pink;
+  }
+
   .lg\:text-primary {
     color: #3f7cac;
   }
@@ -7636,6 +7649,10 @@
   }
 }
 
+.hover\:custom-util:hover {
+  color: pink;
+}
+
 .hover\:text-primary:hover {
   color: #3f7cac;
 }
@@ -8958,6 +8975,10 @@
   }
 }
 
+.focus\:custom-util:focus {
+  color: pink;
+}
+
 .focus\:text-primary:focus {
   color: #3f7cac;
 }
@@ -10278,6 +10299,10 @@
     grid-column-gap: 24px;
     grid-row-gap: 16px;
   }
+}
+
+.active\:custom-util:active {
+  color: pink;
 }
 
 .active\:text-primary:active {

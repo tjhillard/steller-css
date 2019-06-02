@@ -41,7 +41,7 @@ $index: 0;
   }
 
   @else {
-    @include above-media($breakpoint-label) {
+    @include above-breakpoint($breakpoint-label) {
       @each $classes-map in $responsive-classes-maps {
         @each $class-name, $attributes-map in $classes-map {
           .#{$breakpoint-label}\:#{$class-name} {

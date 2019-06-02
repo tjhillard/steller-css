@@ -139,4 +139,6 @@ $steller-transform-distance-md: 4px !default;
 $steller-transform-distance-lg: 6px !default;
 $steller-transform-distance-xl: 8px !default;
 
-$steller-modules: () !default;
+$steller-modules: (
+  'custom-util': (color: pink),
+) !default;
