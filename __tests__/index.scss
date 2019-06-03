@@ -11,4 +11,5 @@ $steller-gradients: (
   'snazzy': linear-gradient(to right, #55c1ff, green),
 );
 
-@import '../index';
+@import '../index'; // steller src
+@import 'functions/index';

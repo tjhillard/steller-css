@@ -1,3 +1,9 @@
 @function row-gutter($row-gutter) {
-  @return map-get($steller-row-gutters, '#{$row-gutter}');
+  $value: map-get($steller-row-gutters, '#{$row-gutter}');
+
+  @if $value == null {
+    @error 'row-gutter(#{$row-gutter}) function returned null value. Make sure the value is in $steller-row-gutters.';
+  }
+
+  @return $value;
 }

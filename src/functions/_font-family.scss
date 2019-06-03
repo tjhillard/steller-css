@@ -1,3 +1,9 @@
 @function font-family($font-family) {
-  @return map-get($steller-font-families, '#{$font-family}');
+  $value: map-get($steller-font-families, '#{$font-family}');
+
+  @if $value == null {
+    @error 'font-family(#{$font-family}) function returned null value. Make sure the value is in $steller-font-famileis.';
+  }
+
+  @return $value;
 }

@@ -1,3 +1,0 @@
-@function transform-distance($transform-distance) {
-  @return map-get($steller-transform-distances, '#{$transform-distance}');
-}

@@ -1,0 +1,7 @@
+@each $breakpoint-label, $attributes-map in $steller-container-paddings {
+  @each $key, $value in $attributes-map {
+    .container-padding-function-test-#{$breakpoint-label} {
+      #{inspect($key)}: #{inspect($value)};
+    }
+  }
+}

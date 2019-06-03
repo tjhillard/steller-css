@@ -132,13 +132,5 @@ $steller-box-shadows: (
 // Gradients
 $steller-gradients: () !default;
 
-// Transforms
-$steller-transform-distance-xs: 1px !default;
-$steller-transform-distance-sm: 2px !default;
-$steller-transform-distance-md: 4px !default;
-$steller-transform-distance-lg: 6px !default;
-$steller-transform-distance-xl: 8px !default;
-
-$steller-modules: (
-  'custom-util': (color: pink),
-) !default;
+// Modules
+$steller-modules: () !default;

@@ -678,7 +678,6 @@ List of all built-in functions like the above color & font-family example:
 * row-gutter()
 * gradient()
 * speed()
-* transform-distance()
 
 ## Extending Steller / Custom Classes
 

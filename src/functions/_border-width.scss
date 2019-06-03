@@ -1,3 +1,9 @@
 @function border-width($border-width) {
-  @return map-get($steller-border-widths, '#{$border-width}');
+  $value: map-get($steller-border-widths, '#{$border-width}');
+
+  @if $value == null {
+    @error 'border-width(#{$border-width}) function returned null value. Make sure the value is in $steller-border-widths.';
+  }
+
+  @return $value;
 }

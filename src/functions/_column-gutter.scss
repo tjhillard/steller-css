@@ -1,3 +1,9 @@
 @function column-gutter($column-gutter) {
-  @return map-get($steller-column-gutters, '#{$column-gutter}');
+  $value: map-get($steller-column-gutters, '#{$column-gutter}');
+
+  @if $value == null {
+    @error 'column-gutter(#{$column-gutters}) function returned null value. Make sure the value is in $steller-column-gutters.';
+  }
+
+  @return $value;
 }
