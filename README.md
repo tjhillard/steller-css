@@ -260,6 +260,7 @@ $steller-gradients: (
 
 | Class | Properties |
 | --- | --- |
+| .font-{$family} | font-family: $font-family |
 | .font-size-{$size} | font-size: $size |
 | .font-weight-{$weight} | font-size: $weight |
 | .leading-{$leading} | line-height: $leading |
@@ -649,7 +650,7 @@ Your feature
 ```css
 .some-complex-element {
   background: linear-gradient(var(--color-primary), var(--color-secondary));
-  font-family: var(--font-family-classy);
+  font-family: var(--font-classy);
   font-size: var(--font-size-2xl);
 }
 ```
