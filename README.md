@@ -67,7 +67,7 @@ $steller-colors: (
 );
 ```
 
-### Typogrpahy
+### Typography
 
 ```scss
 $steller-font-families: (
