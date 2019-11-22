@@ -7,8 +7,6 @@
 
 Steller is a utility-first CSS framework that serves as the foundation of your application's design system. It includes built-in smart defaults for building responsive, accesible, and visually consistent user interfaces. Unlike other CSS frameworks, Steller has no opinion on the actual end appearance of your application, it is simply a bridge for your design system and your application's styling.
 
->Open-source development of Steller is proudly sponsored by [Snap! Raise](https://www.snap-raise.com/).
-
 ## Features
 * Simple configuration & setup ⚙️
 * Grid system built with CSS Grid 📏
